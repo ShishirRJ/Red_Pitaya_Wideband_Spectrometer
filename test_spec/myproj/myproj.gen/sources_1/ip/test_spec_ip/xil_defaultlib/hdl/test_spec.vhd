@@ -1,4 +1,4 @@
--- Generated from Simulink block acc_cnt
+-- Generated from Simulink block test_spec/acc_cnt
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -12,13 +12,13 @@ entity test_spec_acc_cnt is
   );
 end test_spec_acc_cnt;
 architecture structural of test_spec_acc_cnt is 
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal acc_cntr_op_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal acc_cntr_op_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   acc_cntr_op_net <= out_reg;
   test_spec_acc_cnt_user_data_in <= cast_gw_dout_net;
@@ -71,7 +71,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/acc_cntrl/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -87,8 +87,8 @@ end test_spec_edge_detect_x4;
 architecture structural of test_spec_edge_detect_x4 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal register_q_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
   signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
@@ -129,7 +129,7 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block pipeline15
+-- Generated from Simulink block test_spec/acc_cntrl/pipeline15
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -166,7 +166,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block acc_cntrl
+-- Generated from Simulink block test_spec/acc_cntrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -182,6 +182,8 @@ entity test_spec_acc_cntrl is
   );
 end test_spec_acc_cntrl;
 architecture structural of test_spec_acc_cntrl is 
+  signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal fft_start_frame_out_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -190,10 +192,8 @@ architecture structural of test_spec_acc_cntrl is
   signal register_q_net : std_logic_vector( 1-1 downto 0 );
   signal register0_q_net : std_logic_vector( 32-1 downto 0 );
   signal shift_op_net : std_logic_vector( 32-1 downto 0 );
-  signal cntr_op_net : std_logic_vector( 32-1 downto 0 );
-  signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cntr_op_net : std_logic_vector( 32-1 downto 0 );
 begin
   new_acc <= relational5_op_net;
   reint1_output_port_net <= acc_len;
@@ -263,7 +263,7 @@ begin
     op => cntr_op_net
   );
 end structural;
--- Generated from Simulink block acc_len
+-- Generated from Simulink block test_spec/acc_len
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -310,7 +310,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block buscreate
+-- Generated from Simulink block test_spec/accum0_snap/buscreate
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -358,7 +358,7 @@ begin
     output_port => reinterpret2_output_port_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/accum0_snap/ss/add_gen/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -416,7 +416,7 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block add_gen
+-- Generated from Simulink block test_spec/accum0_snap/ss/add_gen
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -430,25 +430,18 @@ entity test_spec_add_gen_x0 is
     init : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
-    add : out std_logic_vector( 12-1 downto 0 );
+    add : out std_logic_vector( 8-1 downto 0 );
     dout : out std_logic_vector( 32-1 downto 0 );
     we_o : out std_logic_vector( 1-1 downto 0 );
     status : out std_logic_vector( 32-1 downto 0 )
   );
 end test_spec_add_gen_x0;
 architecture structural of test_spec_add_gen_x0 is 
-  signal slice1_y_net : std_logic_vector( 14-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal add_gen_op_net : std_logic_vector( 15-1 downto 0 );
-  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 8-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal shift_op_net : std_logic_vector( 17-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 14-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
@@ -457,12 +450,19 @@ architecture structural of test_spec_add_gen_x0 is
   signal ce_net : std_logic;
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 17-1 downto 0 );
+  signal shift_op_net : std_logic_vector( 21-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 10-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 21-1 downto 0 );
   signal register5_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 10-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
+  signal add_gen_op_net : std_logic_vector( 11-1 downto 0 );
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -482,7 +482,7 @@ begin
     ce_1 => ce_net,
     out_x0 => edge_op_y_net_x0
   );
-  concat : entity xil_defaultlib.sysgen_concat_738ae8db00 
+  concat : entity xil_defaultlib.sysgen_concat_1bbdda5322 
   port map (
     clk => '0',
     ce => '0',
@@ -500,7 +500,7 @@ begin
     din_width => 1,
     dout_arith => 1,
     dout_bin_pt => 0,
-    dout_width => 17,
+    dout_width => 21,
     latency => 0,
     overflow => xlWrap,
     quantization => xlTruncate
@@ -526,7 +526,7 @@ begin
     latency => 1,
     reg_retiming => 0,
     reset => 0,
-    width => 14
+    width => 10
   )
   port map (
     en => '1',
@@ -617,7 +617,7 @@ begin
     ce => ce_net,
     q => register5_q_net
   );
-  shift : entity xil_defaultlib.sysgen_shift_3f63cc4867 
+  shift : entity xil_defaultlib.sysgen_shift_4525029074 
   port map (
     clr => '0',
     ip => convert_dout_net,
@@ -629,7 +629,7 @@ begin
   generic map (
     core_name0 => "test_spec_c_counter_binary_v12_0_i3",
     op_arith => xlUnsigned,
-    op_width => 15
+    op_width => 11
   )
   port map (
     clr => '0',
@@ -642,9 +642,9 @@ begin
   slice1 : entity xil_defaultlib.test_spec_xlslice 
   generic map (
     new_lsb => 0,
-    new_msb => 13,
-    x_width => 15,
-    y_width => 14
+    new_msb => 9,
+    x_width => 11,
+    y_width => 10
   )
   port map (
     x => add_gen_op_net,
@@ -653,9 +653,9 @@ begin
   slice2 : entity xil_defaultlib.test_spec_xlslice 
   generic map (
     new_lsb => 2,
-    new_msb => 13,
-    x_width => 15,
-    y_width => 12
+    new_msb => 9,
+    x_width => 11,
+    y_width => 8
   )
   port map (
     x => add_gen_op_net,
@@ -663,9 +663,9 @@ begin
   );
   slice3 : entity xil_defaultlib.test_spec_xlslice 
   generic map (
-    new_lsb => 14,
-    new_msb => 14,
-    x_width => 15,
+    new_lsb => 10,
+    new_msb => 10,
+    x_width => 11,
     y_width => 1
   )
   port map (
@@ -673,7 +673,7 @@ begin
     y => slice3_y_net
   );
 end structural;
--- Generated from Simulink block dram_munge
+-- Generated from Simulink block test_spec/accum0_snap/ss/basic_ctrl/dram_munge
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -690,35 +690,35 @@ entity test_spec_dram_munge_x0 is
   );
 end test_spec_dram_munge_x0;
 architecture structural of test_spec_dram_munge_x0 is 
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
   signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal concat_y_net : std_logic_vector( 80-1 downto 0 );
   signal constant_op_net : std_logic_vector( 8-1 downto 0 );
   signal register_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
   signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
   signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
   signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
   signal con0_op_net : std_logic_vector( 2-1 downto 0 );
   signal con1_op_net : std_logic_vector( 2-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
   signal dram_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
@@ -982,7 +982,7 @@ begin
     y => we_choice_y_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/accum0_snap/ss/basic_ctrl/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -1040,7 +1040,7 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block basic_ctrl
+-- Generated from Simulink block test_spec/accum0_snap/ss/basic_ctrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -1061,12 +1061,9 @@ entity test_spec_basic_ctrl_x0 is
   );
 end test_spec_basic_ctrl_x0;
 architecture structural of test_spec_basic_ctrl_x0 is 
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
-  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
@@ -1080,9 +1077,12 @@ architecture structural of test_spec_basic_ctrl_x0 is
   signal ce_net : std_logic;
   signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
   signal constant2_op_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
+  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
@@ -1278,31 +1278,31 @@ begin
     y => valid_src_y_net
   );
 end structural;
--- Generated from Simulink block calc_add
+-- Generated from Simulink block test_spec/accum0_snap/ss/bram/calc_add
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
 entity test_spec_calc_add_x0 is
   port (
-    in_x0 : in std_logic_vector( 12-1 downto 0 );
+    in_x0 : in std_logic_vector( 8-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
-    out_x0 : out std_logic_vector( 12-1 downto 0 )
+    out_x0 : out std_logic_vector( 8-1 downto 0 )
   );
 end test_spec_calc_add_x0;
 architecture structural of test_spec_calc_add_x0 is 
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux_y_net : std_logic_vector( 8-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 8-1 downto 0 );
+  signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
   signal const_op_net : std_logic_vector( 1-1 downto 0 );
   signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux_y_net : std_logic_vector( 12-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
-  signal clk_net : std_logic;
-  signal concat_y_net : std_logic_vector( 12-1 downto 0 );
-  signal msw_y_net : std_logic_vector( 11-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 8-1 downto 0 );
+  signal msw_y_net : std_logic_vector( 7-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 8-1 downto 0 );
+  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
   add_del_q_net <= in_x0;
@@ -1317,7 +1317,7 @@ begin
     ce => ce_net,
     s => add_sub_s_net
   );
-  concat : entity xil_defaultlib.sysgen_concat_339c82ac9f 
+  concat : entity xil_defaultlib.sysgen_concat_e93d63e157 
   port map (
     clk => '0',
     ce => '0',
@@ -1338,10 +1338,10 @@ begin
     bool_conversion => 0,
     din_arith => 1,
     din_bin_pt => 0,
-    din_width => 12,
+    din_width => 8,
     dout_arith => 1,
     dout_bin_pt => 0,
-    dout_width => 12,
+    dout_width => 8,
     latency => 0,
     overflow => xlWrap,
     quantization => xlTruncate
@@ -1358,7 +1358,7 @@ begin
   generic map (
     new_lsb => 0,
     new_msb => 0,
-    x_width => 12,
+    x_width => 8,
     y_width => 1
   )
   port map (
@@ -1375,15 +1375,15 @@ begin
   msw : entity xil_defaultlib.test_spec_xlslice 
   generic map (
     new_lsb => 1,
-    new_msb => 11,
-    x_width => 12,
-    y_width => 11
+    new_msb => 7,
+    x_width => 8,
+    y_width => 7
   )
   port map (
     x => convert_addr_dout_net,
     y => msw_y_net
   );
-  mux : entity xil_defaultlib.sysgen_mux_c5c11734ab 
+  mux : entity xil_defaultlib.sysgen_mux_755f69db7c 
   port map (
     clk => '0',
     ce => '0',
@@ -1394,7 +1394,7 @@ begin
     y => mux_y_net
   );
 end structural;
--- Generated from Simulink block munge_in
+-- Generated from Simulink block test_spec/accum0_snap/ss/bram/munge_in
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -1420,33 +1420,33 @@ begin
     output_port => reinterpret_out_output_port_net
   );
 end structural;
--- Generated from Simulink block bram
+-- Generated from Simulink block test_spec/accum0_snap/ss/bram
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
 entity test_spec_bram_x0 is
   port (
-    addr : in std_logic_vector( 12-1 downto 0 );
+    addr : in std_logic_vector( 8-1 downto 0 );
     data_in : in std_logic_vector( 32-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
-    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 12-1 downto 0 );
+    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 8-1 downto 0 );
     test_spec_accum0_snap_ss_bram_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_accum0_snap_ss_bram_we : out std_logic_vector( 1-1 downto 0 )
   );
 end test_spec_bram_x0;
 architecture structural of test_spec_bram_x0 is 
-  signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 8-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
   signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 8-1 downto 0 );
   signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
   signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal mux_y_net : std_logic_vector( 12-1 downto 0 );
+  signal mux_y_net : std_logic_vector( 8-1 downto 0 );
   signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
 begin
   add_del_q_net <= addr;
@@ -1474,10 +1474,10 @@ begin
     bool_conversion => 0,
     din_arith => 1,
     din_bin_pt => 0,
-    din_width => 12,
+    din_width => 8,
     dout_arith => 1,
     dout_bin_pt => 0,
-    dout_width => 12,
+    dout_width => 8,
     latency => 0,
     overflow => xlWrap,
     quantization => xlTruncate
@@ -1533,7 +1533,7 @@ begin
     dout => convert_we_dout_net
   );
 end structural;
--- Generated from Simulink block ctrl
+-- Generated from Simulink block test_spec/accum0_snap/ss/ctrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -1580,7 +1580,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block ctrl_combine
+-- Generated from Simulink block test_spec/accum0_snap/ss/ctrl_combine
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -1654,7 +1654,7 @@ begin
     output_port => reinterpret4_output_port_net
   );
 end structural;
--- Generated from Simulink block ctrl_split
+-- Generated from Simulink block test_spec/accum0_snap/ss/ctrl_split
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -1669,13 +1669,13 @@ entity test_spec_ctrl_split_x1 is
   );
 end test_spec_ctrl_split_x1;
 architecture structural of test_spec_ctrl_split_x1 is 
-  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
-  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
   signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
+  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
 begin
   msb_out4 <= reinterpret4_output_port_net;
   out3 <= slice3_y_net;
@@ -1743,7 +1743,7 @@ begin
     y => slice4_y_net
   );
 end structural;
--- Generated from Simulink block status
+-- Generated from Simulink block test_spec/accum0_snap/ss/status
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -1759,11 +1759,11 @@ end test_spec_status_x1;
 architecture structural of test_spec_status_x1 is 
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
   test_spec_accum0_snap_ss_status_user_data_in <= cast_gw_dout_net;
@@ -1816,12 +1816,12 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block ss
+-- Generated from Simulink block test_spec/accum0_snap/ss
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity test_spec_ss_x0 is
+entity test_spec_ss_x1 is
   port (
     din : in std_logic_vector( 32-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -1832,20 +1832,27 @@ entity test_spec_ss_x0 is
     arm_out : out std_logic_vector( 1-1 downto 0 );
     goto_31470454_we1 : out std_logic_vector( 1-1 downto 0 );
     goto_31470454_we4 : out std_logic_vector( 1-1 downto 0 );
-    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 12-1 downto 0 );
+    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 8-1 downto 0 );
     test_spec_accum0_snap_ss_bram_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_accum0_snap_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     test_spec_accum0_snap_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end test_spec_ss_x0;
-architecture structural of test_spec_ss_x0 is 
-  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
+end test_spec_ss_x1;
+architecture structural of test_spec_ss_x1 is 
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 8-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
   signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal test_spec_accum0_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 8-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
@@ -1854,9 +1861,7 @@ architecture structural of test_spec_ss_x0 is
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
   signal concatenate_y_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
-  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
+  signal add_del_q_net : std_logic_vector( 8-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
   signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
@@ -1865,14 +1870,9 @@ architecture structural of test_spec_ss_x0 is
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
@@ -1954,7 +1954,7 @@ begin
     ce_1 => ce_net,
     test_spec_accum0_snap_ss_status_user_data_in => cast_gw_dout_net
   );
-  add_del : entity xil_defaultlib.sysgen_delay_1144a62f70 
+  add_del : entity xil_defaultlib.sysgen_delay_0b523aac04 
   port map (
     clr => '0',
     d => slice2_y_net,
@@ -2047,7 +2047,7 @@ begin
     q => we_del_q_net
   );
 end structural;
--- Generated from Simulink block accum0_snap
+-- Generated from Simulink block test_spec/accum0_snap
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -2062,7 +2062,7 @@ entity test_spec_accum0_snap is
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     arm_out : out std_logic_vector( 1-1 downto 0 );
-    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 12-1 downto 0 );
+    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 8-1 downto 0 );
     test_spec_accum0_snap_ss_bram_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_accum0_snap_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     test_spec_accum0_snap_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 );
@@ -2074,20 +2074,20 @@ architecture structural of test_spec_accum0_snap is
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal single_port_ram_data_out_net : std_logic_vector( 31-1 downto 0 );
   signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal assert_p_acc0_dout_net : std_logic_vector( 31-1 downto 0 );
-  signal assert_val_acc0_dout_net : std_logic_vector( 1-1 downto 0 );
   signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
   signal register0_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 8-1 downto 0 );
   signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
   signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal test_spec_accum0_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_p_acc0_dout_net : std_logic_vector( 31-1 downto 0 );
+  signal assert_val_acc0_dout_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   single_port_ram_data_out_net <= in_p_acc0;
@@ -2109,7 +2109,7 @@ begin
     in2 => assert_val_acc0_dout_net,
     bus_out => concatenate_y_net
   );
-  ss : entity xil_defaultlib.test_spec_ss_x0 
+  ss : entity xil_defaultlib.test_spec_ss_x1 
   port map (
     din => concatenate_y_net,
     we => constant2_op_net,
@@ -2144,7 +2144,7 @@ begin
     dout => assert_val_acc0_dout_net
   );
 end structural;
--- Generated from Simulink block buscreate
+-- Generated from Simulink block test_spec/accum1_snap/buscreate
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -2192,26 +2192,26 @@ begin
     output_port => reinterpret2_output_port_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/accum1_snap/ss/add_gen/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity test_spec_edge_detect_x8 is
+entity test_spec_edge_detect_x5 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end test_spec_edge_detect_x8;
-architecture structural of test_spec_edge_detect_x8 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+end test_spec_edge_detect_x5;
+architecture structural of test_spec_edge_detect_x5 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice3_y_net <= in_x0;
@@ -2250,12 +2250,12 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block add_gen
+-- Generated from Simulink block test_spec/accum1_snap/ss/add_gen
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity test_spec_add_gen_x1 is
+entity test_spec_add_gen_x2 is
   port (
     din : in std_logic_vector( 32-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -2269,10 +2269,14 @@ entity test_spec_add_gen_x1 is
     we_o : out std_logic_vector( 1-1 downto 0 );
     status : out std_logic_vector( 32-1 downto 0 )
   );
-end test_spec_add_gen_x1;
-architecture structural of test_spec_add_gen_x1 is 
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
+end test_spec_add_gen_x2;
+architecture structural of test_spec_add_gen_x2 is 
+  signal convert_dout_net : std_logic_vector( 17-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 14-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -2286,17 +2290,13 @@ architecture structural of test_spec_add_gen_x1 is
   signal ce_net : std_logic;
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 14-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 17-1 downto 0 );
-  signal register5_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
-  signal add_gen_op_net : std_logic_vector( 15-1 downto 0 );
   signal shift_op_net : std_logic_vector( 17-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 14-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
+  signal add_gen_op_net : std_logic_vector( 15-1 downto 0 );
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -2309,7 +2309,7 @@ begin
   edge_op_y_net <= init;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  edge_detect : entity xil_defaultlib.test_spec_edge_detect_x8 
+  edge_detect : entity xil_defaultlib.test_spec_edge_detect_x5 
   port map (
     in_x0 => slice3_y_net,
     clk_1 => clk_net,
@@ -2461,7 +2461,7 @@ begin
   );
   add_gen : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i3",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i5",
     op_arith => xlUnsigned,
     op_width => 15
   )
@@ -2507,7 +2507,7 @@ begin
     y => slice3_y_net
   );
 end structural;
--- Generated from Simulink block dram_munge
+-- Generated from Simulink block test_spec/accum1_snap/ss/basic_ctrl/dram_munge
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -2524,36 +2524,36 @@ entity test_spec_dram_munge_x2 is
   );
 end test_spec_dram_munge_x2;
 architecture structural of test_spec_dram_munge_x2 is 
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
-  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
-  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
-  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal concat_y_net : std_logic_vector( 80-1 downto 0 );
   signal constant_op_net : std_logic_vector( 8-1 downto 0 );
   signal register_q_net : std_logic_vector( 32-1 downto 0 );
   signal register1_q_net : std_logic_vector( 32-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
+  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -2816,26 +2816,26 @@ begin
     y => we_choice_y_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/accum1_snap/ss/basic_ctrl/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity test_spec_edge_detect_x7 is
+entity test_spec_edge_detect_x8 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end test_spec_edge_detect_x7;
-architecture structural of test_spec_edge_detect_x7 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+end test_spec_edge_detect_x8;
+architecture structural of test_spec_edge_detect_x8 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -2874,7 +2874,7 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block basic_ctrl
+-- Generated from Simulink block test_spec/accum1_snap/ss/basic_ctrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -2895,13 +2895,12 @@ entity test_spec_basic_ctrl_x2 is
   );
 end test_spec_basic_ctrl_x2;
 architecture structural of test_spec_basic_ctrl_x2 is 
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal constant7_op_net : std_logic_vector( 1-1 downto 0 );
   signal register0_q_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
@@ -2909,17 +2908,18 @@ architecture structural of test_spec_basic_ctrl_x2 is
   signal ce_net : std_logic;
   signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
   signal enable_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
   signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal constant7_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -2942,7 +2942,7 @@ begin
     dout => data_choice_y_net,
     we_o => we_choice_y_net
   );
-  edge_detect : entity xil_defaultlib.test_spec_edge_detect_x7 
+  edge_detect : entity xil_defaultlib.test_spec_edge_detect_x8 
   port map (
     in_x0 => delay1_q_net,
     clk_1 => clk_net,
@@ -3112,7 +3112,7 @@ begin
     y => valid_src_y_net
   );
 end structural;
--- Generated from Simulink block calc_add
+-- Generated from Simulink block test_spec/accum1_snap/ss/bram/calc_add
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -3126,7 +3126,6 @@ entity test_spec_calc_add_x2 is
   );
 end test_spec_calc_add_x2;
 architecture structural of test_spec_calc_add_x2 is 
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
   signal mux_y_net : std_logic_vector( 12-1 downto 0 );
   signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
   signal clk_net : std_logic;
@@ -3136,6 +3135,7 @@ architecture structural of test_spec_calc_add_x2 is
   signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net : std_logic_vector( 12-1 downto 0 );
   signal msw_y_net : std_logic_vector( 11-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
   signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
@@ -3228,7 +3228,7 @@ begin
     y => mux_y_net
   );
 end structural;
--- Generated from Simulink block munge_in
+-- Generated from Simulink block test_spec/accum1_snap/ss/bram/munge_in
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -3254,7 +3254,7 @@ begin
     output_port => reinterpret_out_output_port_net
   );
 end structural;
--- Generated from Simulink block bram
+-- Generated from Simulink block test_spec/accum1_snap/ss/bram
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -3272,6 +3272,8 @@ entity test_spec_bram_x2 is
   );
 end test_spec_bram_x2;
 architecture structural of test_spec_bram_x2 is 
+  signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
+  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
   signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
   signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
   signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
@@ -3280,8 +3282,6 @@ architecture structural of test_spec_bram_x2 is
   signal ce_net : std_logic;
   signal mux_y_net : std_logic_vector( 12-1 downto 0 );
   signal reinterpret_out_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
-  signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
 begin
   add_del_q_net <= addr;
   dat_del_q_net <= data_in;
@@ -3367,7 +3367,7 @@ begin
     dout => convert_we_dout_net
   );
 end structural;
--- Generated from Simulink block ctrl
+-- Generated from Simulink block test_spec/accum1_snap/ss/ctrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -3379,10 +3379,10 @@ entity test_spec_ctrl_x2 is
   );
 end test_spec_ctrl_x2;
 architecture structural of test_spec_ctrl_x2 is 
-  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal test_spec_accum1_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
   test_spec_accum1_snap_ss_ctrl_user_data_out_net <= test_spec_accum1_snap_ss_ctrl_user_data_out;
@@ -3414,7 +3414,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block ctrl_combine
+-- Generated from Simulink block test_spec/accum1_snap/ss/ctrl_combine
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -3488,7 +3488,7 @@ begin
     output_port => reinterpret4_output_port_net
   );
 end structural;
--- Generated from Simulink block ctrl_split
+-- Generated from Simulink block test_spec/accum1_snap/ss/ctrl_split
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -3577,7 +3577,7 @@ begin
     y => slice4_y_net
   );
 end structural;
--- Generated from Simulink block status
+-- Generated from Simulink block test_spec/accum1_snap/ss/status
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -3591,12 +3591,12 @@ entity test_spec_status_x2 is
   );
 end test_spec_status_x2;
 architecture structural of test_spec_status_x2 is 
+  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
@@ -3650,12 +3650,12 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block ss
+-- Generated from Simulink block test_spec/accum1_snap/ss
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity test_spec_ss_x2 is
+entity test_spec_ss_x0 is
   port (
     din : in std_logic_vector( 32-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -3671,17 +3671,17 @@ entity test_spec_ss_x2 is
     test_spec_accum1_snap_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     test_spec_accum1_snap_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end test_spec_ss_x2;
-architecture structural of test_spec_ss_x2 is 
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
-  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
-  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
+end test_spec_ss_x0;
+architecture structural of test_spec_ss_x0 is 
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal constant7_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal test_spec_accum1_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -3698,15 +3698,15 @@ architecture structural of test_spec_ss_x2 is
   signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 32-1 downto 0 );
   signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal constant7_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
+  signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ri_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
@@ -3721,7 +3721,7 @@ begin
   test_spec_accum1_snap_ss_status_user_data_in <= cast_gw_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  add_gen : entity xil_defaultlib.test_spec_add_gen_x1 
+  add_gen : entity xil_defaultlib.test_spec_add_gen_x2 
   port map (
     din => data_choice_y_net,
     we => we_choice_y_net,
@@ -3881,7 +3881,7 @@ begin
     q => we_del_q_net
   );
 end structural;
--- Generated from Simulink block accum1_snap
+-- Generated from Simulink block test_spec/accum1_snap
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -3905,8 +3905,6 @@ entity test_spec_accum1_snap is
   );
 end test_spec_accum1_snap;
 architecture structural of test_spec_accum1_snap is 
-  signal assert_p_acc1_dout_net : std_logic_vector( 31-1 downto 0 );
-  signal assert_val_acc1_dout_net : std_logic_vector( 1-1 downto 0 );
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal single_port_ram_data_out_net : std_logic_vector( 31-1 downto 0 );
   signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
@@ -3922,6 +3920,8 @@ architecture structural of test_spec_accum1_snap is
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_p_acc1_dout_net : std_logic_vector( 31-1 downto 0 );
+  signal assert_val_acc1_dout_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   single_port_ram_data_out_net <= in_p_acc1;
@@ -3943,7 +3943,7 @@ begin
     in2 => assert_val_acc1_dout_net,
     bus_out => concatenate_y_net
   );
-  ss : entity xil_defaultlib.test_spec_ss_x2 
+  ss : entity xil_defaultlib.test_spec_ss_x0 
   port map (
     din => concatenate_y_net,
     we => constant7_op_net,
@@ -3978,7 +3978,7 @@ begin
     dout => assert_val_acc1_dout_net
   );
 end structural;
--- Generated from Simulink block buscreate
+-- Generated from Simulink block test_spec/accumdat_snap/buscreate
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -4026,26 +4026,26 @@ begin
     output_port => reinterpret2_output_port_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/accumdat_snap/ss/add_gen/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity test_spec_edge_detect_x6 is
+entity test_spec_edge_detect_x7 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end test_spec_edge_detect_x6;
-architecture structural of test_spec_edge_detect_x6 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+end test_spec_edge_detect_x7;
+architecture structural of test_spec_edge_detect_x7 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice3_y_net <= in_x0;
@@ -4084,12 +4084,12 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block add_gen
+-- Generated from Simulink block test_spec/accumdat_snap/ss/add_gen
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity test_spec_add_gen_x2 is
+entity test_spec_add_gen_x1 is
   port (
     din : in std_logic_vector( 32-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -4103,8 +4103,8 @@ entity test_spec_add_gen_x2 is
     we_o : out std_logic_vector( 1-1 downto 0 );
     status : out std_logic_vector( 32-1 downto 0 )
   );
-end test_spec_add_gen_x2;
-architecture structural of test_spec_add_gen_x2 is 
+end test_spec_add_gen_x1;
+architecture structural of test_spec_add_gen_x1 is 
   signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -4121,16 +4121,16 @@ architecture structural of test_spec_add_gen_x2 is
   signal shift_op_net : std_logic_vector( 17-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 14-1 downto 0 );
-  signal add_gen_op_net : std_logic_vector( 15-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 17-1 downto 0 );
   signal register5_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 14-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
+  signal add_gen_op_net : std_logic_vector( 15-1 downto 0 );
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -4143,7 +4143,7 @@ begin
   edge_op_y_net <= init;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  edge_detect : entity xil_defaultlib.test_spec_edge_detect_x6 
+  edge_detect : entity xil_defaultlib.test_spec_edge_detect_x7 
   port map (
     in_x0 => slice3_y_net,
     clk_1 => clk_net,
@@ -4295,7 +4295,7 @@ begin
   );
   add_gen : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i3",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i5",
     op_arith => xlUnsigned,
     op_width => 15
   )
@@ -4341,7 +4341,7 @@ begin
     y => slice3_y_net
   );
 end structural;
--- Generated from Simulink block dram_munge
+-- Generated from Simulink block test_spec/accumdat_snap/ss/basic_ctrl/dram_munge
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -4358,11 +4358,27 @@ entity test_spec_dram_munge_x1 is
   );
 end test_spec_dram_munge_x1;
 architecture structural of test_spec_dram_munge_x1 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
   signal con0_op_net : std_logic_vector( 2-1 downto 0 );
   signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal concat_y_net : std_logic_vector( 80-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
+  signal register_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
   signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
@@ -4371,23 +4387,7 @@ architecture structural of test_spec_dram_munge_x1 is
   signal relational_op_net : std_logic_vector( 1-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
   signal dram_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 32-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 32-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 32-1 downto 0 );
-  signal mux1_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal concat_y_net : std_logic_vector( 80-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 8-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -4650,26 +4650,26 @@ begin
     y => we_choice_y_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/accumdat_snap/ss/basic_ctrl/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity test_spec_edge_detect_x5 is
+entity test_spec_edge_detect_x6 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end test_spec_edge_detect_x5;
-architecture structural of test_spec_edge_detect_x5 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+end test_spec_edge_detect_x6;
+architecture structural of test_spec_edge_detect_x6 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -4708,7 +4708,7 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block basic_ctrl
+-- Generated from Simulink block test_spec/accumdat_snap/ss/basic_ctrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -4729,21 +4729,6 @@ entity test_spec_basic_ctrl_x1 is
   );
 end test_spec_basic_ctrl_x1;
 architecture structural of test_spec_basic_ctrl_x1 is 
-  signal ce_net : std_logic;
-  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
-  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
@@ -4754,6 +4739,21 @@ architecture structural of test_spec_basic_ctrl_x1 is
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal enable_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
+  signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal valid_src_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -4776,7 +4776,7 @@ begin
     dout => data_choice_y_net,
     we_o => we_choice_y_net
   );
-  edge_detect : entity xil_defaultlib.test_spec_edge_detect_x5 
+  edge_detect : entity xil_defaultlib.test_spec_edge_detect_x6 
   port map (
     in_x0 => delay1_q_net,
     clk_1 => clk_net,
@@ -4946,7 +4946,7 @@ begin
     y => valid_src_y_net
   );
 end structural;
--- Generated from Simulink block calc_add
+-- Generated from Simulink block test_spec/accumdat_snap/ss/bram/calc_add
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -4964,13 +4964,13 @@ architecture structural of test_spec_calc_add_x1 is
   signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
   signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
   signal const_op_net : std_logic_vector( 1-1 downto 0 );
   signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net : std_logic_vector( 12-1 downto 0 );
   signal msw_y_net : std_logic_vector( 11-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
   add_del_q_net <= in_x0;
@@ -5062,7 +5062,7 @@ begin
     y => mux_y_net
   );
 end structural;
--- Generated from Simulink block munge_in
+-- Generated from Simulink block test_spec/accumdat_snap/ss/bram/munge_in
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5088,7 +5088,7 @@ begin
     output_port => reinterpret_out_output_port_net
   );
 end structural;
--- Generated from Simulink block bram
+-- Generated from Simulink block test_spec/accumdat_snap/ss/bram
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5201,7 +5201,7 @@ begin
     dout => convert_we_dout_net
   );
 end structural;
--- Generated from Simulink block ctrl
+-- Generated from Simulink block test_spec/accumdat_snap/ss/ctrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5213,10 +5213,10 @@ entity test_spec_ctrl_x0 is
   );
 end test_spec_ctrl_x0;
 architecture structural of test_spec_ctrl_x0 is 
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal test_spec_accumdat_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
   test_spec_accumdat_snap_ss_ctrl_user_data_out_net <= test_spec_accumdat_snap_ss_ctrl_user_data_out;
@@ -5248,7 +5248,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block ctrl_combine
+-- Generated from Simulink block test_spec/accumdat_snap/ss/ctrl_combine
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5263,15 +5263,15 @@ entity test_spec_ctrl_combine_x0 is
   );
 end test_spec_ctrl_combine_x0;
 architecture structural of test_spec_ctrl_combine_x0 is 
+  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
+  signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
+  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal reinterpret2_output_port_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal reinterpret3_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal reinterpret4_output_port_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
-  signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
-  signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   reinterpret4_output_port_net_x0 <= in1;
@@ -5322,7 +5322,7 @@ begin
     output_port => reinterpret4_output_port_net
   );
 end structural;
--- Generated from Simulink block ctrl_split
+-- Generated from Simulink block test_spec/accumdat_snap/ss/ctrl_split
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5337,13 +5337,13 @@ entity test_spec_ctrl_split_x0 is
   );
 end test_spec_ctrl_split_x0;
 architecture structural of test_spec_ctrl_split_x0 is 
-  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
-  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
   signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
+  signal slice4_y_net : std_logic_vector( 28-1 downto 0 );
 begin
   msb_out4 <= reinterpret4_output_port_net;
   out3 <= slice3_y_net;
@@ -5411,7 +5411,7 @@ begin
     y => slice4_y_net
   );
 end structural;
--- Generated from Simulink block status
+-- Generated from Simulink block test_spec/accumdat_snap/ss/status
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5425,12 +5425,12 @@ entity test_spec_status_x0 is
   );
 end test_spec_status_x0;
 architecture structural of test_spec_status_x0 is 
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
@@ -5484,12 +5484,12 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block ss
+-- Generated from Simulink block test_spec/accumdat_snap/ss
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity test_spec_ss_x1 is
+entity test_spec_ss_x2 is
   port (
     din : in std_logic_vector( 19-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -5505,8 +5505,21 @@ entity test_spec_ss_x1 is
     test_spec_accumdat_snap_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     test_spec_accumdat_snap_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end test_spec_ss_x1;
-architecture structural of test_spec_ss_x1 is 
+end test_spec_ss_x2;
+architecture structural of test_spec_ss_x2 is 
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 19-1 downto 0 );
+  signal constant6_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal test_spec_accumdat_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
   signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
@@ -5525,22 +5538,9 @@ architecture structural of test_spec_ss_x1 is
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
   signal ri_output_port_net : std_logic_vector( 19-1 downto 0 );
   signal circ_op_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal test_spec_accumdat_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 19-1 downto 0 );
-  signal constant6_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
@@ -5555,7 +5555,7 @@ begin
   test_spec_accumdat_snap_ss_status_user_data_in <= cast_gw_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  add_gen : entity xil_defaultlib.test_spec_add_gen_x2 
+  add_gen : entity xil_defaultlib.test_spec_add_gen_x1 
   port map (
     din => data_choice_y_net,
     we => we_choice_y_net,
@@ -5715,7 +5715,7 @@ begin
     q => we_del_q_net
   );
 end structural;
--- Generated from Simulink block accumdat_snap
+-- Generated from Simulink block test_spec/accumdat_snap
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5777,7 +5777,7 @@ begin
     in2 => assert_ch_count_dout_net,
     bus_out => concatenate_y_net
   );
-  ss : entity xil_defaultlib.test_spec_ss_x1 
+  ss : entity xil_defaultlib.test_spec_ss_x2 
   port map (
     din => concatenate_y_net,
     we => constant6_op_net,
@@ -5812,7 +5812,7 @@ begin
     dout => assert_ch_count_dout_net
   );
 end structural;
--- Generated from Simulink block adc_dv
+-- Generated from Simulink block test_spec/adc_dv
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5826,13 +5826,13 @@ entity test_spec_adc_dv is
   );
 end test_spec_adc_dv;
 architecture structural of test_spec_adc_dv is 
-  signal assert_reg_dout_net : std_logic_vector( 1-1 downto 0 );
   signal convert2_dout_net : std_logic_vector( 1-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 1-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 1-1 downto 0 );
 begin
   convert2_dout_net <= out_reg;
   test_spec_adc_dv_user_data_in <= cast_gw_dout_net;
@@ -5885,7 +5885,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block adc_sample_cnt
+-- Generated from Simulink block test_spec/adc_sample_cnt
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5903,9 +5903,9 @@ architecture structural of test_spec_adc_sample_cnt is
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   delay1_q_net <= out_reg;
   test_spec_adc_sample_cnt_user_data_in <= cast_gw_dout_net;
@@ -5958,7 +5958,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block buscreate
+-- Generated from Simulink block test_spec/adc_voltage_snap/buscreate
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -5972,13 +5972,13 @@ entity test_spec_buscreate is
   );
 end test_spec_buscreate;
 architecture structural of test_spec_buscreate is 
-  signal reinterpret1_output_port_net : std_logic_vector( 10-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 10-1 downto 0 );
-  signal reinterpret3_output_port_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 21-1 downto 0 );
   signal assert_adc_di_dout_net : std_logic_vector( 10-1 downto 0 );
   signal assert_adc_dq_dout_net : std_logic_vector( 10-1 downto 0 );
   signal assert_adc_valid_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret1_output_port_net : std_logic_vector( 10-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 10-1 downto 0 );
+  signal reinterpret3_output_port_net : std_logic_vector( 1-1 downto 0 );
 begin
   bus_out <= concatenate_y_net;
   assert_adc_di_dout_net <= in1;
@@ -6019,7 +6019,7 @@ begin
     output_port => reinterpret3_output_port_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/add_gen/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -6077,7 +6077,7 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block add_gen
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/add_gen
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -6098,9 +6098,6 @@ entity test_spec_add_gen is
   );
 end test_spec_add_gen;
 architecture structural of test_spec_add_gen is 
-  signal slice1_y_net : std_logic_vector( 14-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal add_gen_op_net : std_logic_vector( 15-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -6117,13 +6114,16 @@ architecture structural of test_spec_add_gen is
   signal shift_op_net : std_logic_vector( 17-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 14-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 17-1 downto 0 );
   signal register5_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay4_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice1_y_net : std_logic_vector( 14-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical4_y_net : std_logic_vector( 1-1 downto 0 );
+  signal add_gen_op_net : std_logic_vector( 15-1 downto 0 );
 begin
   add <= slice2_y_net;
   dout <= delay6_q_net;
@@ -6288,7 +6288,7 @@ begin
   );
   add_gen : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i3",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i5",
     op_arith => xlUnsigned,
     op_width => 15
   )
@@ -6334,7 +6334,7 @@ begin
     y => slice3_y_net
   );
 end structural;
--- Generated from Simulink block dram_munge
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/basic_ctrl/dram_munge
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -6351,8 +6351,6 @@ entity test_spec_dram_munge is
   );
 end test_spec_dram_munge;
 architecture structural of test_spec_dram_munge is 
-  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
@@ -6360,11 +6358,6 @@ architecture structural of test_spec_dram_munge is
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
-  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net : std_logic_vector( 80-1 downto 0 );
   signal constant_op_net : std_logic_vector( 8-1 downto 0 );
   signal register_q_net : std_logic_vector( 32-1 downto 0 );
@@ -6372,15 +6365,22 @@ architecture structural of test_spec_dram_munge is
   signal concat1_y_net : std_logic_vector( 80-1 downto 0 );
   signal register2_q_net : std_logic_vector( 32-1 downto 0 );
   signal register3_q_net : std_logic_vector( 32-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
-  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
   signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 80-1 downto 0 );
+  signal dout_count_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal input_count_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con0_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con1_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con2_op_net : std_logic_vector( 2-1 downto 0 );
+  signal con3_op_net : std_logic_vector( 2-1 downto 0 );
+  signal dram_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
   we_o <= we_choice_y_net;
@@ -6643,7 +6643,7 @@ begin
     y => we_choice_y_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/basic_ctrl/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -6657,12 +6657,12 @@ entity test_spec_edge_detect is
   );
 end test_spec_edge_detect;
 architecture structural of test_spec_edge_detect is 
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   delay1_q_net <= in_x0;
@@ -6701,7 +6701,7 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block basic_ctrl
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/basic_ctrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -6722,6 +6722,11 @@ entity test_spec_basic_ctrl is
   );
 end test_spec_basic_ctrl;
 architecture structural of test_spec_basic_ctrl is 
+  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
+  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
+  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
   signal constant11_op_net : std_logic_vector( 1-1 downto 0 );
   signal register0_q_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
@@ -6731,6 +6736,8 @@ architecture structural of test_spec_basic_ctrl is
   signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal constant_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
   signal enable_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
   signal trig_src_y_net : std_logic_vector( 1-1 downto 0 );
@@ -6739,13 +6746,6 @@ architecture structural of test_spec_basic_ctrl is
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 1-1 downto 0 );
-  signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_dout_net : std_logic_vector( 32-1 downto 0 );
   signal register1_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= data_choice_y_net;
@@ -6939,7 +6939,7 @@ begin
     y => valid_src_y_net
   );
 end structural;
--- Generated from Simulink block calc_add
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/bram/calc_add
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -6958,12 +6958,12 @@ architecture structural of test_spec_calc_add is
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal add_sub_s_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
   signal const_op_net : std_logic_vector( 1-1 downto 0 );
   signal lsw_y_net : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net : std_logic_vector( 12-1 downto 0 );
   signal msw_y_net : std_logic_vector( 11-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal manipulate_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= mux_y_net;
   add_del_q_net <= in_x0;
@@ -7055,7 +7055,7 @@ begin
     y => mux_y_net
   );
 end structural;
--- Generated from Simulink block munge_in
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/bram/munge_in
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7081,7 +7081,7 @@ begin
     output_port => reinterpret_out_output_port_net
   );
 end structural;
--- Generated from Simulink block bram
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/bram
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7194,7 +7194,7 @@ begin
     dout => convert_we_dout_net
   );
 end structural;
--- Generated from Simulink block ctrl
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/ctrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7241,7 +7241,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block ctrl_combine
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/ctrl_combine
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7315,7 +7315,7 @@ begin
     output_port => reinterpret4_output_port_net
   );
 end structural;
--- Generated from Simulink block ctrl_split
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/ctrl_split
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7404,7 +7404,7 @@ begin
     y => slice4_y_net
   );
 end structural;
--- Generated from Simulink block status
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss/status
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7418,12 +7418,12 @@ entity test_spec_status is
   );
 end test_spec_status;
 architecture structural of test_spec_status is 
-  signal ce_net : std_logic;
-  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
 begin
   concat_y_net <= out_reg;
@@ -7477,7 +7477,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block ss
+-- Generated from Simulink block test_spec/adc_voltage_snap/ss
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7500,6 +7500,10 @@ entity test_spec_ss is
   );
 end test_spec_ss;
 architecture structural of test_spec_ss is 
+  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concatenate_y_net : std_logic_vector( 21-1 downto 0 );
+  signal constant11_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
   signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
@@ -7513,9 +7517,6 @@ architecture structural of test_spec_ss is
   signal delay6_q_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal data_choice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal ri_output_port_net : std_logic_vector( 21-1 downto 0 );
-  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
   signal never_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
@@ -7530,10 +7531,9 @@ architecture structural of test_spec_ss is
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concatenate_y_net : std_logic_vector( 21-1 downto 0 );
-  signal constant11_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
+  signal arm_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ri_output_port_net : std_logic_vector( 21-1 downto 0 );
+  signal circ_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   arm_out <= arm_or_y_net;
   concatenate_y_net <= din;
@@ -7708,7 +7708,7 @@ begin
     q => we_del_q_net
   );
 end structural;
--- Generated from Simulink block adc_voltage_snap
+-- Generated from Simulink block test_spec/adc_voltage_snap
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7819,7 +7819,7 @@ begin
     dout => assert_adc_valid_dout_net
   );
 end structural;
--- Generated from Simulink block edge_detect
+-- Generated from Simulink block test_spec/edge_detect
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7833,12 +7833,12 @@ entity test_spec_edge_detect_x0 is
   );
 end test_spec_edge_detect_x0;
 architecture structural of test_spec_edge_detect_x0 is 
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice_reg_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   slice_reg_y_net <= in_x0;
@@ -7877,7 +7877,7 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block edge_detect2
+-- Generated from Simulink block test_spec/edge_detect2
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7891,12 +7891,12 @@ entity test_spec_edge_detect2 is
   );
 end test_spec_edge_detect2;
 architecture structural of test_spec_edge_detect2 is 
-  signal ce_net : std_logic;
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= edge_op_y_net;
   relational1_op_net <= in_x0;
@@ -7935,7 +7935,7 @@ begin
     y => edge_op_y_net
   );
 end structural;
--- Generated from Simulink block fft_sync_inc0
+-- Generated from Simulink block test_spec/fft_sync_inc0
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -7949,13 +7949,13 @@ entity test_spec_fft_sync_inc0 is
   );
 end test_spec_fft_sync_inc0;
 architecture structural of test_spec_fft_sync_inc0 is 
-  signal assert_reg_dout_net : std_logic_vector( 8-1 downto 0 );
   signal spect_cnt3_op_net : std_logic_vector( 8-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal io_delay_q_net : std_logic_vector( 8-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 8-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 8-1 downto 0 );
 begin
   spect_cnt3_op_net <= out_reg;
   test_spec_fft_sync_inc0_user_data_in <= cast_gw_dout_net;
@@ -8008,7 +8008,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block fft_sync_inc1
+-- Generated from Simulink block test_spec/fft_sync_inc1
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8081,7 +8081,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block pipeline1
+-- Generated from Simulink block test_spec/pipeline1
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8118,7 +8118,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block pipeline10
+-- Generated from Simulink block test_spec/pipeline10
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8155,7 +8155,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block pipeline11
+-- Generated from Simulink block test_spec/pipeline11
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8192,7 +8192,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block pipeline12
+-- Generated from Simulink block test_spec/pipeline12
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8229,7 +8229,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block pipeline13
+-- Generated from Simulink block test_spec/pipeline13
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8266,7 +8266,7 @@ begin
     q => register0_q_net_x0
   );
 end structural;
--- Generated from Simulink block pipeline14
+-- Generated from Simulink block test_spec/pipeline14
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8303,7 +8303,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block pipeline15
+-- Generated from Simulink block test_spec/pipeline15
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8340,7 +8340,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block pipeline2
+-- Generated from Simulink block test_spec/pipeline2
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8377,7 +8377,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block pipeline7
+-- Generated from Simulink block test_spec/pipeline7
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8414,7 +8414,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block pipeline8
+-- Generated from Simulink block test_spec/pipeline8
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8451,7 +8451,7 @@ begin
     q => register0_q_net
   );
 end structural;
--- Generated from Simulink block c_to_ri
+-- Generated from Simulink block test_spec/power_calc/power_out/c_to_ri
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8512,7 +8512,7 @@ begin
     y => slice_re_y_net
   );
 end structural;
--- Generated from Simulink block power_out
+-- Generated from Simulink block test_spec/power_calc/power_out
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8651,7 +8651,7 @@ begin
     p => mult1_p_net
   );
 end structural;
--- Generated from Simulink block c_to_ri
+-- Generated from Simulink block test_spec/power_calc/power_out1/c_to_ri
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8664,11 +8664,11 @@ entity test_spec_c_to_ri is
   );
 end test_spec_c_to_ri;
 architecture structural of test_spec_c_to_ri is 
-  signal slice_re_y_net : std_logic_vector( 15-1 downto 0 );
   signal force_re_output_port_net : std_logic_vector( 15-1 downto 0 );
   signal force_im_output_port_net : std_logic_vector( 15-1 downto 0 );
   signal concat_y_net : std_logic_vector( 30-1 downto 0 );
   signal slice_im_y_net : std_logic_vector( 15-1 downto 0 );
+  signal slice_re_y_net : std_logic_vector( 15-1 downto 0 );
 begin
   re <= force_re_output_port_net;
   im <= force_im_output_port_net;
@@ -8712,7 +8712,7 @@ begin
     y => slice_re_y_net
   );
 end structural;
--- Generated from Simulink block power_out1
+-- Generated from Simulink block test_spec/power_calc/power_out1
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8726,14 +8726,14 @@ entity test_spec_power_out1 is
   );
 end test_spec_power_out1;
 architecture structural of test_spec_power_out1 is 
+  signal addsub_s_net : std_logic_vector( 31-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 30-1 downto 0 );
+  signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal force_re_output_port_net : std_logic_vector( 15-1 downto 0 );
   signal force_im_output_port_net : std_logic_vector( 15-1 downto 0 );
   signal mult_p_net : std_logic_vector( 30-1 downto 0 );
   signal mult1_p_net : std_logic_vector( 30-1 downto 0 );
-  signal addsub_s_net : std_logic_vector( 31-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 30-1 downto 0 );
-  signal clk_net : std_logic;
 begin
   out1 <= addsub_s_net;
   concat_y_net <= in1;
@@ -8851,7 +8851,7 @@ begin
     p => mult1_p_net
   );
 end structural;
--- Generated from Simulink block power_calc
+-- Generated from Simulink block test_spec/power_calc
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8895,7 +8895,7 @@ begin
     out1 => addsub_s_net
   );
 end structural;
--- Generated from Simulink block red_pitaya_adc
+-- Generated from Simulink block test_spec/red_pitaya_adc
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -8915,9 +8915,6 @@ entity test_spec_red_pitaya_adc is
   );
 end test_spec_red_pitaya_adc;
 architecture structural of test_spec_red_pitaya_adc is 
-  signal reinterpret5_output_port_net : std_logic_vector( 10-1 downto 0 );
-  signal reinterpret2_output_port_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret6_output_port_net : std_logic_vector( 10-1 downto 0 );
   signal convert2_dout_net : std_logic_vector( 1-1 downto 0 );
   signal convert6_dout_net : std_logic_vector( 10-1 downto 0 );
   signal convert18_dout_net : std_logic_vector( 10-1 downto 0 );
@@ -8928,6 +8925,9 @@ architecture structural of test_spec_red_pitaya_adc is
   signal convert_adc_reset_in_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal reinterpret5_output_port_net : std_logic_vector( 10-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret6_output_port_net : std_logic_vector( 10-1 downto 0 );
 begin
   adc_data_val_out <= convert2_dout_net;
   adc0_data_i_out <= convert6_dout_net;
@@ -9048,7 +9048,7 @@ begin
     dout => convert_adc_reset_in_dout_net
   );
 end structural;
--- Generated from Simulink block reg_cntrl
+-- Generated from Simulink block test_spec/reg_cntrl
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9086,7 +9086,7 @@ begin
     y => slice_reg_y_net
   );
 end structural;
--- Generated from Simulink block ri_to_c
+-- Generated from Simulink block test_spec/ri_to_c
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9134,7 +9134,7 @@ begin
     output_port => force_re_output_port_net
   );
 end structural;
--- Generated from Simulink block ri_to_c1
+-- Generated from Simulink block test_spec/ri_to_c1
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9182,7 +9182,7 @@ begin
     output_port => force_re_output_port_net
   );
 end structural;
--- Generated from Simulink block delay_bram
+-- Generated from Simulink block test_spec/simple_bram_vacc/delay_bram
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9220,7 +9220,7 @@ begin
     cnt_31_16 => 0,
     cnt_47_32 => 0,
     cnt_63_48 => 0,
-    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i1",
     count_limited => 1,
     op_arith => xlUnsigned,
     op_width => 8
@@ -9257,7 +9257,7 @@ begin
     data_out => single_port_ram_data_out_net
   );
 end structural;
--- Generated from Simulink block posedge
+-- Generated from Simulink block test_spec/simple_bram_vacc/pulse_ext/posedge
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9315,7 +9315,7 @@ begin
     y => logical_y_net
   );
 end structural;
--- Generated from Simulink block pulse_ext
+-- Generated from Simulink block test_spec/simple_bram_vacc/pulse_ext
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9329,13 +9329,13 @@ entity test_spec_pulse_ext_x0 is
   );
 end test_spec_pulse_ext_x0;
 architecture structural of test_spec_pulse_ext_x0 is 
+  signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal constant5_op_net : std_logic_vector( 9-1 downto 0 );
   signal counter3_op_net : std_logic_vector( 9-1 downto 0 );
-  signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   out_x0 <= relational5_op_net;
   register0_q_net <= in_x0;
@@ -9357,7 +9357,7 @@ begin
   );
   counter3 : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i5",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i6",
     op_arith => xlUnsigned,
     op_width => 9
   )
@@ -9379,7 +9379,7 @@ begin
     op => relational5_op_net
   );
 end structural;
--- Generated from Simulink block simple_bram_vacc
+-- Generated from Simulink block test_spec/simple_bram_vacc
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9395,8 +9395,6 @@ entity test_spec_simple_bram_vacc is
   );
 end test_spec_simple_bram_vacc;
 architecture structural of test_spec_simple_bram_vacc is 
-  signal mux_y_net : std_logic_vector( 31-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 31-1 downto 0 );
   signal single_port_ram_data_out_net : std_logic_vector( 31-1 downto 0 );
   signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
   signal register0_q_net_x0 : std_logic_vector( 1-1 downto 0 );
@@ -9404,6 +9402,8 @@ architecture structural of test_spec_simple_bram_vacc is
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal adder_s_net : std_logic_vector( 31-1 downto 0 );
+  signal mux_y_net : std_logic_vector( 31-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 31-1 downto 0 );
 begin
   dout <= single_port_ram_data_out_net;
   valid <= relational5_op_net;
@@ -9452,7 +9452,7 @@ begin
     y => mux_y_net
   );
 end structural;
--- Generated from Simulink block delay_bram
+-- Generated from Simulink block test_spec/simple_bram_vacc1/delay_bram
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9467,11 +9467,11 @@ entity test_spec_delay_bram is
 end test_spec_delay_bram;
 architecture structural of test_spec_delay_bram is 
   signal single_port_ram_data_out_net : std_logic_vector( 31-1 downto 0 );
-  signal counter_op_net : std_logic_vector( 8-1 downto 0 );
   signal adder_s_net : std_logic_vector( 31-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal counter_op_net : std_logic_vector( 8-1 downto 0 );
 begin
   out1 <= single_port_ram_data_out_net;
   adder_s_net <= in1;
@@ -9490,7 +9490,7 @@ begin
     cnt_31_16 => 0,
     cnt_47_32 => 0,
     cnt_63_48 => 0,
-    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i1",
     count_limited => 1,
     op_arith => xlUnsigned,
     op_width => 8
@@ -9527,7 +9527,7 @@ begin
     data_out => single_port_ram_data_out_net
   );
 end structural;
--- Generated from Simulink block posedge
+-- Generated from Simulink block test_spec/simple_bram_vacc1/pulse_ext/posedge
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9585,7 +9585,7 @@ begin
     y => logical_y_net
   );
 end structural;
--- Generated from Simulink block pulse_ext
+-- Generated from Simulink block test_spec/simple_bram_vacc1/pulse_ext
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9627,7 +9627,7 @@ begin
   );
   counter3 : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i5",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i6",
     op_arith => xlUnsigned,
     op_width => 9
   )
@@ -9649,7 +9649,7 @@ begin
     op => relational5_op_net
   );
 end structural;
--- Generated from Simulink block simple_bram_vacc1
+-- Generated from Simulink block test_spec/simple_bram_vacc1
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9665,15 +9665,15 @@ entity test_spec_simple_bram_vacc1 is
   );
 end test_spec_simple_bram_vacc1;
 architecture structural of test_spec_simple_bram_vacc1 is 
+  signal single_port_ram_data_out_net : std_logic_vector( 31-1 downto 0 );
+  signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal register0_q_net : std_logic_vector( 31-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal adder_s_net : std_logic_vector( 31-1 downto 0 );
   signal mux_y_net : std_logic_vector( 31-1 downto 0 );
   signal constant_op_net : std_logic_vector( 31-1 downto 0 );
-  signal single_port_ram_data_out_net : std_logic_vector( 31-1 downto 0 );
-  signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register0_q_net_x0 : std_logic_vector( 1-1 downto 0 );
 begin
   dout <= single_port_ram_data_out_net;
   valid <= relational5_op_net;
@@ -9722,7 +9722,7 @@ begin
     y => mux_y_net
   );
 end structural;
--- Generated from Simulink block snap_gap
+-- Generated from Simulink block test_spec/snap_gap
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9734,10 +9734,10 @@ entity test_spec_snap_gap is
   );
 end test_spec_snap_gap;
 architecture structural of test_spec_snap_gap is 
-  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal test_spec_snap_gap_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
   in_reg <= reint1_output_port_net;
   test_spec_snap_gap_user_data_out_net <= test_spec_snap_gap_user_data_out;
@@ -9769,7 +9769,7 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
--- Generated from Simulink block sync_cnt
+-- Generated from Simulink block test_spec/sync_cnt
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -9842,6 +9842,79 @@ begin
     output_port => reint1_output_port_net
   );
 end structural;
+-- Generated from Simulink block test_spec/trig_cnt
+library IEEE;
+use IEEE.std_logic_1164.all;
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+entity test_spec_trig_cnt is
+  port (
+    out_reg : in std_logic_vector( 32-1 downto 0 );
+    clk_1 : in std_logic;
+    ce_1 : in std_logic;
+    test_spec_trig_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 )
+  );
+end test_spec_trig_cnt;
+architecture structural of test_spec_trig_cnt is 
+  signal trig_counter_op_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
+begin
+  trig_counter_op_net <= out_reg;
+  test_spec_trig_cnt_user_data_in <= cast_gw_dout_net;
+  clk_net <= clk_1;
+  ce_net <= ce_1;
+  io_delay : entity xil_defaultlib.sysgen_delay_4584cd3e10 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    d => reint1_output_port_net,
+    q => io_delay_q_net
+  );
+  cast_gw : entity xil_defaultlib.test_spec_xlconvert 
+  generic map (
+    bool_conversion => 0,
+    din_arith => 1,
+    din_bin_pt => 0,
+    din_width => 32,
+    dout_arith => 1,
+    dout_bin_pt => 0,
+    dout_width => 32,
+    latency => 1,
+    overflow => xlWrap,
+    quantization => xlTruncate
+  )
+  port map (
+    clr => '0',
+    en => "1",
+    din => io_delay_q_net,
+    clk => clk_net,
+    ce => ce_net,
+    dout => cast_gw_dout_net
+  );
+  assert_reg : entity xil_defaultlib.xlpassthrough 
+  generic map (
+    din_width => 32,
+    dout_width => 32
+  )
+  port map (
+    din => trig_counter_op_net,
+    dout => assert_reg_dout_net
+  );
+  reint1 : entity xil_defaultlib.sysgen_reinterpret_f8bd0fe7f0 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    input_port => assert_reg_dout_net,
+    output_port => reint1_output_port_net
+  );
+end structural;
 -- Generated from Simulink block test_spec_struct
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -9866,7 +9939,7 @@ entity test_spec_struct is
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     test_spec_acc_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 );
-    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 12-1 downto 0 );
+    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 8-1 downto 0 );
     test_spec_accum0_snap_ss_bram_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_accum0_snap_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     test_spec_accum0_snap_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 );
@@ -9887,63 +9960,68 @@ entity test_spec_struct is
     test_spec_fft_sync_inc0_user_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_fft_sync_inc1_user_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_red_pitaya_adc_adc_reset_in : out std_logic_vector( 1-1 downto 0 );
-    test_spec_sync_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 )
+    test_spec_sync_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 );
+    test_spec_trig_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
 end test_spec_struct;
 architecture structural of test_spec_struct is 
-  signal fft_op_re_net : std_logic_vector( 19-1 downto 0 );
-  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
-  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
-  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal test_spec_adc_voltage_snap_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal test_spec_adc_voltage_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x5 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x4 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
+  signal adc_sample_counter_op_net : std_logic_vector( 32-1 downto 0 );
+  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay28_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal fft1_start_frame_out_net : std_logic_vector( 1-1 downto 0 );
+  signal spect_cnt1_op_net : std_logic_vector( 11-1 downto 0 );
+  signal counter_led1_op_net : std_logic_vector( 8-1 downto 0 );
+  signal cast_gw_dout_net_x7 : std_logic_vector( 32-1 downto 0 );
+  signal test_spec_acc_len_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net_x1 : std_logic_vector( 8-1 downto 0 );
+  signal convert_din1_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
+  signal test_spec_accum0_snap_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net_x2 : std_logic_vector( 1-1 downto 0 );
+  signal test_spec_accum0_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x9 : std_logic_vector( 32-1 downto 0 );
   signal convert_addr_dout_net_x2 : std_logic_vector( 12-1 downto 0 );
   signal convert_din1_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
   signal test_spec_accum1_snap_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal convert_we_dout_net_x1 : std_logic_vector( 1-1 downto 0 );
   signal test_spec_accum1_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x7 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x8 : std_logic_vector( 32-1 downto 0 );
   signal convert_addr_dout_net_x0 : std_logic_vector( 12-1 downto 0 );
   signal convert_din1_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
   signal test_spec_accumdat_snap_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal convert_we_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal test_spec_accumdat_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal constant3_op_net : std_logic_vector( 10-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 15-1 downto 0 );
-  signal convert2_dout_net_x0 : std_logic_vector( 15-1 downto 0 );
-  signal convert3_dout_net : std_logic_vector( 15-1 downto 0 );
-  signal convert4_dout_net : std_logic_vector( 15-1 downto 0 );
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal sync_cntr_op_net : std_logic_vector( 32-1 downto 0 );
-  signal counter_led1_op_net : std_logic_vector( 8-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 8-1 downto 0 );
-  signal delay2_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay28_q_net : std_logic_vector( 1-1 downto 0 );
-  signal fft_op_im_net : std_logic_vector( 19-1 downto 0 );
-  signal fft1_op_re_net : std_logic_vector( 19-1 downto 0 );
-  signal fft1_op_im_net : std_logic_vector( 19-1 downto 0 );
-  signal adc_sample_counter_op_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net : std_logic_vector( 12-1 downto 0 );
+  signal convert_din1_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal test_spec_adc_voltage_snap_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal test_spec_adc_voltage_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x6 : std_logic_vector( 32-1 downto 0 );
-  signal test_spec_acc_len_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_addr_dout_net_x1 : std_logic_vector( 12-1 downto 0 );
-  signal convert_din1_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
-  signal test_spec_accum0_snap_ss_bram_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_we_dout_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal test_spec_accum0_snap_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x8 : std_logic_vector( 32-1 downto 0 );
-  signal spect_cnt1_op_net : std_logic_vector( 11-1 downto 0 );
+  signal cast_gw_dout_net_x5 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x4 : std_logic_vector( 32-1 downto 0 );
+  signal test_spec_red_pitaya_adc_adc0_data_i_out_net : std_logic_vector( 10-1 downto 0 );
+  signal test_spec_red_pitaya_adc_adc1_data_q_out_net : std_logic_vector( 10-1 downto 0 );
+  signal test_spec_red_pitaya_adc_adc_data_val_out_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_adc_reset_in_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal test_spec_reg_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal test_spec_snap_gap_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal acc_cntr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal relational5_op_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal reint1_output_port_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal fft_start_frame_out_net : std_logic_vector( 1-1 downto 0 );
   signal edge_op_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal arm_or_y_net_x1 : std_logic_vector( 1-1 downto 0 );
   signal single_port_ram_data_out_net_x0 : std_logic_vector( 31-1 downto 0 );
   signal relational5_op_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal constant2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register0_q_net_x7 : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net_x1 : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal arm_or_y_net_x2 : std_logic_vector( 1-1 downto 0 );
@@ -9954,7 +10032,7 @@ architecture structural of test_spec_struct is
   signal logical6_y_net_x2 : std_logic_vector( 1-1 downto 0 );
   signal arm_or_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal spect_cnt_op_net : std_logic_vector( 11-1 downto 0 );
-  signal register0_q_net_x8 : std_logic_vector( 8-1 downto 0 );
+  signal register0_q_net_x0 : std_logic_vector( 8-1 downto 0 );
   signal constant6_op_net : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net_x1 : std_logic_vector( 1-1 downto 0 );
@@ -9972,73 +10050,72 @@ architecture structural of test_spec_struct is
   signal spect_cnt3_op_net : std_logic_vector( 8-1 downto 0 );
   signal spect_cnt4_op_net : std_logic_vector( 32-1 downto 0 );
   signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register0_q_net_x6 : std_logic_vector( 31-1 downto 0 );
-  signal addsub_s_net_x0 : std_logic_vector( 31-1 downto 0 );
-  signal register0_q_net_x5 : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net_x8 : std_logic_vector( 31-1 downto 0 );
+  signal addsub_s_net : std_logic_vector( 31-1 downto 0 );
+  signal register0_q_net_x7 : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net_x6 : std_logic_vector( 1-1 downto 0 );
+  signal register0_q_net_x5 : std_logic_vector( 31-1 downto 0 );
+  signal register0_q_net_x2 : std_logic_vector( 31-1 downto 0 );
   signal register0_q_net_x4 : std_logic_vector( 1-1 downto 0 );
   signal register0_q_net_x3 : std_logic_vector( 31-1 downto 0 );
-  signal register0_q_net_x0 : std_logic_vector( 31-1 downto 0 );
-  signal register0_q_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal register0_q_net_x1 : std_logic_vector( 31-1 downto 0 );
-  signal addsub_s_net : std_logic_vector( 31-1 downto 0 );
-  signal register0_q_net : std_logic_vector( 8-1 downto 0 );
+  signal addsub_s_net_x0 : std_logic_vector( 31-1 downto 0 );
+  signal register0_q_net_x1 : std_logic_vector( 8-1 downto 0 );
   signal spect_cnt2_op_net : std_logic_vector( 8-1 downto 0 );
   signal concat_y_net_x0 : std_logic_vector( 30-1 downto 0 );
   signal concat_y_net : std_logic_vector( 30-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal fft1_start_frame_out_net : std_logic_vector( 1-1 downto 0 );
-  signal test_spec_red_pitaya_adc_adc0_data_i_out_net : std_logic_vector( 10-1 downto 0 );
-  signal test_spec_red_pitaya_adc_adc1_data_q_out_net : std_logic_vector( 10-1 downto 0 );
-  signal test_spec_red_pitaya_adc_adc_data_val_out_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_adc_reset_in_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal test_spec_reg_cntrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal test_spec_snap_gap_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal acc_cntr_op_net : std_logic_vector( 32-1 downto 0 );
-  signal relational5_op_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal reint1_output_port_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal fft_start_frame_out_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 15-1 downto 0 );
+  signal convert2_dout_net_x0 : std_logic_vector( 15-1 downto 0 );
+  signal convert3_dout_net : std_logic_vector( 15-1 downto 0 );
+  signal convert4_dout_net : std_logic_vector( 15-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal sync_cntr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal trig_counter_op_net : std_logic_vector( 32-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 8-1 downto 0 );
   signal constant12_op_net : std_logic_vector( 10-1 downto 0 );
+  signal constant3_op_net : std_logic_vector( 10-1 downto 0 );
+  signal fft_op_re_net : std_logic_vector( 19-1 downto 0 );
+  signal fft_op_im_net : std_logic_vector( 19-1 downto 0 );
+  signal fft1_op_re_net : std_logic_vector( 19-1 downto 0 );
+  signal fft1_op_im_net : std_logic_vector( 19-1 downto 0 );
 begin
-  test_spec_acc_cnt_user_data_in <= cast_gw_dout_net_x6;
+  test_spec_acc_cnt_user_data_in <= cast_gw_dout_net_x7;
   test_spec_acc_len_user_data_out_net <= test_spec_acc_len_user_data_out;
   test_spec_accum0_snap_ss_bram_addr <= convert_addr_dout_net_x1;
   test_spec_accum0_snap_ss_bram_data_in <= convert_din1_dout_net_x1;
   test_spec_accum0_snap_ss_bram_data_out_net <= test_spec_accum0_snap_ss_bram_data_out;
   test_spec_accum0_snap_ss_bram_we <= convert_we_dout_net_x2;
   test_spec_accum0_snap_ss_ctrl_user_data_out_net <= test_spec_accum0_snap_ss_ctrl_user_data_out;
-  test_spec_accum0_snap_ss_status_user_data_in <= cast_gw_dout_net_x8;
+  test_spec_accum0_snap_ss_status_user_data_in <= cast_gw_dout_net_x9;
   test_spec_accum1_snap_ss_bram_addr <= convert_addr_dout_net_x2;
   test_spec_accum1_snap_ss_bram_data_in <= convert_din1_dout_net_x2;
   test_spec_accum1_snap_ss_bram_data_out_net <= test_spec_accum1_snap_ss_bram_data_out;
   test_spec_accum1_snap_ss_bram_we <= convert_we_dout_net_x1;
   test_spec_accum1_snap_ss_ctrl_user_data_out_net <= test_spec_accum1_snap_ss_ctrl_user_data_out;
-  test_spec_accum1_snap_ss_status_user_data_in <= cast_gw_dout_net_x7;
+  test_spec_accum1_snap_ss_status_user_data_in <= cast_gw_dout_net_x8;
   test_spec_accumdat_snap_ss_bram_addr <= convert_addr_dout_net_x0;
   test_spec_accumdat_snap_ss_bram_data_in <= convert_din1_dout_net_x0;
   test_spec_accumdat_snap_ss_bram_data_out_net <= test_spec_accumdat_snap_ss_bram_data_out;
   test_spec_accumdat_snap_ss_bram_we <= convert_we_dout_net_x0;
   test_spec_accumdat_snap_ss_ctrl_user_data_out_net <= test_spec_accumdat_snap_ss_ctrl_user_data_out;
-  test_spec_accumdat_snap_ss_status_user_data_in <= cast_gw_dout_net_x0;
-  test_spec_adc_dv_user_data_in <= cast_gw_dout_net_x2;
-  test_spec_adc_sample_cnt_user_data_in <= cast_gw_dout_net_x1;
+  test_spec_accumdat_snap_ss_status_user_data_in <= cast_gw_dout_net_x3;
+  test_spec_adc_dv_user_data_in <= cast_gw_dout_net_x1;
+  test_spec_adc_sample_cnt_user_data_in <= cast_gw_dout_net_x2;
   test_spec_adc_voltage_snap_ss_bram_addr <= convert_addr_dout_net;
   test_spec_adc_voltage_snap_ss_bram_data_in <= convert_din1_dout_net;
   test_spec_adc_voltage_snap_ss_bram_data_out_net <= test_spec_adc_voltage_snap_ss_bram_data_out;
   test_spec_adc_voltage_snap_ss_bram_we <= convert_we_dout_net;
   test_spec_adc_voltage_snap_ss_ctrl_user_data_out_net <= test_spec_adc_voltage_snap_ss_ctrl_user_data_out;
-  test_spec_adc_voltage_snap_ss_status_user_data_in <= cast_gw_dout_net_x5;
-  test_spec_fft_sync_inc0_user_data_in <= cast_gw_dout_net_x4;
-  test_spec_fft_sync_inc1_user_data_in <= cast_gw_dout_net_x3;
+  test_spec_adc_voltage_snap_ss_status_user_data_in <= cast_gw_dout_net_x6;
+  test_spec_fft_sync_inc0_user_data_in <= cast_gw_dout_net_x5;
+  test_spec_fft_sync_inc1_user_data_in <= cast_gw_dout_net_x4;
   test_spec_red_pitaya_adc_adc0_data_i_out_net <= test_spec_red_pitaya_adc_adc0_data_i_out;
   test_spec_red_pitaya_adc_adc1_data_q_out_net <= test_spec_red_pitaya_adc_adc1_data_q_out;
   test_spec_red_pitaya_adc_adc_data_val_out_net <= test_spec_red_pitaya_adc_adc_data_val_out;
   test_spec_red_pitaya_adc_adc_reset_in <= convert_adc_reset_in_dout_net;
   test_spec_reg_cntrl_user_data_out_net <= test_spec_reg_cntrl_user_data_out;
   test_spec_snap_gap_user_data_out_net <= test_spec_snap_gap_user_data_out;
-  test_spec_sync_cnt_user_data_in <= cast_gw_dout_net;
+  test_spec_sync_cnt_user_data_in <= cast_gw_dout_net_x0;
+  test_spec_trig_cnt_user_data_in <= cast_gw_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
   acc_cnt : entity xil_defaultlib.test_spec_acc_cnt 
@@ -10046,7 +10123,7 @@ begin
     out_reg => acc_cntr_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    test_spec_acc_cnt_user_data_in => cast_gw_dout_net_x6
+    test_spec_acc_cnt_user_data_in => cast_gw_dout_net_x7
   );
   acc_cntrl : entity xil_defaultlib.test_spec_acc_cntrl 
   port map (
@@ -10067,7 +10144,7 @@ begin
     in_p_acc0 => single_port_ram_data_out_net_x0,
     in_val_acc0 => relational5_op_net_x0,
     we => constant2_op_net,
-    trig => register0_q_net_x7,
+    trig => register0_q_net,
     test_spec_accum0_snap_ss_ctrl_user_data_out => test_spec_accum0_snap_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
@@ -10075,7 +10152,7 @@ begin
     test_spec_accum0_snap_ss_bram_addr => convert_addr_dout_net_x1,
     test_spec_accum0_snap_ss_bram_data_in => convert_din1_dout_net_x1,
     test_spec_accum0_snap_ss_bram_we => convert_we_dout_net_x2,
-    test_spec_accum0_snap_ss_status_user_data_in => cast_gw_dout_net_x8,
+    test_spec_accum0_snap_ss_status_user_data_in => cast_gw_dout_net_x9,
     goto_31470454_we1 => we_choice_y_net_x1,
     goto_31470454_we4 => logical6_y_net_x0
   );
@@ -10084,7 +10161,7 @@ begin
     in_p_acc1 => single_port_ram_data_out_net,
     in_val_acc1 => relational5_op_net,
     we => constant7_op_net,
-    trig => register0_q_net_x7,
+    trig => register0_q_net,
     test_spec_accum1_snap_ss_ctrl_user_data_out => test_spec_accum1_snap_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
@@ -10092,16 +10169,16 @@ begin
     test_spec_accum1_snap_ss_bram_addr => convert_addr_dout_net_x2,
     test_spec_accum1_snap_ss_bram_data_in => convert_din1_dout_net_x2,
     test_spec_accum1_snap_ss_bram_we => convert_we_dout_net_x1,
-    test_spec_accum1_snap_ss_status_user_data_in => cast_gw_dout_net_x7,
+    test_spec_accum1_snap_ss_status_user_data_in => cast_gw_dout_net_x8,
     goto_103064183_we1 => we_choice_y_net_x2,
     goto_103064183_we4 => logical6_y_net_x2
   );
   accumdat_snap : entity xil_defaultlib.test_spec_accumdat_snap 
   port map (
     in_ch_acc => spect_cnt_op_net,
-    in_ch_count => register0_q_net_x8,
+    in_ch_count => register0_q_net_x0,
     we => constant6_op_net,
-    trig => register0_q_net_x7,
+    trig => register0_q_net,
     test_spec_accumdat_snap_ss_ctrl_user_data_out => test_spec_accumdat_snap_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
@@ -10109,7 +10186,7 @@ begin
     test_spec_accumdat_snap_ss_bram_addr => convert_addr_dout_net_x0,
     test_spec_accumdat_snap_ss_bram_data_in => convert_din1_dout_net_x0,
     test_spec_accumdat_snap_ss_bram_we => convert_we_dout_net_x0,
-    test_spec_accumdat_snap_ss_status_user_data_in => cast_gw_dout_net_x0,
+    test_spec_accumdat_snap_ss_status_user_data_in => cast_gw_dout_net_x3,
     goto_121630685_we1 => we_choice_y_net_x0,
     goto_121630685_we4 => logical6_y_net_x1
   );
@@ -10118,14 +10195,14 @@ begin
     out_reg => convert2_dout_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    test_spec_adc_dv_user_data_in => cast_gw_dout_net_x2
+    test_spec_adc_dv_user_data_in => cast_gw_dout_net_x1
   );
   adc_sample_cnt : entity xil_defaultlib.test_spec_adc_sample_cnt 
   port map (
     out_reg => delay1_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    test_spec_adc_sample_cnt_user_data_in => cast_gw_dout_net_x1
+    test_spec_adc_sample_cnt_user_data_in => cast_gw_dout_net_x2
   );
   adc_voltage_snap : entity xil_defaultlib.test_spec_adc_voltage_snap 
   port map (
@@ -10133,7 +10210,7 @@ begin
     in_adc_dq => convert18_dout_net,
     in_adc_valid => convert2_dout_net,
     we => constant11_op_net,
-    trig => register0_q_net_x7,
+    trig => register0_q_net,
     test_spec_adc_voltage_snap_ss_ctrl_user_data_out => test_spec_adc_voltage_snap_ss_ctrl_user_data_out_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
@@ -10141,7 +10218,7 @@ begin
     test_spec_adc_voltage_snap_ss_bram_addr => convert_addr_dout_net,
     test_spec_adc_voltage_snap_ss_bram_data_in => convert_din1_dout_net,
     test_spec_adc_voltage_snap_ss_bram_we => convert_we_dout_net,
-    test_spec_adc_voltage_snap_ss_status_user_data_in => cast_gw_dout_net_x5,
+    test_spec_adc_voltage_snap_ss_status_user_data_in => cast_gw_dout_net_x6,
     goto_28719212_we1 => we_choice_y_net,
     goto_28719212_we4 => logical6_y_net
   );
@@ -10164,84 +10241,84 @@ begin
     out_reg => spect_cnt3_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    test_spec_fft_sync_inc0_user_data_in => cast_gw_dout_net_x4
+    test_spec_fft_sync_inc0_user_data_in => cast_gw_dout_net_x5
   );
   fft_sync_inc1 : entity xil_defaultlib.test_spec_fft_sync_inc1 
   port map (
     out_reg => spect_cnt4_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    test_spec_fft_sync_inc1_user_data_in => cast_gw_dout_net_x3
+    test_spec_fft_sync_inc1_user_data_in => cast_gw_dout_net_x4
   );
   pipeline1 : entity xil_defaultlib.test_spec_pipeline1 
   port map (
     d => relational_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net_x7
+    q => register0_q_net
   );
   pipeline10 : entity xil_defaultlib.test_spec_pipeline10 
   port map (
-    d => addsub_s_net_x0,
+    d => addsub_s_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net_x6
+    q => register0_q_net_x8
   );
   pipeline11 : entity xil_defaultlib.test_spec_pipeline11 
   port map (
     d => relational5_op_net_x1,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net_x5
+    q => register0_q_net_x7
   );
   pipeline12 : entity xil_defaultlib.test_spec_pipeline12 
   port map (
     d => relational5_op_net_x1,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net_x4
+    q => register0_q_net_x6
   );
   pipeline13 : entity xil_defaultlib.test_spec_pipeline13 
   port map (
-    d => register0_q_net_x0,
+    d => register0_q_net_x2,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net_x3
+    q => register0_q_net_x5
   );
   pipeline14 : entity xil_defaultlib.test_spec_pipeline14 
   port map (
     d => relational5_op_net_x1,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net_x2
+    q => register0_q_net_x4
   );
   pipeline15 : entity xil_defaultlib.test_spec_pipeline15 
   port map (
-    d => register0_q_net_x6,
+    d => register0_q_net_x8,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net_x1
+    q => register0_q_net_x3
   );
   pipeline2 : entity xil_defaultlib.test_spec_pipeline2 
   port map (
-    d => addsub_s_net,
+    d => addsub_s_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net_x0
+    q => register0_q_net_x2
   );
   pipeline7 : entity xil_defaultlib.test_spec_pipeline7 
   port map (
     d => spect_cnt2_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net
+    q => register0_q_net_x1
   );
   pipeline8 : entity xil_defaultlib.test_spec_pipeline8 
   port map (
-    d => register0_q_net,
+    d => register0_q_net_x1,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    q => register0_q_net_x8
+    q => register0_q_net_x0
   );
   power_calc : entity xil_defaultlib.test_spec_power_calc 
   port map (
@@ -10249,8 +10326,8 @@ begin
     pol1 => concat_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    p0 => addsub_s_net,
-    p1 => addsub_s_net_x0
+    p0 => addsub_s_net_x0,
+    p1 => addsub_s_net
   );
   red_pitaya_adc : entity xil_defaultlib.test_spec_red_pitaya_adc 
   port map (
@@ -10284,8 +10361,8 @@ begin
   );
   simple_bram_vacc : entity xil_defaultlib.test_spec_simple_bram_vacc 
   port map (
-    new_acc => register0_q_net_x4,
-    din => register0_q_net_x3,
+    new_acc => register0_q_net_x6,
+    din => register0_q_net_x5,
     clk_1 => clk_net,
     ce_1 => ce_net,
     dout => single_port_ram_data_out_net_x0,
@@ -10293,8 +10370,8 @@ begin
   );
   simple_bram_vacc1 : entity xil_defaultlib.test_spec_simple_bram_vacc1 
   port map (
-    new_acc => register0_q_net_x2,
-    din => register0_q_net_x1,
+    new_acc => register0_q_net_x4,
+    din => register0_q_net_x3,
     clk_1 => clk_net,
     ce_1 => ce_net,
     dout => single_port_ram_data_out_net,
@@ -10310,30 +10387,14 @@ begin
     out_reg => sync_cntr_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    test_spec_sync_cnt_user_data_in => cast_gw_dout_net
+    test_spec_sync_cnt_user_data_in => cast_gw_dout_net_x0
   );
-  relational1 : entity xil_defaultlib.sysgen_relational_7c10521c5f 
+  trig_cnt : entity xil_defaultlib.test_spec_trig_cnt 
   port map (
-    clk => '0',
-    ce => '0',
-    clr => '0',
-    a => counter_led1_op_net,
-    b => constant1_op_net,
-    op => relational1_op_net
-  );
-  counter_led1 : entity xil_defaultlib.test_spec_xlcounter_free 
-  generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
-    op_arith => xlUnsigned,
-    op_width => 8
-  )
-  port map (
-    en => "1",
-    rst => "0",
-    clr => '0',
-    clk => clk_net,
-    ce => ce_net,
-    op => counter_led1_op_net
+    out_reg => trig_counter_op_net,
+    clk_1 => clk_net,
+    ce_1 => ce_net,
+    test_spec_trig_cnt_user_data_in => cast_gw_dout_net
   );
   constant1 : entity xil_defaultlib.sysgen_constant_799c70ed2a 
   port map (
@@ -10552,9 +10613,18 @@ begin
     b => spect_cnt1_op_net,
     op => relational_op_net
   );
+  relational1 : entity xil_defaultlib.sysgen_relational_7c10521c5f 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    a => counter_led1_op_net,
+    b => constant1_op_net,
+    op => relational1_op_net
+  );
   acc_cntr : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i1",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
     op_arith => xlUnsigned,
     op_width => 32
   )
@@ -10568,7 +10638,7 @@ begin
   );
   adc_sample_counter : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i1",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
     op_arith => xlUnsigned,
     op_width => 32
   )
@@ -10580,6 +10650,20 @@ begin
     ce => ce_net,
     op => adc_sample_counter_op_net
   );
+  counter_led1 : entity xil_defaultlib.test_spec_xlcounter_free 
+  generic map (
+    core_name0 => "test_spec_c_counter_binary_v12_0_i1",
+    op_arith => xlUnsigned,
+    op_width => 8
+  )
+  port map (
+    en => "1",
+    rst => "0",
+    clr => '0',
+    clk => clk_net,
+    ce => ce_net,
+    op => counter_led1_op_net
+  );
   spect_cnt : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
     core_name0 => "test_spec_c_counter_binary_v12_0_i2",
@@ -10588,7 +10672,7 @@ begin
   )
   port map (
     clr => '0',
-    rst => register0_q_net_x5,
+    rst => register0_q_net_x7,
     en => relational5_op_net_x0,
     clk => clk_net,
     ce => ce_net,
@@ -10610,7 +10694,7 @@ begin
   );
   spect_cnt2 : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i1",
     op_arith => xlUnsigned,
     op_width => 8
   )
@@ -10624,7 +10708,7 @@ begin
   );
   spect_cnt3 : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i1",
     op_arith => xlUnsigned,
     op_width => 8
   )
@@ -10638,7 +10722,7 @@ begin
   );
   spect_cnt4 : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i1",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
     op_arith => xlUnsigned,
     op_width => 32
   )
@@ -10652,7 +10736,7 @@ begin
   );
   sync_cntr : entity xil_defaultlib.test_spec_xlcounter_free 
   generic map (
-    core_name0 => "test_spec_c_counter_binary_v12_0_i1",
+    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
     op_arith => xlUnsigned,
     op_width => 32
   )
@@ -10663,6 +10747,20 @@ begin
     clk => clk_net,
     ce => ce_net,
     op => sync_cntr_op_net
+  );
+  trig_counter : entity xil_defaultlib.test_spec_xlcounter_free 
+  generic map (
+    core_name0 => "test_spec_c_counter_binary_v12_0_i0",
+    op_arith => xlUnsigned,
+    op_width => 32
+  )
+  port map (
+    rst => "0",
+    clr => '0',
+    en => register0_q_net,
+    clk => clk_net,
+    ce => ce_net,
+    op => trig_counter_op_net
   );
 end structural;
 -- Generated from Simulink block 
@@ -10717,7 +10815,7 @@ entity test_spec is
     test_spec_snap_gap_user_data_out : in std_logic_vector( 32-1 downto 0 );
     clk : in std_logic;
     test_spec_acc_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 );
-    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 12-1 downto 0 );
+    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 8-1 downto 0 );
     test_spec_accum0_snap_ss_bram_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_accum0_snap_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     test_spec_accum0_snap_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 );
@@ -10738,12 +10836,13 @@ entity test_spec is
     test_spec_fft_sync_inc0_user_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_fft_sync_inc1_user_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_red_pitaya_adc_adc_reset_in : out std_logic_vector( 1-1 downto 0 );
-    test_spec_sync_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 )
+    test_spec_sync_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 );
+    test_spec_trig_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
 end test_spec;
 architecture structural of test_spec is 
   attribute core_generation_info : string;
-  attribute core_generation_info of structural : architecture is "test_spec,sysgen_core_2021_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z010,speed=-1,package=clg400,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=8,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=10000,addsub=8,assert=19,concat=26,constant=81,convert=42,counter=26,delay=108,inv=29,logical=58,mult=4,mux=30,register=56,reinterpret=72,relational=21,shift=5,slice=59,spram=2,xfft_forward=2,}";
+  attribute core_generation_info of structural : architecture is "test_spec,sysgen_core_2021_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z010,speed=-1,package=clg400,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=8,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=10000,addsub=8,assert=20,concat=26,constant=81,convert=43,counter=27,delay=110,inv=29,logical=58,mult=4,mux=30,register=56,reinterpret=73,relational=21,shift=5,slice=59,spram=2,xfft_forward=2,}";
   signal clk_1_net : std_logic;
   signal ce_1_net : std_logic;
 begin
@@ -10795,6 +10894,7 @@ begin
     test_spec_fft_sync_inc0_user_data_in => test_spec_fft_sync_inc0_user_data_in,
     test_spec_fft_sync_inc1_user_data_in => test_spec_fft_sync_inc1_user_data_in,
     test_spec_red_pitaya_adc_adc_reset_in => test_spec_red_pitaya_adc_adc_reset_in,
-    test_spec_sync_cnt_user_data_in => test_spec_sync_cnt_user_data_in
+    test_spec_sync_cnt_user_data_in => test_spec_sync_cnt_user_data_in,
+    test_spec_trig_cnt_user_data_in => test_spec_trig_cnt_user_data_in
   );
 end structural;

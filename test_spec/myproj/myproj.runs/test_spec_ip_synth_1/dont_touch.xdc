@@ -25,6 +25,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==test_spec_c
 # IP: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/test_spec_ip/test_spec_c_counter_binary_v12_0_i5/test_spec_c_counter_binary_v12_0_i5.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==test_spec_c_counter_binary_v12_0_i5 || ORIG_REF_NAME==test_spec_c_counter_binary_v12_0_i5} -quiet] -quiet
 
+# IP: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/test_spec_ip/test_spec_c_counter_binary_v12_0_i6/test_spec_c_counter_binary_v12_0_i6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==test_spec_c_counter_binary_v12_0_i6 || ORIG_REF_NAME==test_spec_c_counter_binary_v12_0_i6} -quiet] -quiet
+
 # IP: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/test_spec_ip/test_spec_mult_gen_v12_0_i0/test_spec_mult_gen_v12_0_i0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==test_spec_mult_gen_v12_0_i0 || ORIG_REF_NAME==test_spec_mult_gen_v12_0_i0} -quiet] -quiet
 
@@ -58,6 +61,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 
 # IP: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/test_spec_ip/test_spec_c_counter_binary_v12_0_i5/test_spec_c_counter_binary_v12_0_i5.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==test_spec_c_counter_binary_v12_0_i5 || ORIG_REF_NAME==test_spec_c_counter_binary_v12_0_i5} -quiet] -quiet
+
+# IP: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/test_spec_ip/test_spec_c_counter_binary_v12_0_i6/test_spec_c_counter_binary_v12_0_i6.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==test_spec_c_counter_binary_v12_0_i6 || ORIG_REF_NAME==test_spec_c_counter_binary_v12_0_i6} -quiet] -quiet
 
 # IP: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/test_spec_ip/test_spec_mult_gen_v12_0_i0/test_spec_mult_gen_v12_0_i0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==test_spec_mult_gen_v12_0_i0 || ORIG_REF_NAME==test_spec_mult_gen_v12_0_i0} -quiet] -quiet

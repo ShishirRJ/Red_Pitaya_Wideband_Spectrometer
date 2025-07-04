@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date             : Fri Jul  4 10:28:25 2025
+| Date             : Fri Jul  4 12:12:39 2025
 | Host             : shishir-HP-Pavilion-Laptop-15-eg3xxx running 64-bit Ubuntu 22.04.4 LTS
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.045        |
+| Total On-Chip Power (W)  | 2.044        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.920        |
+| Dynamic (W)              | 1.919        |
 | Device Static (W)        | 0.125        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 61.4         |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.034 |        8 |       --- |             --- |
-| Slice Logic              |     0.017 |    14732 |       --- |             --- |
-|   LUT as Logic           |     0.011 |     2471 |     17600 |           14.04 |
-|   Register               |     0.003 |     7627 |     35200 |           21.67 |
+| Clocks                   |     0.033 |        8 |       --- |             --- |
+| Slice Logic              |     0.017 |    14886 |       --- |             --- |
+|   LUT as Logic           |     0.011 |     2508 |     17600 |           14.25 |
+|   Register               |     0.003 |     7727 |     35200 |           21.95 |
 |   LUT as Shift Register  |     0.002 |      802 |      6000 |           13.37 |
-|   CARRY4                 |     0.001 |      306 |      4400 |            6.95 |
+|   CARRY4                 |     0.001 |      314 |      4400 |            7.14 |
 |   LUT as Distributed RAM |    <0.001 |      256 |      6000 |            4.27 |
-|   F7/F8 Muxes            |    <0.001 |       23 |     17600 |            0.13 |
-|   Others                 |     0.000 |     1685 |       --- |             --- |
-| Signals                  |     0.041 |    12192 |       --- |             --- |
-| Block RAM                |     0.039 |       22 |        60 |           36.67 |
+|   F7/F8 Muxes            |    <0.001 |       20 |     17600 |            0.11 |
+|   Others                 |     0.000 |     1698 |       --- |             --- |
+| Signals                  |     0.042 |    12333 |       --- |             --- |
+| Block RAM                |     0.038 |       19 |        60 |           31.67 |
 | MMCM                     |     0.212 |        2 |         2 |          100.00 |
 | DSPs                     |     0.049 |       68 |        80 |           85.00 |
 | I/O                      |    <0.001 |       22 |       100 |           22.00 |
 | PS7                      |     1.526 |        1 |       --- |             --- |
 | Static Power             |     0.125 |          |           |                 |
-| Total                    |     2.045 |          |           |                 |
+| Total                    |     2.044 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.189 |       0.180 |      0.009 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.188 |       0.179 |      0.009 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.126 |       0.117 |      0.009 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -159,18 +159,16 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| top                                            |     1.920 |
-|   axi4lite_interconnect                        |     0.020 |
-|     axi4lite_accum0_snap_ss_bram_inst          |     0.002 |
-|       ipb_accum0_snap_ss_bram_dp_ram_inst      |     0.002 |
+| top                                            |     1.919 |
+|   axi4lite_interconnect                        |     0.019 |
 |     axi4lite_accum1_snap_ss_bram_inst          |     0.005 |
-|       ipb_accum1_snap_ss_bram_dp_ram_inst      |     0.004 |
+|       ipb_accum1_snap_ss_bram_dp_ram_inst      |     0.005 |
 |     axi4lite_accumdat_snap_ss_bram_inst        |     0.005 |
 |       ipb_accumdat_snap_ss_bram_dp_ram_inst    |     0.004 |
 |     axi4lite_adc_voltage_snap_ss_bram_inst     |     0.005 |
 |       ipb_adc_voltage_snap_ss_bram_dp_ram_inst |     0.004 |
 |     axi4lite_sw_reg_inst                       |     0.002 |
-|   red_pitaya_bd_inst                           |     1.531 |
+|   red_pitaya_bd_inst                           |     1.532 |
 |     axi_protocol_convert_0                     |     0.004 |
 |       inst                                     |     0.004 |
 |     processing_system7_0                       |     1.527 |

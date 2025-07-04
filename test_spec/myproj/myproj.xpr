@@ -6,7 +6,7 @@
 <Project Version="7" Minor="55" Path="/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="49f2866869d347fcb06fdd735bd6ddfd"/>
+    <Option Name="Id" Val="da9a0faabbdc4ca9b308a48b0ecfa499"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -98,14 +98,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="red_pitaya_bd.bd" FileRelPathName="ip/red_pitaya_bd_axi_protocol_convert_0_0/red_pitaya_bd_axi_protocol_convert_0_0.xci">
+          <Proxy FileSetName="red_pitaya_bd_axi_protocol_convert_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="red_pitaya_bd.bd" FileRelPathName="ip/red_pitaya_bd_rst_ps7_0_50M_0/red_pitaya_bd_rst_ps7_0_50M_0.xci">
           <Proxy FileSetName="red_pitaya_bd_rst_ps7_0_50M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="red_pitaya_bd.bd" FileRelPathName="ip/red_pitaya_bd_processing_system7_0_0/red_pitaya_bd_processing_system7_0_0.xci">
           <Proxy FileSetName="red_pitaya_bd_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="red_pitaya_bd.bd" FileRelPathName="ip/red_pitaya_bd_axi_protocol_convert_0_0/red_pitaya_bd_axi_protocol_convert_0_0.xci">
-          <Proxy FileSetName="red_pitaya_bd_axi_protocol_convert_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/infrastructure/red_pitaya.v">
@@ -138,7 +138,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/asym_bram_tdp.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/asym_bram_tdp.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -160,7 +160,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -182,7 +182,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram_muxdemux.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram_muxdemux.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -190,7 +190,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/ipb_accum0_snap_ss_bram_dp_ram.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/ipb_accum0_snap_ss_bram_dp_ram.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -198,7 +198,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -206,7 +206,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -214,7 +214,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram_muxdemux.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram_muxdemux.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -222,7 +222,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/ipb_accum1_snap_ss_bram_dp_ram.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/ipb_accum1_snap_ss_bram_dp_ram.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -230,7 +230,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -238,7 +238,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -246,7 +246,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram_muxdemux.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram_muxdemux.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -254,7 +254,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/ipb_accumdat_snap_ss_bram_dp_ram.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/ipb_accumdat_snap_ss_bram_dp_ram.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -262,7 +262,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -270,7 +270,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -278,7 +278,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram_muxdemux.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram_muxdemux.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -286,7 +286,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/ipb_adc_voltage_snap_ss_bram_dp_ram.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/ipb_adc_voltage_snap_ss_bram_dp_ram.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -294,7 +294,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -302,7 +302,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -310,7 +310,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_mmap_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_axi4lite_top_mmap_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -318,7 +318,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -326,7 +326,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sw_reg_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -334,7 +334,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sys_pkg.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -342,7 +342,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg_muxdemux.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sw_reg_muxdemux.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -350,7 +350,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sw_reg.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -358,7 +358,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys_muxdemux.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sys_muxdemux.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -366,7 +366,7 @@
       <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sys.vhd"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -374,7 +374,7 @@
       <File Path="$PSRCDIR/sources_1/imports/test_spec/axi4lite_ic_wrapper.vhdl">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../axi4lite_ic_wrapper.vhdl"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -390,7 +390,7 @@
       <File Path="$PSRCDIR/sources_1/imports/test_spec/top.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../top.v"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -443,7 +443,7 @@
       <File Path="$PSRCDIR/constrs_1/imports/test_spec/user_const.xdc">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../user_const.xdc"/>
-          <Attr Name="ImportTime" Val="1751604581"/>
+          <Attr Name="ImportTime" Val="1751610904"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -472,19 +472,6 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="test_spec_ip" Type="BlockSrcs" RelSrcDir="$PSRCDIR/test_spec_ip" RelGenDir="$PGENDIR/test_spec_ip">
-      <File Path="$PSRCDIR/sources_1/ip/test_spec_ip/test_spec_ip.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="test_spec_ip"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="adc_data_fifo" Type="BlockSrcs" RelSrcDir="$PSRCDIR/adc_data_fifo" RelGenDir="$PGENDIR/adc_data_fifo">
       <File Path="$PSRCDIR/sources_1/ip/adc_data_fifo/adc_data_fifo.xci">
         <FileInfo>
@@ -500,6 +487,25 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="test_spec_ip" Type="BlockSrcs" RelSrcDir="$PSRCDIR/test_spec_ip" RelGenDir="$PGENDIR/test_spec_ip">
+      <File Path="$PSRCDIR/sources_1/ip/test_spec_ip/test_spec_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="test_spec_ip"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="red_pitaya_bd_axi_protocol_convert_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/red_pitaya_bd_axi_protocol_convert_0_0" RelGenDir="$PGENDIR/red_pitaya_bd_axi_protocol_convert_0_0">
+      <Config>
+        <Option Name="TopModule" Val="red_pitaya_bd_axi_protocol_convert_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="red_pitaya_bd_rst_ps7_0_50M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/red_pitaya_bd_rst_ps7_0_50M_0" RelGenDir="$PGENDIR/red_pitaya_bd_rst_ps7_0_50M_0">
       <Config>
         <Option Name="TopModule" Val="red_pitaya_bd_rst_ps7_0_50M_0"/>
@@ -509,12 +515,6 @@
     <FileSet Name="red_pitaya_bd_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/red_pitaya_bd_processing_system7_0_0" RelGenDir="$PGENDIR/red_pitaya_bd_processing_system7_0_0">
       <Config>
         <Option Name="TopModule" Val="red_pitaya_bd_processing_system7_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="red_pitaya_bd_axi_protocol_convert_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/red_pitaya_bd_axi_protocol_convert_0_0" RelGenDir="$PGENDIR/red_pitaya_bd_axi_protocol_convert_0_0">
-      <Config>
-        <Option Name="TopModule" Val="red_pitaya_bd_axi_protocol_convert_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -556,6 +556,18 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="adc_data_fifo_synth_1" Type="Ft3:Synth" SrcSet="adc_data_fifo" Part="xc7z010clg400-1" ConstrsSet="adc_data_fifo" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/adc_data_fifo_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/adc_data_fifo_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2021"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="test_spec_ip_synth_1" Type="Ft3:Synth" SrcSet="test_spec_ip" Part="xc7z010clg400-1" ConstrsSet="test_spec_ip" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/test_spec_ip_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/test_spec_ip_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
@@ -568,7 +580,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="adc_data_fifo_synth_1" Type="Ft3:Synth" SrcSet="adc_data_fifo" Part="xc7z010clg400-1" ConstrsSet="adc_data_fifo" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/adc_data_fifo_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/adc_data_fifo_synth_1">
+    <Run Id="red_pitaya_bd_axi_protocol_convert_0_0_synth_1" Type="Ft3:Synth" SrcSet="red_pitaya_bd_axi_protocol_convert_0_0" Part="xc7z010clg400-1" ConstrsSet="red_pitaya_bd_axi_protocol_convert_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/red_pitaya_bd_axi_protocol_convert_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/red_pitaya_bd_axi_protocol_convert_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -604,18 +616,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="red_pitaya_bd_axi_protocol_convert_0_0_synth_1" Type="Ft3:Synth" SrcSet="red_pitaya_bd_axi_protocol_convert_0_0" Part="xc7z010clg400-1" ConstrsSet="red_pitaya_bd_axi_protocol_convert_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/red_pitaya_bd_axi_protocol_convert_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/red_pitaya_bd_axi_protocol_convert_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2021"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
@@ -634,6 +634,25 @@
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="adc_data_fifo_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="adc_data_fifo" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="adc_data_fifo_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/adc_data_fifo_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
@@ -657,7 +676,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="adc_data_fifo_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="adc_data_fifo" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="adc_data_fifo_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/adc_data_fifo_impl_1">
+    <Run Id="red_pitaya_bd_axi_protocol_convert_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="red_pitaya_bd_axi_protocol_convert_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="red_pitaya_bd_axi_protocol_convert_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/red_pitaya_bd_axi_protocol_convert_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
           <Desc>Default settings for Implementation.</Desc>
@@ -696,25 +715,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="red_pitaya_bd_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="red_pitaya_bd_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="red_pitaya_bd_processing_system7_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/red_pitaya_bd_processing_system7_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="red_pitaya_bd_axi_protocol_convert_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="red_pitaya_bd_axi_protocol_convert_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="red_pitaya_bd_axi_protocol_convert_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/red_pitaya_bd_axi_protocol_convert_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
           <Desc>Default settings for Implementation.</Desc>

@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
---Date        : Fri Jul  4 10:19:35 2025
+--Date        : Fri Jul  4 12:04:59 2025
 --Host        : shishir-HP-Pavilion-Laptop-15-eg3xxx running 64-bit Ubuntu 22.04.4 LTS
 --Command     : generate_target test_spec_bd_wrapper.bd
 --Design      : test_spec_bd_wrapper
@@ -16,7 +16,7 @@ entity test_spec_bd_wrapper is
     clk : in STD_LOGIC;
     test_spec_acc_cnt_user_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 );
     test_spec_acc_len_user_data_out : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    test_spec_accum0_snap_ss_bram_addr : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    test_spec_accum0_snap_ss_bram_addr : out STD_LOGIC_VECTOR ( 7 downto 0 );
     test_spec_accum0_snap_ss_bram_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 );
     test_spec_accum0_snap_ss_bram_data_out : in STD_LOGIC_VECTOR ( 31 downto 0 );
     test_spec_accum0_snap_ss_bram_we : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -50,7 +50,8 @@ entity test_spec_bd_wrapper is
     test_spec_red_pitaya_adc_adc_reset_in : out STD_LOGIC_VECTOR ( 0 to 0 );
     test_spec_reg_cntrl_user_data_out : in STD_LOGIC_VECTOR ( 31 downto 0 );
     test_spec_snap_gap_user_data_out : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    test_spec_sync_cnt_user_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 )
+    test_spec_sync_cnt_user_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    test_spec_trig_cnt_user_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
 end test_spec_bd_wrapper;
 
@@ -60,7 +61,7 @@ architecture STRUCTURE of test_spec_bd_wrapper is
     clk : in STD_LOGIC;
     test_spec_acc_cnt_user_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 );
     test_spec_acc_len_user_data_out : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    test_spec_accum0_snap_ss_bram_addr : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    test_spec_accum0_snap_ss_bram_addr : out STD_LOGIC_VECTOR ( 7 downto 0 );
     test_spec_accum0_snap_ss_bram_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 );
     test_spec_accum0_snap_ss_bram_data_out : in STD_LOGIC_VECTOR ( 31 downto 0 );
     test_spec_accum0_snap_ss_bram_we : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -94,7 +95,8 @@ architecture STRUCTURE of test_spec_bd_wrapper is
     test_spec_red_pitaya_adc_adc_reset_in : out STD_LOGIC_VECTOR ( 0 to 0 );
     test_spec_reg_cntrl_user_data_out : in STD_LOGIC_VECTOR ( 31 downto 0 );
     test_spec_snap_gap_user_data_out : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    test_spec_sync_cnt_user_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 )
+    test_spec_sync_cnt_user_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    test_spec_trig_cnt_user_data_in : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component test_spec_bd;
 begin
@@ -103,7 +105,7 @@ test_spec_bd_i: component test_spec_bd
       clk => clk,
       test_spec_acc_cnt_user_data_in(31 downto 0) => test_spec_acc_cnt_user_data_in(31 downto 0),
       test_spec_acc_len_user_data_out(31 downto 0) => test_spec_acc_len_user_data_out(31 downto 0),
-      test_spec_accum0_snap_ss_bram_addr(11 downto 0) => test_spec_accum0_snap_ss_bram_addr(11 downto 0),
+      test_spec_accum0_snap_ss_bram_addr(7 downto 0) => test_spec_accum0_snap_ss_bram_addr(7 downto 0),
       test_spec_accum0_snap_ss_bram_data_in(31 downto 0) => test_spec_accum0_snap_ss_bram_data_in(31 downto 0),
       test_spec_accum0_snap_ss_bram_data_out(31 downto 0) => test_spec_accum0_snap_ss_bram_data_out(31 downto 0),
       test_spec_accum0_snap_ss_bram_we(0) => test_spec_accum0_snap_ss_bram_we(0),
@@ -137,6 +139,7 @@ test_spec_bd_i: component test_spec_bd
       test_spec_red_pitaya_adc_adc_reset_in(0) => test_spec_red_pitaya_adc_adc_reset_in(0),
       test_spec_reg_cntrl_user_data_out(31 downto 0) => test_spec_reg_cntrl_user_data_out(31 downto 0),
       test_spec_snap_gap_user_data_out(31 downto 0) => test_spec_snap_gap_user_data_out(31 downto 0),
-      test_spec_sync_cnt_user_data_in(31 downto 0) => test_spec_sync_cnt_user_data_in(31 downto 0)
+      test_spec_sync_cnt_user_data_in(31 downto 0) => test_spec_sync_cnt_user_data_in(31 downto 0),
+      test_spec_trig_cnt_user_data_in(31 downto 0) => test_spec_trig_cnt_user_data_in(31 downto 0)
     );
 end STRUCTURE;

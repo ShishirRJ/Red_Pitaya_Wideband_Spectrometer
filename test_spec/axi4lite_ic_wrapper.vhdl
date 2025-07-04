@@ -5,10 +5,10 @@ library xil_defaultlib;
 use xil_defaultlib.axi4lite_pkg.all;
 use xil_defaultlib.axi4lite_axi4lite_top_ic_pkg.all;
 use xil_defaultlib.axi4lite_axi4lite_top_mmap_pkg.all;
-use xil_defaultlib.axi4lite_accum0_snap_ss_bram_pkg.all;
 use xil_defaultlib.axi4lite_accum1_snap_ss_bram_pkg.all;
 use xil_defaultlib.axi4lite_accumdat_snap_ss_bram_pkg.all;
 use xil_defaultlib.axi4lite_adc_voltage_snap_ss_bram_pkg.all;
+use xil_defaultlib.axi4lite_accum0_snap_ss_bram_pkg.all;
 use xil_defaultlib.axi4lite_sw_reg_pkg.all;
 use xil_defaultlib.axi4lite_sys_pkg.all;
 
@@ -33,12 +33,6 @@ entity axi4lite_ic_wrapper is
 		s_axi4lite_arvalid : in std_logic;
 		s_axi4lite_rready : in std_logic;
 		s_axi4lite_bready : in std_logic;
-		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_add : in std_logic_vector(11 downto 0);
-		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_data_in : in std_logic_vector(31 downto 0);
-		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_data_out : out std_logic_vector(31 downto 0);
-		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_we : in std_logic;
-		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_en : in std_logic;
-		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_clk : in std_logic;
 		axi4lite_accum1_snap_ss_bram_accum1_snap_ss_bram_add : in std_logic_vector(11 downto 0);
 		axi4lite_accum1_snap_ss_bram_accum1_snap_ss_bram_data_in : in std_logic_vector(31 downto 0);
 		axi4lite_accum1_snap_ss_bram_accum1_snap_ss_bram_data_out : out std_logic_vector(31 downto 0);
@@ -57,6 +51,12 @@ entity axi4lite_ic_wrapper is
 		axi4lite_adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram_we : in std_logic;
 		axi4lite_adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram_en : in std_logic;
 		axi4lite_adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram_clk : in std_logic;
+		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_add : in std_logic_vector(7 downto 0);
+		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_data_in : in std_logic_vector(31 downto 0);
+		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_data_out : out std_logic_vector(31 downto 0);
+		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_we : in std_logic;
+		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_en : in std_logic;
+		axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_clk : in std_logic;
 		axi4lite_sw_reg_acc_cnt_in : in std_logic_vector(31 downto 0);
 		axi4lite_sw_reg_acc_cnt_in_we : in std_logic;
 		axi4lite_sw_reg_acc_len_out : out std_logic_vector(31 downto 0);
@@ -91,6 +91,8 @@ entity axi4lite_ic_wrapper is
 		axi4lite_sw_reg_snap_gap_out_we : out std_logic;
 		axi4lite_sw_reg_sync_cnt_in : in std_logic_vector(31 downto 0);
 		axi4lite_sw_reg_sync_cnt_in_we : in std_logic;
+		axi4lite_sw_reg_trig_cnt_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_trig_cnt_in_we : in std_logic;
 		axi4lite_sys_board_id_in : in std_logic_vector(31 downto 0);
 		axi4lite_sys_board_id_in_we : in std_logic;
 		axi4lite_sys_rev_in : in std_logic_vector(31 downto 0);
@@ -128,20 +130,6 @@ begin
 		axi4lite_mosi_arr => axi4lite_mosi_arr,
 		axi4lite_miso => axi4lite_miso,
 		axi4lite_miso_arr => axi4lite_miso_arr
-	);
-
-	axi4lite_accum0_snap_ss_bram_inst: entity xil_defaultlib.axi4lite_accum0_snap_ss_bram
-	port map(
-		axi4lite_aclk => axi4lite_aclk,
-		axi4lite_aresetn => axi4lite_aresetn,
-		axi4lite_mosi => axi4lite_mosi_arr(axi4lite_mmap_get_id(id_accum0_snap_ss_bram)),
-		axi4lite_miso => axi4lite_miso_arr(axi4lite_mmap_get_id(id_accum0_snap_ss_bram)),
-		accum0_snap_ss_bram_accum0_snap_ss_bram_add => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_add,
-		accum0_snap_ss_bram_accum0_snap_ss_bram_wdat => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_data_in,
-		accum0_snap_ss_bram_accum0_snap_ss_bram_rdat => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_data_out,
-		accum0_snap_ss_bram_accum0_snap_ss_bram_clk => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_clk,
-		accum0_snap_ss_bram_accum0_snap_ss_bram_en => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_en,
-		accum0_snap_ss_bram_accum0_snap_ss_bram_we => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_we
 	);
 
 	axi4lite_accum1_snap_ss_bram_inst: entity xil_defaultlib.axi4lite_accum1_snap_ss_bram
@@ -184,6 +172,20 @@ begin
 		adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram_clk => axi4lite_adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram_clk,
 		adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram_en => axi4lite_adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram_en,
 		adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram_we => axi4lite_adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram_we
+	);
+
+	axi4lite_accum0_snap_ss_bram_inst: entity xil_defaultlib.axi4lite_accum0_snap_ss_bram
+	port map(
+		axi4lite_aclk => axi4lite_aclk,
+		axi4lite_aresetn => axi4lite_aresetn,
+		axi4lite_mosi => axi4lite_mosi_arr(axi4lite_mmap_get_id(id_accum0_snap_ss_bram)),
+		axi4lite_miso => axi4lite_miso_arr(axi4lite_mmap_get_id(id_accum0_snap_ss_bram)),
+		accum0_snap_ss_bram_accum0_snap_ss_bram_add => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_add,
+		accum0_snap_ss_bram_accum0_snap_ss_bram_wdat => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_data_in,
+		accum0_snap_ss_bram_accum0_snap_ss_bram_rdat => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_data_out,
+		accum0_snap_ss_bram_accum0_snap_ss_bram_clk => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_clk,
+		accum0_snap_ss_bram_accum0_snap_ss_bram_en => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_en,
+		accum0_snap_ss_bram_accum0_snap_ss_bram_we => axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_we
 	);
 
 	axi4lite_sw_reg_inst: entity xil_defaultlib.axi4lite_sw_reg
@@ -245,6 +247,8 @@ begin
 	axi4lite_sw_reg_snap_gap_out_we <= axi4lite_sw_reg_out_we.snap_gap;
 	axi4lite_sw_reg_in.sync_cnt <= axi4lite_sw_reg_sync_cnt_in;
 	axi4lite_sw_reg_in_we.sync_cnt <= axi4lite_sw_reg_sync_cnt_in_we;
+	axi4lite_sw_reg_in.trig_cnt <= axi4lite_sw_reg_trig_cnt_in;
+	axi4lite_sw_reg_in_we.trig_cnt <= axi4lite_sw_reg_trig_cnt_in_we;
 	axi4lite_sys_in.board_id <= axi4lite_sys_board_id_in;
 	axi4lite_sys_in_we.board_id <= axi4lite_sys_board_id_in_we;
 	axi4lite_sys_in.rev <= axi4lite_sys_rev_in;

@@ -1,330 +1,340 @@
 {
-  'Line_10044' => {
-    'CodeInstance' => 'test_spec_struct/acc_cnt',
-    'Instance' => 'acc_cnt',
-    'SimulinkInstance' => 'acc_cnt'
-  },
-  'Line_10051' => {
-    'CodeInstance' => 'test_spec_struct/acc_cntrl',
-    'Instance' => 'acc_cntrl',
-    'SimulinkInstance' => 'acc_cntrl'
-  },
-  'Line_10060' => {
-    'CodeInstance' => 'test_spec_struct/acc_len',
-    'Instance' => 'acc_len',
-    'SimulinkInstance' => 'acc_len'
-  },
-  'Line_10065' => {
-    'CodeInstance' => 'test_spec_struct/accum0_snap',
-    'Instance' => 'accum0_snap',
-    'SimulinkInstance' => 'accum0_snap'
-  },
-  'Line_10082' => {
-    'CodeInstance' => 'test_spec_struct/accum1_snap',
-    'Instance' => 'accum1_snap',
-    'SimulinkInstance' => 'accum1_snap'
-  },
-  'Line_10099' => {
-    'CodeInstance' => 'test_spec_struct/accumdat_snap',
-    'Instance' => 'accumdat_snap',
-    'SimulinkInstance' => 'accumdat_snap'
-  },
   'Line_1010' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/basic_ctrl/edge_detect/delay',
     'Instance' => 'delay',
     'SimulinkInstance' => 'test_spec/accum0_snap/ss/basic_ctrl/edge_detect/Delay'
   },
-  'Line_10116' => {
-    'CodeInstance' => 'test_spec_struct/adc_dv',
-    'Instance' => 'adc_dv',
-    'SimulinkInstance' => 'adc_dv'
+  'Line_10121' => {
+    'CodeInstance' => 'test_spec_struct/acc_cnt',
+    'Instance' => 'acc_cnt',
+    'SimulinkInstance' => 'test_spec/acc_cnt'
   },
-  'Line_10123' => {
-    'CodeInstance' => 'test_spec_struct/adc_sample_cnt',
-    'Instance' => 'adc_sample_cnt',
-    'SimulinkInstance' => 'adc_sample_cnt'
+  'Line_10128' => {
+    'CodeInstance' => 'test_spec_struct/acc_cntrl',
+    'Instance' => 'acc_cntrl',
+    'SimulinkInstance' => 'test_spec/acc_cntrl'
   },
-  'Line_10130' => {
-    'CodeInstance' => 'test_spec_struct/adc_voltage_snap',
-    'Instance' => 'adc_voltage_snap',
-    'SimulinkInstance' => 'adc_voltage_snap'
+  'Line_10137' => {
+    'CodeInstance' => 'test_spec_struct/acc_len',
+    'Instance' => 'acc_len',
+    'SimulinkInstance' => 'test_spec/acc_len'
   },
-  'Line_10148' => {
-    'CodeInstance' => 'test_spec_struct/edge_detect',
-    'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+  'Line_10142' => {
+    'CodeInstance' => 'test_spec_struct/accum0_snap',
+    'Instance' => 'accum0_snap',
+    'SimulinkInstance' => 'test_spec/accum0_snap'
   },
-  'Line_10155' => {
-    'CodeInstance' => 'test_spec_struct/edge_detect2',
-    'Instance' => 'edge_detect2',
-    'SimulinkInstance' => 'edge_detect2'
-  },
-  'Line_10162' => {
-    'CodeInstance' => 'test_spec_struct/fft_sync_inc0',
-    'Instance' => 'fft_sync_inc0',
-    'SimulinkInstance' => 'fft_sync_inc0'
-  },
-  'Line_10169' => {
-    'CodeInstance' => 'test_spec_struct/fft_sync_inc1',
-    'Instance' => 'fft_sync_inc1',
-    'SimulinkInstance' => 'fft_sync_inc1'
+  'Line_10159' => {
+    'CodeInstance' => 'test_spec_struct/accum1_snap',
+    'Instance' => 'accum1_snap',
+    'SimulinkInstance' => 'test_spec/accum1_snap'
   },
   'Line_10176' => {
-    'CodeInstance' => 'test_spec_struct/pipeline1',
-    'Instance' => 'pipeline1',
-    'SimulinkInstance' => 'pipeline1'
+    'CodeInstance' => 'test_spec_struct/accumdat_snap',
+    'Instance' => 'accumdat_snap',
+    'SimulinkInstance' => 'test_spec/accumdat_snap'
   },
-  'Line_10183' => {
-    'CodeInstance' => 'test_spec_struct/pipeline10',
-    'Instance' => 'pipeline10',
-    'SimulinkInstance' => 'pipeline10'
+  'Line_10193' => {
+    'CodeInstance' => 'test_spec_struct/adc_dv',
+    'Instance' => 'adc_dv',
+    'SimulinkInstance' => 'test_spec/adc_dv'
   },
-  'Line_10190' => {
-    'CodeInstance' => 'test_spec_struct/pipeline11',
-    'Instance' => 'pipeline11',
-    'SimulinkInstance' => 'pipeline11'
+  'Line_10200' => {
+    'CodeInstance' => 'test_spec_struct/adc_sample_cnt',
+    'Instance' => 'adc_sample_cnt',
+    'SimulinkInstance' => 'test_spec/adc_sample_cnt'
   },
-  'Line_10197' => {
-    'CodeInstance' => 'test_spec_struct/pipeline12',
-    'Instance' => 'pipeline12',
-    'SimulinkInstance' => 'pipeline12'
-  },
-  'Line_10204' => {
-    'CodeInstance' => 'test_spec_struct/pipeline13',
-    'Instance' => 'pipeline13',
-    'SimulinkInstance' => 'pipeline13'
-  },
-  'Line_10211' => {
-    'CodeInstance' => 'test_spec_struct/pipeline14',
-    'Instance' => 'pipeline14',
-    'SimulinkInstance' => 'pipeline14'
-  },
-  'Line_10218' => {
-    'CodeInstance' => 'test_spec_struct/pipeline15',
-    'Instance' => 'pipeline15',
-    'SimulinkInstance' => 'pipeline15'
+  'Line_10207' => {
+    'CodeInstance' => 'test_spec_struct/adc_voltage_snap',
+    'Instance' => 'adc_voltage_snap',
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap'
   },
   'Line_10225' => {
-    'CodeInstance' => 'test_spec_struct/pipeline2',
-    'Instance' => 'pipeline2',
-    'SimulinkInstance' => 'pipeline2'
+    'CodeInstance' => 'test_spec_struct/edge_detect',
+    'Instance' => 'edge_detect',
+    'SimulinkInstance' => 'test_spec/edge_detect'
   },
   'Line_10232' => {
-    'CodeInstance' => 'test_spec_struct/pipeline7',
-    'Instance' => 'pipeline7',
-    'SimulinkInstance' => 'pipeline7'
+    'CodeInstance' => 'test_spec_struct/edge_detect2',
+    'Instance' => 'edge_detect2',
+    'SimulinkInstance' => 'test_spec/edge_detect2'
   },
   'Line_10239' => {
-    'CodeInstance' => 'test_spec_struct/pipeline8',
-    'Instance' => 'pipeline8',
-    'SimulinkInstance' => 'pipeline8'
+    'CodeInstance' => 'test_spec_struct/fft_sync_inc0',
+    'Instance' => 'fft_sync_inc0',
+    'SimulinkInstance' => 'test_spec/fft_sync_inc0'
   },
   'Line_10246' => {
-    'CodeInstance' => 'test_spec_struct/power_calc',
-    'Instance' => 'power_calc',
-    'SimulinkInstance' => 'power_calc'
+    'CodeInstance' => 'test_spec_struct/fft_sync_inc1',
+    'Instance' => 'fft_sync_inc1',
+    'SimulinkInstance' => 'test_spec/fft_sync_inc1'
   },
   'Line_1025' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/basic_ctrl/edge_detect/inverter',
     'Instance' => 'inverter',
     'SimulinkInstance' => 'test_spec/accum0_snap/ss/basic_ctrl/edge_detect/Inverter'
   },
-  'Line_10255' => {
-    'CodeInstance' => 'test_spec_struct/red_pitaya_adc',
-    'Instance' => 'red_pitaya_adc',
-    'SimulinkInstance' => 'red_pitaya_adc'
+  'Line_10253' => {
+    'CodeInstance' => 'test_spec_struct/pipeline1',
+    'Instance' => 'pipeline1',
+    'SimulinkInstance' => 'test_spec/pipeline1'
   },
-  'Line_10268' => {
-    'CodeInstance' => 'test_spec_struct/reg_cntrl',
-    'Instance' => 'reg_cntrl',
-    'SimulinkInstance' => 'reg_cntrl'
+  'Line_10260' => {
+    'CodeInstance' => 'test_spec_struct/pipeline10',
+    'Instance' => 'pipeline10',
+    'SimulinkInstance' => 'test_spec/pipeline10'
   },
-  'Line_10273' => {
-    'CodeInstance' => 'test_spec_struct/ri_to_c',
-    'Instance' => 'ri_to_c',
-    'SimulinkInstance' => 'ri_to_c'
+  'Line_10267' => {
+    'CodeInstance' => 'test_spec_struct/pipeline11',
+    'Instance' => 'pipeline11',
+    'SimulinkInstance' => 'test_spec/pipeline11'
   },
-  'Line_10279' => {
-    'CodeInstance' => 'test_spec_struct/ri_to_c1',
-    'Instance' => 'ri_to_c1',
-    'SimulinkInstance' => 'ri_to_c1'
+  'Line_10274' => {
+    'CodeInstance' => 'test_spec_struct/pipeline12',
+    'Instance' => 'pipeline12',
+    'SimulinkInstance' => 'test_spec/pipeline12'
   },
-  'Line_10285' => {
-    'CodeInstance' => 'test_spec_struct/simple_bram_vacc',
-    'Instance' => 'simple_bram_vacc',
-    'SimulinkInstance' => 'simple_bram_vacc'
+  'Line_10281' => {
+    'CodeInstance' => 'test_spec_struct/pipeline13',
+    'Instance' => 'pipeline13',
+    'SimulinkInstance' => 'test_spec/pipeline13'
   },
-  'Line_10294' => {
-    'CodeInstance' => 'test_spec_struct/simple_bram_vacc1',
-    'Instance' => 'simple_bram_vacc1',
-    'SimulinkInstance' => 'simple_bram_vacc1'
+  'Line_10288' => {
+    'CodeInstance' => 'test_spec_struct/pipeline14',
+    'Instance' => 'pipeline14',
+    'SimulinkInstance' => 'test_spec/pipeline14'
   },
-  'Line_10303' => {
-    'CodeInstance' => 'test_spec_struct/snap_gap',
-    'Instance' => 'snap_gap',
-    'SimulinkInstance' => 'snap_gap'
+  'Line_10295' => {
+    'CodeInstance' => 'test_spec_struct/pipeline15',
+    'Instance' => 'pipeline15',
+    'SimulinkInstance' => 'test_spec/pipeline15'
   },
-  'Line_10308' => {
-    'CodeInstance' => 'test_spec_struct/sync_cnt',
-    'Instance' => 'sync_cnt',
-    'SimulinkInstance' => 'sync_cnt'
+  'Line_10302' => {
+    'CodeInstance' => 'test_spec_struct/pipeline2',
+    'Instance' => 'pipeline2',
+    'SimulinkInstance' => 'test_spec/pipeline2'
   },
-  'Line_10315' => {
-    'CodeInstance' => 'test_spec_struct/relational1',
-    'Instance' => 'relational1',
-    'SimulinkInstance' => 'test_spec/Relational1'
+  'Line_10309' => {
+    'CodeInstance' => 'test_spec_struct/pipeline7',
+    'Instance' => 'pipeline7',
+    'SimulinkInstance' => 'test_spec/pipeline7'
   },
-  'Line_10324' => {
-    'CodeInstance' => 'test_spec_struct/counter_led1',
-    'Instance' => 'counter_led1',
-    'SimulinkInstance' => 'test_spec/counter_led1'
+  'Line_10316' => {
+    'CodeInstance' => 'test_spec_struct/pipeline8',
+    'Instance' => 'pipeline8',
+    'SimulinkInstance' => 'test_spec/pipeline8'
+  },
+  'Line_10323' => {
+    'CodeInstance' => 'test_spec_struct/power_calc',
+    'Instance' => 'power_calc',
+    'SimulinkInstance' => 'test_spec/power_calc'
   },
   'Line_1033' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/basic_ctrl/edge_detect/edge_op',
     'Instance' => 'edge_op',
     'SimulinkInstance' => 'test_spec/accum0_snap/ss/basic_ctrl/edge_detect/edge_op'
   },
-  'Line_10338' => {
+  'Line_10332' => {
+    'CodeInstance' => 'test_spec_struct/red_pitaya_adc',
+    'Instance' => 'red_pitaya_adc',
+    'SimulinkInstance' => 'test_spec/red_pitaya_adc'
+  },
+  'Line_10345' => {
+    'CodeInstance' => 'test_spec_struct/reg_cntrl',
+    'Instance' => 'reg_cntrl',
+    'SimulinkInstance' => 'test_spec/reg_cntrl'
+  },
+  'Line_10350' => {
+    'CodeInstance' => 'test_spec_struct/ri_to_c',
+    'Instance' => 'ri_to_c',
+    'SimulinkInstance' => 'test_spec/ri_to_c'
+  },
+  'Line_10356' => {
+    'CodeInstance' => 'test_spec_struct/ri_to_c1',
+    'Instance' => 'ri_to_c1',
+    'SimulinkInstance' => 'test_spec/ri_to_c1'
+  },
+  'Line_10362' => {
+    'CodeInstance' => 'test_spec_struct/simple_bram_vacc',
+    'Instance' => 'simple_bram_vacc',
+    'SimulinkInstance' => 'test_spec/simple_bram_vacc'
+  },
+  'Line_10371' => {
+    'CodeInstance' => 'test_spec_struct/simple_bram_vacc1',
+    'Instance' => 'simple_bram_vacc1',
+    'SimulinkInstance' => 'test_spec/simple_bram_vacc1'
+  },
+  'Line_10380' => {
+    'CodeInstance' => 'test_spec_struct/snap_gap',
+    'Instance' => 'snap_gap',
+    'SimulinkInstance' => 'test_spec/snap_gap'
+  },
+  'Line_10385' => {
+    'CodeInstance' => 'test_spec_struct/sync_cnt',
+    'Instance' => 'sync_cnt',
+    'SimulinkInstance' => 'test_spec/sync_cnt'
+  },
+  'Line_10392' => {
+    'CodeInstance' => 'test_spec_struct/trig_cnt',
+    'Instance' => 'trig_cnt',
+    'SimulinkInstance' => 'test_spec/trig_cnt'
+  },
+  'Line_10399' => {
     'CodeInstance' => 'test_spec_struct/constant1',
     'Instance' => 'constant1',
     'SimulinkInstance' => 'test_spec/Constant1'
   },
-  'Line_10345' => {
+  'Line_10406' => {
     'CodeInstance' => 'test_spec_struct/constant11',
     'Instance' => 'constant11',
     'SimulinkInstance' => 'test_spec/Constant11'
   },
-  'Line_10352' => {
+  'Line_10413' => {
     'CodeInstance' => 'test_spec_struct/constant12',
     'Instance' => 'constant12',
     'SimulinkInstance' => 'test_spec/Constant12'
   },
-  'Line_10359' => {
+  'Line_10420' => {
     'CodeInstance' => 'test_spec_struct/constant2',
     'Instance' => 'constant2',
     'SimulinkInstance' => 'test_spec/Constant2'
   },
-  'Line_10366' => {
+  'Line_10427' => {
     'CodeInstance' => 'test_spec_struct/constant3',
     'Instance' => 'constant3',
     'SimulinkInstance' => 'test_spec/Constant3'
   },
-  'Line_10373' => {
+  'Line_10434' => {
     'CodeInstance' => 'test_spec_struct/constant6',
     'Instance' => 'constant6',
     'SimulinkInstance' => 'test_spec/Constant6'
   },
-  'Line_10380' => {
+  'Line_10441' => {
     'CodeInstance' => 'test_spec_struct/constant7',
     'Instance' => 'constant7',
     'SimulinkInstance' => 'test_spec/Constant7'
   },
-  'Line_10387' => {
+  'Line_10448' => {
     'CodeInstance' => 'test_spec_struct/convert',
     'Instance' => 'convert',
     'SimulinkInstance' => 'test_spec/Convert'
   },
-  'Line_10408' => {
+  'Line_10469' => {
     'CodeInstance' => 'test_spec_struct/convert2',
     'Instance' => 'convert2',
     'SimulinkInstance' => 'test_spec/Convert2'
   },
-  'Line_10429' => {
+  'Line_10490' => {
     'CodeInstance' => 'test_spec_struct/convert3',
     'Instance' => 'convert3',
     'SimulinkInstance' => 'test_spec/Convert3'
   },
-  'Line_10450' => {
+  'Line_10511' => {
     'CodeInstance' => 'test_spec_struct/convert4',
     'Instance' => 'convert4',
     'SimulinkInstance' => 'test_spec/Convert4'
   },
-  'Line_10471' => {
+  'Line_10532' => {
     'CodeInstance' => 'test_spec_struct/delay1',
     'Instance' => 'delay1',
     'SimulinkInstance' => 'test_spec/Delay1'
   },
-  'Line_10486' => {
+  'Line_10547' => {
     'CodeInstance' => 'test_spec_struct/delay2',
     'Instance' => 'delay2',
     'SimulinkInstance' => 'test_spec/Delay2'
   },
-  'Line_10501' => {
+  'Line_10562' => {
     'CodeInstance' => 'test_spec_struct/delay28',
     'Instance' => 'delay28',
     'SimulinkInstance' => 'test_spec/Delay28'
   },
-  'Line_10509' => {
+  'Line_10570' => {
     'CodeInstance' => 'test_spec_struct/delay3',
     'Instance' => 'delay3',
     'SimulinkInstance' => 'test_spec/Delay3'
   },
-  'Line_10524' => {
+  'Line_10585' => {
     'CodeInstance' => 'test_spec_struct/fft',
     'Instance' => 'fft',
     'SimulinkInstance' => 'test_spec/FFT'
   },
-  'Line_10535' => {
+  'Line_10596' => {
     'CodeInstance' => 'test_spec_struct/fft1',
     'Instance' => 'fft1',
     'SimulinkInstance' => 'test_spec/FFT1'
   },
-  'Line_10546' => {
+  'Line_10607' => {
     'CodeInstance' => 'test_spec_struct/relational',
     'Instance' => 'relational',
     'SimulinkInstance' => 'test_spec/Relational'
   },
-  'Line_10555' => {
+  'Line_10616' => {
+    'CodeInstance' => 'test_spec_struct/relational1',
+    'Instance' => 'relational1',
+    'SimulinkInstance' => 'test_spec/Relational1'
+  },
+  'Line_10625' => {
     'CodeInstance' => 'test_spec_struct/acc_cntr',
     'Instance' => 'acc_cntr',
     'SimulinkInstance' => 'test_spec/acc_cntr'
   },
-  'Line_10569' => {
+  'Line_10639' => {
     'CodeInstance' => 'test_spec_struct/adc_sample_counter',
     'Instance' => 'adc_sample_counter',
     'SimulinkInstance' => 'test_spec/adc_sample_counter'
   },
-  'Line_10583' => {
+  'Line_10653' => {
+    'CodeInstance' => 'test_spec_struct/counter_led1',
+    'Instance' => 'counter_led1',
+    'SimulinkInstance' => 'test_spec/counter_led1'
+  },
+  'Line_10667' => {
     'CodeInstance' => 'test_spec_struct/spect_cnt',
     'Instance' => 'spect_cnt',
     'SimulinkInstance' => 'test_spec/spect_cnt'
   },
-  'Line_10597' => {
+  'Line_10681' => {
     'CodeInstance' => 'test_spec_struct/spect_cnt1',
     'Instance' => 'spect_cnt1',
     'SimulinkInstance' => 'test_spec/spect_cnt1'
   },
-  'Line_10611' => {
+  'Line_10695' => {
     'CodeInstance' => 'test_spec_struct/spect_cnt2',
     'Instance' => 'spect_cnt2',
     'SimulinkInstance' => 'test_spec/spect_cnt2'
   },
-  'Line_10625' => {
+  'Line_10709' => {
     'CodeInstance' => 'test_spec_struct/spect_cnt3',
     'Instance' => 'spect_cnt3',
     'SimulinkInstance' => 'test_spec/spect_cnt3'
   },
-  'Line_10639' => {
+  'Line_10723' => {
     'CodeInstance' => 'test_spec_struct/spect_cnt4',
     'Instance' => 'spect_cnt4',
     'SimulinkInstance' => 'test_spec/spect_cnt4'
   },
-  'Line_10653' => {
+  'Line_10737' => {
     'CodeInstance' => 'test_spec_struct/sync_cntr',
     'Instance' => 'sync_cntr',
     'SimulinkInstance' => 'test_spec/sync_cntr'
   },
-  'Line_10684' => {
+  'Line_10751' => {
+    'CodeInstance' => 'test_spec_struct/trig_counter',
+    'Instance' => 'trig_counter',
+    'SimulinkInstance' => 'test_spec/trig_counter'
+  },
+  'Line_10782' => {
     'CodeInstance' => 'test_spec_default_clock_driver/clockdriver',
     'Instance' => 'clockdriver',
     'SimulinkInstance' => ''
   },
-  'Line_10750' => {
+  'Line_10849' => {
     'CodeInstance' => 'test_spec_default_clock_driver',
     'Instance' => 'test_spec_default_clock_driver',
     'SimulinkInstance' => ''
   },
-  'Line_10758' => {
+  'Line_10857' => {
     'CodeInstance' => 'test_spec_struct',
     'Instance' => 'test_spec_struct',
     'SimulinkInstance' => 'test_spec'
@@ -332,12 +342,12 @@
   'Line_1101' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/basic_ctrl/dram_munge',
     'Instance' => 'dram_munge',
-    'SimulinkInstance' => 'dram_munge'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/basic_ctrl/dram_munge'
   },
   'Line_1111' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/basic_ctrl/edge_detect',
     'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/basic_ctrl/edge_detect'
   },
   'Line_1118' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/basic_ctrl/constant_x0',
@@ -472,12 +482,12 @@
   'Line_1460' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/bram/calc_add',
     'Instance' => 'calc_add',
-    'SimulinkInstance' => 'calc_add'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/bram/calc_add'
   },
   'Line_1467' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/bram/munge_in',
     'Instance' => 'munge_in',
-    'SimulinkInstance' => 'munge_in'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/bram/munge_in'
   },
   'Line_1472' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/bram/convert_addr',
@@ -592,37 +602,37 @@
   'Line_1890' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/add_gen',
     'Instance' => 'add_gen',
-    'SimulinkInstance' => 'add_gen'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/add_gen'
   },
   'Line_1904' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/basic_ctrl',
     'Instance' => 'basic_ctrl',
-    'SimulinkInstance' => 'basic_ctrl'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/basic_ctrl'
   },
   'Line_1918' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/bram',
     'Instance' => 'bram',
-    'SimulinkInstance' => 'bram'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/bram'
   },
   'Line_1929' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/ctrl',
     'Instance' => 'ctrl',
-    'SimulinkInstance' => 'ctrl'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/ctrl'
   },
   'Line_1934' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/ctrl_combine',
     'Instance' => 'ctrl_combine',
-    'SimulinkInstance' => 'ctrl_combine'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/ctrl_combine'
   },
   'Line_1942' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/ctrl_split',
     'Instance' => 'ctrl_split',
-    'SimulinkInstance' => 'ctrl_split'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/ctrl_split'
   },
   'Line_1950' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/status',
     'Instance' => 'status',
-    'SimulinkInstance' => 'status'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/status'
   },
   'Line_1957' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/add_del',
@@ -672,7 +682,7 @@
   'Line_204' => {
     'CodeInstance' => 'test_spec_struct/acc_cntrl/edge_detect',
     'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+    'SimulinkInstance' => 'test_spec/acc_cntrl/edge_detect'
   },
   'Line_2041' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/we_del',
@@ -682,17 +692,17 @@
   'Line_2106' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/buscreate',
     'Instance' => 'buscreate',
-    'SimulinkInstance' => 'buscreate'
+    'SimulinkInstance' => 'test_spec/accum0_snap/buscreate'
   },
   'Line_211' => {
     'CodeInstance' => 'test_spec_struct/acc_cntrl/pipeline15',
     'Instance' => 'pipeline15',
-    'SimulinkInstance' => 'pipeline15'
+    'SimulinkInstance' => 'test_spec/acc_cntrl/pipeline15'
   },
   'Line_2112' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss',
     'Instance' => 'ss',
-    'SimulinkInstance' => 'ss'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss'
   },
   'Line_2128' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/assert_p_acc0',
@@ -747,7 +757,7 @@
   'Line_2312' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/add_gen/edge_detect',
     'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/add_gen/edge_detect'
   },
   'Line_2319' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/add_gen/concat',
@@ -1012,12 +1022,12 @@
   'Line_2935' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/basic_ctrl/dram_munge',
     'Instance' => 'dram_munge',
-    'SimulinkInstance' => 'dram_munge'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/basic_ctrl/dram_munge'
   },
   'Line_2945' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/basic_ctrl/edge_detect',
     'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/basic_ctrl/edge_detect'
   },
   'Line_2952' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/basic_ctrl/constant_x0',
@@ -1147,12 +1157,12 @@
   'Line_3294' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/bram/calc_add',
     'Instance' => 'calc_add',
-    'SimulinkInstance' => 'calc_add'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/bram/calc_add'
   },
   'Line_3301' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/bram/munge_in',
     'Instance' => 'munge_in',
-    'SimulinkInstance' => 'munge_in'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/bram/munge_in'
   },
   'Line_3306' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/bram/convert_addr',
@@ -1282,37 +1292,37 @@
   'Line_3724' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/add_gen',
     'Instance' => 'add_gen',
-    'SimulinkInstance' => 'add_gen'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/add_gen'
   },
   'Line_3738' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/basic_ctrl',
     'Instance' => 'basic_ctrl',
-    'SimulinkInstance' => 'basic_ctrl'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/basic_ctrl'
   },
   'Line_3752' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/bram',
     'Instance' => 'bram',
-    'SimulinkInstance' => 'bram'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/bram'
   },
   'Line_3763' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/ctrl',
     'Instance' => 'ctrl',
-    'SimulinkInstance' => 'ctrl'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/ctrl'
   },
   'Line_3768' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/ctrl_combine',
     'Instance' => 'ctrl_combine',
-    'SimulinkInstance' => 'ctrl_combine'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/ctrl_combine'
   },
   'Line_3776' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/ctrl_split',
     'Instance' => 'ctrl_split',
-    'SimulinkInstance' => 'ctrl_split'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/ctrl_split'
   },
   'Line_3784' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/status',
     'Instance' => 'status',
-    'SimulinkInstance' => 'status'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss/status'
   },
   'Line_3791' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss/add_del',
@@ -1372,12 +1382,12 @@
   'Line_3940' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/buscreate',
     'Instance' => 'buscreate',
-    'SimulinkInstance' => 'buscreate'
+    'SimulinkInstance' => 'test_spec/accum1_snap/buscreate'
   },
   'Line_3946' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/ss',
     'Instance' => 'ss',
-    'SimulinkInstance' => 'ss'
+    'SimulinkInstance' => 'test_spec/accum1_snap/ss'
   },
   'Line_3962' => {
     'CodeInstance' => 'test_spec_struct/accum1_snap/assert_p_acc1',
@@ -1432,7 +1442,7 @@
   'Line_4146' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/add_gen/edge_detect',
     'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/add_gen/edge_detect'
   },
   'Line_4153' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/add_gen/concat',
@@ -1667,17 +1677,17 @@
   'Line_4769' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/basic_ctrl/dram_munge',
     'Instance' => 'dram_munge',
-    'SimulinkInstance' => 'dram_munge'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/basic_ctrl/dram_munge'
   },
   'Line_4779' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/basic_ctrl/edge_detect',
     'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/basic_ctrl/edge_detect'
   },
   'Line_478' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/add_gen/edge_detect',
     'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+    'SimulinkInstance' => 'test_spec/accum0_snap/ss/add_gen/edge_detect'
   },
   'Line_4786' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/basic_ctrl/constant_x0',
@@ -1812,12 +1822,12 @@
   'Line_5128' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/bram/calc_add',
     'Instance' => 'calc_add',
-    'SimulinkInstance' => 'calc_add'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/bram/calc_add'
   },
   'Line_5135' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/bram/munge_in',
     'Instance' => 'munge_in',
-    'SimulinkInstance' => 'munge_in'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/bram/munge_in'
   },
   'Line_5140' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/bram/convert_addr',
@@ -1952,22 +1962,22 @@
   'Line_5558' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/add_gen',
     'Instance' => 'add_gen',
-    'SimulinkInstance' => 'add_gen'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/add_gen'
   },
   'Line_5572' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/basic_ctrl',
     'Instance' => 'basic_ctrl',
-    'SimulinkInstance' => 'basic_ctrl'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/basic_ctrl'
   },
   'Line_5586' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/bram',
     'Instance' => 'bram',
-    'SimulinkInstance' => 'bram'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/bram'
   },
   'Line_5597' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/ctrl',
     'Instance' => 'ctrl',
-    'SimulinkInstance' => 'ctrl'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/ctrl'
   },
   'Line_56' => {
     'CodeInstance' => 'test_spec_struct/acc_cnt/assert_reg',
@@ -1977,17 +1987,17 @@
   'Line_5602' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/ctrl_combine',
     'Instance' => 'ctrl_combine',
-    'SimulinkInstance' => 'ctrl_combine'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/ctrl_combine'
   },
   'Line_5610' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/ctrl_split',
     'Instance' => 'ctrl_split',
-    'SimulinkInstance' => 'ctrl_split'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/ctrl_split'
   },
   'Line_5618' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/status',
     'Instance' => 'status',
-    'SimulinkInstance' => 'status'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss/status'
   },
   'Line_5625' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss/add_del',
@@ -2052,12 +2062,12 @@
   'Line_5774' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/buscreate',
     'Instance' => 'buscreate',
-    'SimulinkInstance' => 'buscreate'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/buscreate'
   },
   'Line_5780' => {
     'CodeInstance' => 'test_spec_struct/accumdat_snap/ss',
     'Instance' => 'ss',
-    'SimulinkInstance' => 'ss'
+    'SimulinkInstance' => 'test_spec/accumdat_snap/ss'
   },
   'Line_579' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/add_gen/logical1',
@@ -2167,7 +2177,7 @@
   'Line_6139' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/add_gen/edge_detect',
     'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/add_gen/edge_detect'
   },
   'Line_6146' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/add_gen/concat',
@@ -2432,12 +2442,12 @@
   'Line_6762' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/basic_ctrl/dram_munge',
     'Instance' => 'dram_munge',
-    'SimulinkInstance' => 'dram_munge'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/basic_ctrl/dram_munge'
   },
   'Line_6772' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/basic_ctrl/edge_detect',
     'Instance' => 'edge_detect',
-    'SimulinkInstance' => 'edge_detect'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/basic_ctrl/edge_detect'
   },
   'Line_6779' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/basic_ctrl/constant_x0',
@@ -2562,12 +2572,12 @@
   'Line_7121' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/bram/calc_add',
     'Instance' => 'calc_add',
-    'SimulinkInstance' => 'calc_add'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/bram/calc_add'
   },
   'Line_7128' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/bram/munge_in',
     'Instance' => 'munge_in',
-    'SimulinkInstance' => 'munge_in'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/bram/munge_in'
   },
   'Line_7133' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/bram/convert_addr',
@@ -2692,27 +2702,27 @@
   'Line_7551' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/add_gen',
     'Instance' => 'add_gen',
-    'SimulinkInstance' => 'add_gen'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/add_gen'
   },
   'Line_7565' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/basic_ctrl',
     'Instance' => 'basic_ctrl',
-    'SimulinkInstance' => 'basic_ctrl'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/basic_ctrl'
   },
   'Line_7579' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/bram',
     'Instance' => 'bram',
-    'SimulinkInstance' => 'bram'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/bram'
   },
   'Line_7590' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/ctrl',
     'Instance' => 'ctrl',
-    'SimulinkInstance' => 'ctrl'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/ctrl'
   },
   'Line_7595' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/ctrl_combine',
     'Instance' => 'ctrl_combine',
-    'SimulinkInstance' => 'ctrl_combine'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/ctrl_combine'
   },
   'Line_760' => {
     'CodeInstance' => 'test_spec_struct/accum0_snap/ss/basic_ctrl/dram_munge/delay',
@@ -2722,12 +2732,12 @@
   'Line_7603' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/ctrl_split',
     'Instance' => 'ctrl_split',
-    'SimulinkInstance' => 'ctrl_split'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/ctrl_split'
   },
   'Line_7611' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/status',
     'Instance' => 'status',
-    'SimulinkInstance' => 'status'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss/status'
   },
   'Line_7618' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss/add_del',
@@ -2787,12 +2797,12 @@
   'Line_7771' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/buscreate',
     'Instance' => 'buscreate',
-    'SimulinkInstance' => 'buscreate'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/buscreate'
   },
   'Line_7778' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/ss',
     'Instance' => 'ss',
-    'SimulinkInstance' => 'ss'
+    'SimulinkInstance' => 'test_spec/adc_voltage_snap/ss'
   },
   'Line_7794' => {
     'CodeInstance' => 'test_spec_struct/adc_voltage_snap/assert_adc_di',
@@ -2982,7 +2992,7 @@
   'Line_8542' => {
     'CodeInstance' => 'test_spec_struct/power_calc/power_out/c_to_ri',
     'Instance' => 'c_to_ri',
-    'SimulinkInstance' => 'c_to_ri'
+    'SimulinkInstance' => 'test_spec/power_calc/power_out/c_to_ri'
   },
   'Line_8548' => {
     'CodeInstance' => 'test_spec_struct/power_calc/power_out/addsub',
@@ -3032,7 +3042,7 @@
   'Line_8742' => {
     'CodeInstance' => 'test_spec_struct/power_calc/power_out1/c_to_ri',
     'Instance' => 'c_to_ri',
-    'SimulinkInstance' => 'c_to_ri'
+    'SimulinkInstance' => 'test_spec/power_calc/power_out1/c_to_ri'
   },
   'Line_8748' => {
     'CodeInstance' => 'test_spec_struct/power_calc/power_out1/addsub',
@@ -3062,12 +3072,12 @@
   'Line_8883' => {
     'CodeInstance' => 'test_spec_struct/power_calc/power_out',
     'Instance' => 'power_out',
-    'SimulinkInstance' => 'power_out'
+    'SimulinkInstance' => 'test_spec/power_calc/power_out'
   },
   'Line_8890' => {
     'CodeInstance' => 'test_spec_struct/power_calc/power_out1',
     'Instance' => 'power_out1',
-    'SimulinkInstance' => 'power_out1'
+    'SimulinkInstance' => 'test_spec/power_calc/power_out1'
   },
   'Line_8942' => {
     'CodeInstance' => 'test_spec_struct/red_pitaya_adc/convert18',
@@ -3207,7 +3217,7 @@
   'Line_9344' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc/pulse_ext/posedge',
     'Instance' => 'posedge',
-    'SimulinkInstance' => 'posedge'
+    'SimulinkInstance' => 'test_spec/simple_bram_vacc/pulse_ext/posedge'
   },
   'Line_9351' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc/pulse_ext/constant5',
@@ -3227,12 +3237,12 @@
   'Line_9414' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc/delay_bram',
     'Instance' => 'delay_bram',
-    'SimulinkInstance' => 'delay_bram'
+    'SimulinkInstance' => 'test_spec/simple_bram_vacc/delay_bram'
   },
   'Line_9421' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc/pulse_ext',
     'Instance' => 'pulse_ext',
-    'SimulinkInstance' => 'pulse_ext'
+    'SimulinkInstance' => 'test_spec/simple_bram_vacc/pulse_ext'
   },
   'Line_9428' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc/adder',
@@ -3297,7 +3307,7 @@
   'Line_9614' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc1/pulse_ext/posedge',
     'Instance' => 'posedge',
-    'SimulinkInstance' => 'posedge'
+    'SimulinkInstance' => 'test_spec/simple_bram_vacc1/pulse_ext/posedge'
   },
   'Line_9621' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc1/pulse_ext/constant5',
@@ -3317,12 +3327,12 @@
   'Line_9684' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc1/delay_bram',
     'Instance' => 'delay_bram',
-    'SimulinkInstance' => 'delay_bram'
+    'SimulinkInstance' => 'test_spec/simple_bram_vacc1/delay_bram'
   },
   'Line_9691' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc1/pulse_ext',
     'Instance' => 'pulse_ext',
-    'SimulinkInstance' => 'pulse_ext'
+    'SimulinkInstance' => 'test_spec/simple_bram_vacc1/pulse_ext'
   },
   'Line_9698' => {
     'CodeInstance' => 'test_spec_struct/simple_bram_vacc1/adder',
@@ -3379,9 +3389,29 @@
     'Instance' => 'reint1',
     'SimulinkInstance' => 'test_spec/sync_cnt/reint1'
   },
+  'Line_9871' => {
+    'CodeInstance' => 'test_spec_struct/trig_cnt/io_delay',
+    'Instance' => 'io_delay',
+    'SimulinkInstance' => 'test_spec/trig_cnt/io_delay'
+  },
+  'Line_9879' => {
+    'CodeInstance' => 'test_spec_struct/trig_cnt/cast_gw',
+    'Instance' => 'cast_gw',
+    'SimulinkInstance' => 'test_spec/trig_cnt/cast_gw'
+  },
   'Line_99' => {
     'CodeInstance' => 'test_spec_struct/acc_cntrl/edge_detect/delay',
     'Instance' => 'delay',
     'SimulinkInstance' => 'test_spec/acc_cntrl/edge_detect/Delay'
+  },
+  'Line_9900' => {
+    'CodeInstance' => 'test_spec_struct/trig_cnt/assert_reg',
+    'Instance' => 'assert_reg',
+    'SimulinkInstance' => 'test_spec/trig_cnt/assert_reg'
+  },
+  'Line_9909' => {
+    'CodeInstance' => 'test_spec_struct/trig_cnt/reint1',
+    'Instance' => 'reint1',
+    'SimulinkInstance' => 'test_spec/trig_cnt/reint1'
   }
 }

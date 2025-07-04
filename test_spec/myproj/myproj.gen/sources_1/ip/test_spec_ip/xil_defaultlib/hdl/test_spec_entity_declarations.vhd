@@ -40,33 +40,6 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_relational_7c10521c5f is
-  port (
-    a : in std_logic_vector((8 - 1) downto 0);
-    b : in std_logic_vector((8 - 1) downto 0);
-    op : out std_logic_vector((1 - 1) downto 0);
-    clk : in std_logic;
-    ce : in std_logic;
-    clr : in std_logic);
-end sysgen_relational_7c10521c5f;
-architecture behavior of sysgen_relational_7c10521c5f
-is
-  signal a_1_31: unsigned((8 - 1) downto 0);
-  signal b_1_34: unsigned((8 - 1) downto 0);
-  signal result_12_3_rel: boolean;
-begin
-  a_1_31 <= std_logic_vector_to_unsigned(a);
-  b_1_34 <= std_logic_vector_to_unsigned(b);
-  result_12_3_rel <= a_1_31 = b_1_34;
-  op <= boolean_to_vector(result_12_3_rel);
-end behavior;
-
-library xil_defaultlib;
-use xil_defaultlib.conv_pkg.all;
-
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
 entity sysgen_constant_799c70ed2a is
   port (
     op : out std_logic_vector((8 - 1) downto 0);
@@ -498,6 +471,33 @@ begin
   b_1_34 <= std_logic_vector_to_unsigned(b);
   cast_12_17 <= u2u_cast(b_1_34, 0, 32, 0);
   result_12_3_rel <= a_1_31 = cast_12_17;
+  op <= boolean_to_vector(result_12_3_rel);
+end behavior;
+
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+entity sysgen_relational_7c10521c5f is
+  port (
+    a : in std_logic_vector((8 - 1) downto 0);
+    b : in std_logic_vector((8 - 1) downto 0);
+    op : out std_logic_vector((1 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end sysgen_relational_7c10521c5f;
+architecture behavior of sysgen_relational_7c10521c5f
+is
+  signal a_1_31: unsigned((8 - 1) downto 0);
+  signal b_1_34: unsigned((8 - 1) downto 0);
+  signal result_12_3_rel: boolean;
+begin
+  a_1_31 <= std_logic_vector_to_unsigned(a);
+  b_1_34 <= std_logic_vector_to_unsigned(b);
+  result_12_3_rel <= a_1_31 = b_1_34;
   op <= boolean_to_vector(result_12_3_rel);
 end behavior;
 
@@ -1047,22 +1047,22 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_delay_1144a62f70 is
+entity sysgen_delay_0b523aac04 is
   port (
-    d : in std_logic_vector((12 - 1) downto 0);
-    q : out std_logic_vector((12 - 1) downto 0);
+    d : in std_logic_vector((8 - 1) downto 0);
+    q : out std_logic_vector((8 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_delay_1144a62f70;
-architecture behavior of sysgen_delay_1144a62f70
+end sysgen_delay_0b523aac04;
+architecture behavior of sysgen_delay_0b523aac04
 is
-  signal d_1_22: std_logic_vector((12 - 1) downto 0);
-  type array_type_op_mem_20_24 is array (0 to (1 - 1)) of std_logic_vector((12 - 1) downto 0);
+  signal d_1_22: std_logic_vector((8 - 1) downto 0);
+  type array_type_op_mem_20_24 is array (0 to (1 - 1)) of std_logic_vector((8 - 1) downto 0);
   signal op_mem_20_24: array_type_op_mem_20_24 := (
-    0 => "000000000000");
-  signal op_mem_20_24_front_din: std_logic_vector((12 - 1) downto 0);
-  signal op_mem_20_24_back: std_logic_vector((12 - 1) downto 0);
+    0 => "00000000");
+  signal op_mem_20_24_front_din: std_logic_vector((8 - 1) downto 0);
+  signal op_mem_20_24_back: std_logic_vector((8 - 1) downto 0);
   signal op_mem_20_24_push_front_pop_back_en: std_logic;
 begin
   d_1_22 <= d;
@@ -1107,21 +1107,21 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_concat_738ae8db00 is
+entity sysgen_concat_1bbdda5322 is
   port (
-    in0 : in std_logic_vector((17 - 1) downto 0);
+    in0 : in std_logic_vector((21 - 1) downto 0);
     in1 : in std_logic_vector((1 - 1) downto 0);
-    in2 : in std_logic_vector((14 - 1) downto 0);
+    in2 : in std_logic_vector((10 - 1) downto 0);
     y : out std_logic_vector((32 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_concat_738ae8db00;
-architecture behavior of sysgen_concat_738ae8db00
+end sysgen_concat_1bbdda5322;
+architecture behavior of sysgen_concat_1bbdda5322
 is
-  signal in0_1_23: unsigned((17 - 1) downto 0);
+  signal in0_1_23: unsigned((21 - 1) downto 0);
   signal in1_1_27: boolean;
-  signal in2_1_31: unsigned((14 - 1) downto 0);
+  signal in2_1_31: unsigned((10 - 1) downto 0);
   signal y_2_1_concat: unsigned((32 - 1) downto 0);
 begin
   in0_1_23 <= std_logic_vector_to_unsigned(in0);
@@ -1256,25 +1256,25 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_shift_3f63cc4867 is
+entity sysgen_shift_4525029074 is
   port (
-    ip : in std_logic_vector((17 - 1) downto 0);
-    op : out std_logic_vector((17 - 1) downto 0);
+    ip : in std_logic_vector((21 - 1) downto 0);
+    op : out std_logic_vector((21 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_shift_3f63cc4867;
-architecture behavior of sysgen_shift_3f63cc4867
+end sysgen_shift_4525029074;
+architecture behavior of sysgen_shift_4525029074
 is
-  signal ip_1_23: unsigned((17 - 1) downto 0);
-  type array_type_op_mem_46_20 is array (0 to (1 - 1)) of unsigned((17 - 1) downto 0);
+  signal ip_1_23: unsigned((21 - 1) downto 0);
+  type array_type_op_mem_46_20 is array (0 to (1 - 1)) of unsigned((21 - 1) downto 0);
   signal op_mem_46_20: array_type_op_mem_46_20 := (
-    0 => "00000000000000000");
-  signal op_mem_46_20_front_din: unsigned((17 - 1) downto 0);
-  signal op_mem_46_20_back: unsigned((17 - 1) downto 0);
+    0 => "000000000000000000000");
+  signal op_mem_46_20_front_din: unsigned((21 - 1) downto 0);
+  signal op_mem_46_20_back: unsigned((21 - 1) downto 0);
   signal op_mem_46_20_push_front_pop_back_en: std_logic;
-  signal cast_internal_ip_25_3_lsh: unsigned((33 - 1) downto 0);
-  signal cast_internal_ip_36_3_convert: unsigned((17 - 1) downto 0);
+  signal cast_internal_ip_25_3_lsh: unsigned((41 - 1) downto 0);
+  signal cast_internal_ip_36_3_convert: unsigned((21 - 1) downto 0);
 begin
   ip_1_23 <= std_logic_vector_to_unsigned(ip);
   op_mem_46_20_back <= op_mem_46_20(0);
@@ -1288,8 +1288,8 @@ begin
       end if;
     end if;
   end process proc_op_mem_46_20;
-  cast_internal_ip_25_3_lsh <= u2u_cast(ip_1_23, 0, 33, 16);
-  cast_internal_ip_36_3_convert <= u2u_cast(cast_internal_ip_25_3_lsh, 0, 17, 0);
+  cast_internal_ip_25_3_lsh <= u2u_cast(ip_1_23, 0, 41, 20);
+  cast_internal_ip_36_3_convert <= u2u_cast(cast_internal_ip_25_3_lsh, 0, 21, 0);
   op_mem_46_20_front_din <= cast_internal_ip_36_3_convert;
   op_mem_46_20_push_front_pop_back_en <= '1';
   op <= unsigned_to_std_logic_vector(op_mem_46_20_back);
@@ -1812,20 +1812,20 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_concat_339c82ac9f is
+entity sysgen_concat_e93d63e157 is
   port (
-    in0 : in std_logic_vector((11 - 1) downto 0);
+    in0 : in std_logic_vector((7 - 1) downto 0);
     in1 : in std_logic_vector((1 - 1) downto 0);
-    y : out std_logic_vector((12 - 1) downto 0);
+    y : out std_logic_vector((8 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_concat_339c82ac9f;
-architecture behavior of sysgen_concat_339c82ac9f
+end sysgen_concat_e93d63e157;
+architecture behavior of sysgen_concat_e93d63e157
 is
-  signal in0_1_23: unsigned((11 - 1) downto 0);
+  signal in0_1_23: unsigned((7 - 1) downto 0);
   signal in1_1_27: unsigned((1 - 1) downto 0);
-  signal y_2_1_concat: unsigned((12 - 1) downto 0);
+  signal y_2_1_concat: unsigned((8 - 1) downto 0);
 begin
   in0_1_23 <= std_logic_vector_to_unsigned(in0);
   in1_1_27 <= std_logic_vector_to_unsigned(in1);
@@ -1839,22 +1839,22 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_mux_c5c11734ab is
+entity sysgen_mux_755f69db7c is
   port (
     sel : in std_logic_vector((1 - 1) downto 0);
-    d0 : in std_logic_vector((12 - 1) downto 0);
-    d1 : in std_logic_vector((12 - 1) downto 0);
-    y : out std_logic_vector((12 - 1) downto 0);
+    d0 : in std_logic_vector((8 - 1) downto 0);
+    d1 : in std_logic_vector((8 - 1) downto 0);
+    y : out std_logic_vector((8 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_mux_c5c11734ab;
-architecture behavior of sysgen_mux_c5c11734ab
+end sysgen_mux_755f69db7c;
+architecture behavior of sysgen_mux_755f69db7c
 is
   signal sel_1_20: std_logic_vector((1 - 1) downto 0);
-  signal d0_1_24: std_logic_vector((12 - 1) downto 0);
-  signal d1_1_27: std_logic_vector((12 - 1) downto 0);
-  signal unregy_join_6_1: std_logic_vector((12 - 1) downto 0);
+  signal d0_1_24: std_logic_vector((8 - 1) downto 0);
+  signal d1_1_27: std_logic_vector((8 - 1) downto 0);
+  signal unregy_join_6_1: std_logic_vector((8 - 1) downto 0);
 begin
   sel_1_20 <= sel;
   d0_1_24 <= d0;
@@ -1947,6 +1947,188 @@ is
 begin
   input_port_1_40 <= std_logic_vector_to_unsigned(input_port);
   output_port <= unsigned_to_std_logic_vector(input_port_1_40);
+end behavior;
+
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+entity sysgen_delay_1144a62f70 is
+  port (
+    d : in std_logic_vector((12 - 1) downto 0);
+    q : out std_logic_vector((12 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end sysgen_delay_1144a62f70;
+architecture behavior of sysgen_delay_1144a62f70
+is
+  signal d_1_22: std_logic_vector((12 - 1) downto 0);
+  type array_type_op_mem_20_24 is array (0 to (1 - 1)) of std_logic_vector((12 - 1) downto 0);
+  signal op_mem_20_24: array_type_op_mem_20_24 := (
+    0 => "000000000000");
+  signal op_mem_20_24_front_din: std_logic_vector((12 - 1) downto 0);
+  signal op_mem_20_24_back: std_logic_vector((12 - 1) downto 0);
+  signal op_mem_20_24_push_front_pop_back_en: std_logic;
+begin
+  d_1_22 <= d;
+  op_mem_20_24_back <= op_mem_20_24(0);
+  proc_op_mem_20_24: process (clk)
+  is
+    variable i: integer;
+  begin
+    if (clk'event and (clk = '1')) then
+      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
+        op_mem_20_24(0) <= op_mem_20_24_front_din;
+      end if;
+    end if;
+  end process proc_op_mem_20_24;
+  op_mem_20_24_front_din <= d_1_22;
+  op_mem_20_24_push_front_pop_back_en <= '1';
+  q <= op_mem_20_24_back;
+end behavior;
+
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+entity sysgen_concat_738ae8db00 is
+  port (
+    in0 : in std_logic_vector((17 - 1) downto 0);
+    in1 : in std_logic_vector((1 - 1) downto 0);
+    in2 : in std_logic_vector((14 - 1) downto 0);
+    y : out std_logic_vector((32 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end sysgen_concat_738ae8db00;
+architecture behavior of sysgen_concat_738ae8db00
+is
+  signal in0_1_23: unsigned((17 - 1) downto 0);
+  signal in1_1_27: boolean;
+  signal in2_1_31: unsigned((14 - 1) downto 0);
+  signal y_2_1_concat: unsigned((32 - 1) downto 0);
+begin
+  in0_1_23 <= std_logic_vector_to_unsigned(in0);
+  in1_1_27 <= ((in1) = "1");
+  in2_1_31 <= std_logic_vector_to_unsigned(in2);
+  y_2_1_concat <= std_logic_vector_to_unsigned(unsigned_to_std_logic_vector(in0_1_23) & boolean_to_vector(in1_1_27) & unsigned_to_std_logic_vector(in2_1_31));
+  y <= unsigned_to_std_logic_vector(y_2_1_concat);
+end behavior;
+
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+entity sysgen_shift_3f63cc4867 is
+  port (
+    ip : in std_logic_vector((17 - 1) downto 0);
+    op : out std_logic_vector((17 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end sysgen_shift_3f63cc4867;
+architecture behavior of sysgen_shift_3f63cc4867
+is
+  signal ip_1_23: unsigned((17 - 1) downto 0);
+  type array_type_op_mem_46_20 is array (0 to (1 - 1)) of unsigned((17 - 1) downto 0);
+  signal op_mem_46_20: array_type_op_mem_46_20 := (
+    0 => "00000000000000000");
+  signal op_mem_46_20_front_din: unsigned((17 - 1) downto 0);
+  signal op_mem_46_20_back: unsigned((17 - 1) downto 0);
+  signal op_mem_46_20_push_front_pop_back_en: std_logic;
+  signal cast_internal_ip_25_3_lsh: unsigned((33 - 1) downto 0);
+  signal cast_internal_ip_36_3_convert: unsigned((17 - 1) downto 0);
+begin
+  ip_1_23 <= std_logic_vector_to_unsigned(ip);
+  op_mem_46_20_back <= op_mem_46_20(0);
+  proc_op_mem_46_20: process (clk)
+  is
+    variable i: integer;
+  begin
+    if (clk'event and (clk = '1')) then
+      if ((ce = '1') and (op_mem_46_20_push_front_pop_back_en = '1')) then
+        op_mem_46_20(0) <= op_mem_46_20_front_din;
+      end if;
+    end if;
+  end process proc_op_mem_46_20;
+  cast_internal_ip_25_3_lsh <= u2u_cast(ip_1_23, 0, 33, 16);
+  cast_internal_ip_36_3_convert <= u2u_cast(cast_internal_ip_25_3_lsh, 0, 17, 0);
+  op_mem_46_20_front_din <= cast_internal_ip_36_3_convert;
+  op_mem_46_20_push_front_pop_back_en <= '1';
+  op <= unsigned_to_std_logic_vector(op_mem_46_20_back);
+end behavior;
+
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+entity sysgen_concat_339c82ac9f is
+  port (
+    in0 : in std_logic_vector((11 - 1) downto 0);
+    in1 : in std_logic_vector((1 - 1) downto 0);
+    y : out std_logic_vector((12 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end sysgen_concat_339c82ac9f;
+architecture behavior of sysgen_concat_339c82ac9f
+is
+  signal in0_1_23: unsigned((11 - 1) downto 0);
+  signal in1_1_27: unsigned((1 - 1) downto 0);
+  signal y_2_1_concat: unsigned((12 - 1) downto 0);
+begin
+  in0_1_23 <= std_logic_vector_to_unsigned(in0);
+  in1_1_27 <= std_logic_vector_to_unsigned(in1);
+  y_2_1_concat <= std_logic_vector_to_unsigned(unsigned_to_std_logic_vector(in0_1_23) & unsigned_to_std_logic_vector(in1_1_27));
+  y <= unsigned_to_std_logic_vector(y_2_1_concat);
+end behavior;
+
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+entity sysgen_mux_c5c11734ab is
+  port (
+    sel : in std_logic_vector((1 - 1) downto 0);
+    d0 : in std_logic_vector((12 - 1) downto 0);
+    d1 : in std_logic_vector((12 - 1) downto 0);
+    y : out std_logic_vector((12 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end sysgen_mux_c5c11734ab;
+architecture behavior of sysgen_mux_c5c11734ab
+is
+  signal sel_1_20: std_logic_vector((1 - 1) downto 0);
+  signal d0_1_24: std_logic_vector((12 - 1) downto 0);
+  signal d1_1_27: std_logic_vector((12 - 1) downto 0);
+  signal unregy_join_6_1: std_logic_vector((12 - 1) downto 0);
+begin
+  sel_1_20 <= sel;
+  d0_1_24 <= d0;
+  d1_1_27 <= d1;
+  proc_switch_6_1: process (d0_1_24, d1_1_27, sel_1_20)
+  is
+  begin
+    case sel_1_20 is 
+      when "0" =>
+        unregy_join_6_1 <= d0_1_24;
+      when others =>
+        unregy_join_6_1 <= d1_1_27;
+    end case;
+  end process proc_switch_6_1;
+  y <= unregy_join_6_1;
 end behavior;
 
 library xil_defaultlib;
@@ -2160,47 +2342,6 @@ is
 begin
   d_1_22 <= d;
   q <= d_1_22;
-end behavior;
-
-library xil_defaultlib;
-use xil_defaultlib.conv_pkg.all;
-
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
-entity sysgen_delay_0b523aac04 is
-  port (
-    d : in std_logic_vector((8 - 1) downto 0);
-    q : out std_logic_vector((8 - 1) downto 0);
-    clk : in std_logic;
-    ce : in std_logic;
-    clr : in std_logic);
-end sysgen_delay_0b523aac04;
-architecture behavior of sysgen_delay_0b523aac04
-is
-  signal d_1_22: std_logic_vector((8 - 1) downto 0);
-  type array_type_op_mem_20_24 is array (0 to (1 - 1)) of std_logic_vector((8 - 1) downto 0);
-  signal op_mem_20_24: array_type_op_mem_20_24 := (
-    0 => "00000000");
-  signal op_mem_20_24_front_din: std_logic_vector((8 - 1) downto 0);
-  signal op_mem_20_24_back: std_logic_vector((8 - 1) downto 0);
-  signal op_mem_20_24_push_front_pop_back_en: std_logic;
-begin
-  d_1_22 <= d;
-  op_mem_20_24_back <= op_mem_20_24(0);
-  proc_op_mem_20_24: process (clk)
-  is
-    variable i: integer;
-  begin
-    if (clk'event and (clk = '1')) then
-      if ((ce = '1') and (op_mem_20_24_push_front_pop_back_en = '1')) then
-        op_mem_20_24(0) <= op_mem_20_24_front_din;
-      end if;
-    end if;
-  end process proc_op_mem_20_24;
-  op_mem_20_24_front_din <= d_1_22;
-  op_mem_20_24_push_front_pop_back_en <= '1';
-  q <= op_mem_20_24_back;
 end behavior;
 
 library xil_defaultlib;
@@ -2994,6 +3135,15 @@ entity test_spec_xlcounter_free is
     port ( 
       clk: in std_logic;
       ce: in std_logic;
+      SCLR: in std_logic;
+      q: out std_logic_vector(op_width - 1 downto 0) 
+ 		  ); 
+ end component;
+
+ component test_spec_c_counter_binary_v12_0_i6
+    port ( 
+      clk: in std_logic;
+      ce: in std_logic;
       SINIT: in std_logic;
       q: out std_logic_vector(op_width - 1 downto 0) 
  		  ); 
@@ -3069,6 +3219,16 @@ entity test_spec_xlcounter_free is
 
  comp5: if ((core_name0 = "test_spec_c_counter_binary_v12_0_i5")) generate 
   core_instance5:test_spec_c_counter_binary_v12_0_i5
+   port map ( 
+        clk => clk,
+        ce => core_ce,
+        SCLR => core_sinit,
+        q => op_net
+  ); 
+   end generate;
+
+ comp6: if ((core_name0 = "test_spec_c_counter_binary_v12_0_i6")) generate 
+  core_instance6:test_spec_c_counter_binary_v12_0_i6
    port map ( 
         clk => clk,
         ce => core_ce,
@@ -3166,7 +3326,7 @@ entity test_spec_xlcounter_limit is
  end;
 
 
- component test_spec_c_counter_binary_v12_0_i0
+ component test_spec_c_counter_binary_v12_0_i1
     port ( 
       clk: in std_logic;
       ce: in std_logic;
@@ -3217,8 +3377,8 @@ entity test_spec_xlcounter_limit is
    end generate;
 
 
- comp0: if ((core_name0 = "test_spec_c_counter_binary_v12_0_i0")) generate 
-  core_instance0:test_spec_c_counter_binary_v12_0_i0
+ comp0: if ((core_name0 = "test_spec_c_counter_binary_v12_0_i1")) generate 
+  core_instance0:test_spec_c_counter_binary_v12_0_i1
    port map ( 
         clk => clk,
         ce => core_ce,

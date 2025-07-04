@@ -47,11 +47,11 @@ module top (
          |___/                   
 */
   // bram: accum0_snap/ss/bram
-  wire [11:0] accum0_snap_ss_bram_accum0_snap_ss_bram_addr;
+  wire [7:0] accum0_snap_ss_bram_accum0_snap_ss_bram_addr;
   wire [31:0] accum0_snap_ss_bram_accum0_snap_ss_bram_data_in;
   wire [31:0] accum0_snap_ss_bram_accum0_snap_ss_bram_data_out;
   wire [0:0] accum0_snap_ss_bram_accum0_snap_ss_bram_we;
-  wire [11:0] test_spec_accum0_snap_ss_bram_addr;
+  wire [7:0] test_spec_accum0_snap_ss_bram_addr;
   wire [31:0] test_spec_accum0_snap_ss_bram_data_in;
   wire [31:0] test_spec_accum0_snap_ss_bram_data_out;
   wire [0:0] test_spec_accum0_snap_ss_bram_we;
@@ -170,6 +170,9 @@ module top (
   // sw_reg: sync_cnt
   wire [31:0] sw_reg_sync_cnt_in;
   wire [31:0] test_spec_sync_cnt_user_data_in;
+  // sw_reg: trig_cnt
+  wire [31:0] sw_reg_trig_cnt_in;
+  wire [31:0] test_spec_trig_cnt_user_data_in;
   // sys_block: RED_PITAYA
   wire [0:0] sw_reg_acc_cnt_in_we;
   wire [0:0] sw_reg_acc_len_out_we;
@@ -188,6 +191,7 @@ module top (
   wire [0:0] sw_reg_reg_cntrl_out_we;
   wire [0:0] sw_reg_snap_gap_out_we;
   wire [0:0] sw_reg_sync_cnt_in_we;
+  wire [0:0] sw_reg_trig_cnt_in_we;
   wire [31:0] sys_board_id_in;
   wire [0:0] sys_board_id_in_we;
   wire [31:0] sys_clkcounter_cdc;
@@ -496,6 +500,17 @@ module top (
     .OP_BUS(sw_reg_sync_cnt_in)
   );
 
+  // sw_reg: trig_cnt
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) test_spec_trig_cnt (
+    .IP_BUS(test_spec_trig_cnt_user_data_in),
+    .IP_BUS_VALID(1'b1),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(sw_reg_trig_cnt_in)
+  );
+
   // sys_block: RED_PITAYA
   axi4lite_ic_wrapper  axi4lite_interconnect (
     .axi4lite_accum0_snap_ss_bram_accum0_snap_ss_bram_add(accum0_snap_ss_bram_accum0_snap_ss_bram_addr),
@@ -558,6 +573,8 @@ module top (
     .axi4lite_sw_reg_snap_gap_out_we(sw_reg_snap_gap_out_we),
     .axi4lite_sw_reg_sync_cnt_in(sw_reg_sync_cnt_in),
     .axi4lite_sw_reg_sync_cnt_in_we(sw_reg_sync_cnt_in_we),
+    .axi4lite_sw_reg_trig_cnt_in(sw_reg_trig_cnt_in),
+    .axi4lite_sw_reg_trig_cnt_in_we(sw_reg_trig_cnt_in_we),
     .axi4lite_sys_board_id_in(sys_board_id_in),
     .axi4lite_sys_board_id_in_we(sys_board_id_in_we),
     .axi4lite_sys_clkcounter_in(sys_clkcounter_in),
@@ -648,7 +665,8 @@ module top (
     .test_spec_red_pitaya_adc_adc_reset_in(test_spec_red_pitaya_adc_adc_reset_in),
     .test_spec_reg_cntrl_user_data_out(test_spec_reg_cntrl_user_data_out),
     .test_spec_snap_gap_user_data_out(test_spec_snap_gap_user_data_out),
-    .test_spec_sync_cnt_user_data_in(test_spec_sync_cnt_user_data_in)
+    .test_spec_sync_cnt_user_data_in(test_spec_sync_cnt_user_data_in),
+    .test_spec_trig_cnt_user_data_in(test_spec_trig_cnt_user_data_in)
   );
 
 

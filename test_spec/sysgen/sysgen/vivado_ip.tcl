@@ -35,34 +35,6 @@
 #-----------------------------------------------------------------
 
 set existingipslist [get_ips]
-if {[lsearch $existingipslist test_spec_c_counter_binary_v12_0_i0] < 0} {
-create_ip -name c_counter_binary -version 12.0 -vendor xilinx.com -library ip -module_name test_spec_c_counter_binary_v12_0_i0
-set params_list [list]
-lappend params_list CONFIG.Component_Name {test_spec_c_counter_binary_v12_0_i0}
-lappend params_list CONFIG.ainit_value {0}
-lappend params_list CONFIG.ce {true}
-lappend params_list CONFIG.count_mode {UP}
-lappend params_list CONFIG.fb_latency {0}
-lappend params_list CONFIG.final_count_value {1}
-lappend params_list CONFIG.implementation {Fabric}
-lappend params_list CONFIG.increment_value {1}
-lappend params_list CONFIG.latency {1}
-lappend params_list CONFIG.load {false}
-lappend params_list CONFIG.output_width {8}
-lappend params_list CONFIG.restrict_count {false}
-lappend params_list CONFIG.sclr {false}
-lappend params_list CONFIG.sinit {true}
-lappend params_list CONFIG.sinit_value {0}
-lappend params_list CONFIG.sset {false}
-lappend params_list CONFIG.sync_ce_priority {Sync_Overrides_CE}
-lappend params_list CONFIG.sync_threshold_output {false}
-lappend params_list CONFIG.syncctrlpriority {Reset_Overrides_Set}
-
-set_property -dict $params_list [get_ips test_spec_c_counter_binary_v12_0_i0]
-}
-
-
-set existingipslist [get_ips]
 if {[lsearch $existingipslist test_spec_xfft_v9_1_i0] < 0} {
 create_ip -name xfft -version 9.1 -vendor xilinx.com -library ip -module_name test_spec_xfft_v9_1_i0
 set params_list [list]
@@ -98,6 +70,34 @@ set_property -dict $params_list [get_ips test_spec_xfft_v9_1_i0]
 
 
 set existingipslist [get_ips]
+if {[lsearch $existingipslist test_spec_c_counter_binary_v12_0_i0] < 0} {
+create_ip -name c_counter_binary -version 12.0 -vendor xilinx.com -library ip -module_name test_spec_c_counter_binary_v12_0_i0
+set params_list [list]
+lappend params_list CONFIG.Component_Name {test_spec_c_counter_binary_v12_0_i0}
+lappend params_list CONFIG.ainit_value {0}
+lappend params_list CONFIG.ce {true}
+lappend params_list CONFIG.count_mode {UP}
+lappend params_list CONFIG.fb_latency {0}
+lappend params_list CONFIG.final_count_value {1}
+lappend params_list CONFIG.implementation {Fabric}
+lappend params_list CONFIG.increment_value {1}
+lappend params_list CONFIG.latency {1}
+lappend params_list CONFIG.load {false}
+lappend params_list CONFIG.output_width {32}
+lappend params_list CONFIG.restrict_count {false}
+lappend params_list CONFIG.sclr {false}
+lappend params_list CONFIG.sinit {true}
+lappend params_list CONFIG.sinit_value {0}
+lappend params_list CONFIG.sset {false}
+lappend params_list CONFIG.sync_ce_priority {Sync_Overrides_CE}
+lappend params_list CONFIG.sync_threshold_output {false}
+lappend params_list CONFIG.syncctrlpriority {Reset_Overrides_Set}
+
+set_property -dict $params_list [get_ips test_spec_c_counter_binary_v12_0_i0]
+}
+
+
+set existingipslist [get_ips]
 if {[lsearch $existingipslist test_spec_c_counter_binary_v12_0_i1] < 0} {
 create_ip -name c_counter_binary -version 12.0 -vendor xilinx.com -library ip -module_name test_spec_c_counter_binary_v12_0_i1
 set params_list [list]
@@ -111,7 +111,7 @@ lappend params_list CONFIG.implementation {Fabric}
 lappend params_list CONFIG.increment_value {1}
 lappend params_list CONFIG.latency {1}
 lappend params_list CONFIG.load {false}
-lappend params_list CONFIG.output_width {32}
+lappend params_list CONFIG.output_width {8}
 lappend params_list CONFIG.restrict_count {false}
 lappend params_list CONFIG.sclr {false}
 lappend params_list CONFIG.sinit {true}
@@ -167,7 +167,7 @@ lappend params_list CONFIG.implementation {DSP48}
 lappend params_list CONFIG.increment_value {4}
 lappend params_list CONFIG.latency {1}
 lappend params_list CONFIG.load {false}
-lappend params_list CONFIG.output_width {15}
+lappend params_list CONFIG.output_width {11}
 lappend params_list CONFIG.restrict_count {false}
 lappend params_list CONFIG.sclr {true}
 lappend params_list CONFIG.sinit {false}
@@ -205,6 +205,33 @@ lappend params_list CONFIG.sync_threshold_output {false}
 lappend params_list CONFIG.syncctrlpriority {Reset_Overrides_Set}
 
 set_property -dict $params_list [get_ips test_spec_c_counter_binary_v12_0_i4]
+}
+
+
+set existingipslist [get_ips]
+if {[lsearch $existingipslist test_spec_c_counter_binary_v12_0_i5] < 0} {
+create_ip -name c_counter_binary -version 12.0 -vendor xilinx.com -library ip -module_name test_spec_c_counter_binary_v12_0_i5
+set params_list [list]
+lappend params_list CONFIG.Component_Name {test_spec_c_counter_binary_v12_0_i5}
+lappend params_list CONFIG.ainit_value {0}
+lappend params_list CONFIG.ce {true}
+lappend params_list CONFIG.count_mode {UP}
+lappend params_list CONFIG.fb_latency {0}
+lappend params_list CONFIG.final_count_value {1}
+lappend params_list CONFIG.implementation {DSP48}
+lappend params_list CONFIG.increment_value {4}
+lappend params_list CONFIG.latency {1}
+lappend params_list CONFIG.load {false}
+lappend params_list CONFIG.output_width {15}
+lappend params_list CONFIG.restrict_count {false}
+lappend params_list CONFIG.sclr {true}
+lappend params_list CONFIG.sinit {false}
+lappend params_list CONFIG.sset {false}
+lappend params_list CONFIG.sync_ce_priority {Sync_Overrides_CE}
+lappend params_list CONFIG.sync_threshold_output {false}
+lappend params_list CONFIG.syncctrlpriority {Reset_Overrides_Set}
+
+set_property -dict $params_list [get_ips test_spec_c_counter_binary_v12_0_i5]
 }
 
 
@@ -265,10 +292,10 @@ set_property -dict $params_list [get_ips test_spec_mult_gen_v12_0_i0]
 
 
 set existingipslist [get_ips]
-if {[lsearch $existingipslist test_spec_c_counter_binary_v12_0_i5] < 0} {
-create_ip -name c_counter_binary -version 12.0 -vendor xilinx.com -library ip -module_name test_spec_c_counter_binary_v12_0_i5
+if {[lsearch $existingipslist test_spec_c_counter_binary_v12_0_i6] < 0} {
+create_ip -name c_counter_binary -version 12.0 -vendor xilinx.com -library ip -module_name test_spec_c_counter_binary_v12_0_i6
 set params_list [list]
-lappend params_list CONFIG.Component_Name {test_spec_c_counter_binary_v12_0_i5}
+lappend params_list CONFIG.Component_Name {test_spec_c_counter_binary_v12_0_i6}
 lappend params_list CONFIG.ainit_value {0}
 lappend params_list CONFIG.ce {true}
 lappend params_list CONFIG.count_mode {UP}
@@ -288,7 +315,7 @@ lappend params_list CONFIG.sync_ce_priority {Sync_Overrides_CE}
 lappend params_list CONFIG.sync_threshold_output {false}
 lappend params_list CONFIG.syncctrlpriority {Reset_Overrides_Set}
 
-set_property -dict $params_list [get_ips test_spec_c_counter_binary_v12_0_i5]
+set_property -dict $params_list [get_ips test_spec_c_counter_binary_v12_0_i6]
 }
 
 

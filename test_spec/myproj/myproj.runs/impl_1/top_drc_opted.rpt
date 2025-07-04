@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Fri Jul  4 10:26:06 2025
+| Date         : Fri Jul  4 12:10:39 2025
 | Host         : shishir-HP-Pavilion-Laptop-15-eg3xxx running 64-bit Ubuntu 22.04.4 LTS
 | Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 | Design       : top
@@ -127,22 +127,22 @@ Related violations: <none>
 
 REQP-1839#1 Warning
 RAMB36 async control check  
-The RAMB36E1 axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_0 has an input control pin axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_0/WEBWE[0] (net: axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/ipb_mosi[wreq]) which is driven by a register (axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/axi4lite_slave_logic_inst/ipb_mosi_int_reg[wreq]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg has an input control pin axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg/WEBWE[0] (net: axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/ipb_mosi[wreq]) which is driven by a register (axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/axi4lite_slave_logic_inst/ipb_mosi_int_reg[wreq]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#2 Warning
 RAMB36 async control check  
-The RAMB36E1 axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_1 has an input control pin axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_1/WEBWE[0] (net: axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/ipb_mosi[wreq]) which is driven by a register (axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/axi4lite_slave_logic_inst/ipb_mosi_int_reg[wreq]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg has an input control pin axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg/WEBWE[1] (net: axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/ipb_mosi[wreq]) which is driven by a register (axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/axi4lite_slave_logic_inst/ipb_mosi_int_reg[wreq]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#3 Warning
 RAMB36 async control check  
-The RAMB36E1 axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_2 has an input control pin axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_2/WEBWE[0] (net: axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/ipb_mosi[wreq]) which is driven by a register (axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/axi4lite_slave_logic_inst/ipb_mosi_int_reg[wreq]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg has an input control pin axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg/WEBWE[2] (net: axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/ipb_mosi[wreq]) which is driven by a register (axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/axi4lite_slave_logic_inst/ipb_mosi_int_reg[wreq]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#4 Warning
 RAMB36 async control check  
-The RAMB36E1 axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_3 has an input control pin axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg_3/WEBWE[0] (net: axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/ipb_mosi[wreq]) which is driven by a register (axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/axi4lite_slave_logic_inst/ipb_mosi_int_reg[wreq]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg has an input control pin axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg/WEBWE[3] (net: axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/ipb_mosi[wreq]) which is driven by a register (axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/axi4lite_slave_logic_inst/ipb_mosi_int_reg[wreq]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#5 Warning
@@ -532,17 +532,17 @@ Related violations: <none>
 
 AVAL-5#2 Advisory
 enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-test_spec_ip_inst/inst/test_spec_struct/accum1_snap/ss/add_gen/add_gen/comp3.core_instance3/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+test_spec_ip_inst/inst/test_spec_struct/accum1_snap/ss/add_gen/add_gen/comp5.core_instance5/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-5#3 Advisory
 enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-test_spec_ip_inst/inst/test_spec_struct/accumdat_snap/ss/add_gen/add_gen/comp3.core_instance3/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+test_spec_ip_inst/inst/test_spec_struct/accumdat_snap/ss/add_gen/add_gen/comp5.core_instance5/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-5#4 Advisory
 enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-test_spec_ip_inst/inst/test_spec_struct/adc_voltage_snap/ss/add_gen/add_gen/comp3.core_instance3/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+test_spec_ip_inst/inst/test_spec_struct/adc_voltage_snap/ss/add_gen/add_gen/comp5.core_instance5/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-5#5 Advisory

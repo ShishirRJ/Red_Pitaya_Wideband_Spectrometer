@@ -35,7 +35,7 @@ entity axi4lite_accum0_snap_ss_bram is
       accum0_snap_ss_bram_accum0_snap_ss_bram_clk: in std_logic:='0';
       accum0_snap_ss_bram_accum0_snap_ss_bram_en: in std_logic:='0';
       accum0_snap_ss_bram_accum0_snap_ss_bram_we: in std_logic:='0';
-      accum0_snap_ss_bram_accum0_snap_ss_bram_add: in std_logic_vector(11 downto 0):=(others=>'0');
+      accum0_snap_ss_bram_accum0_snap_ss_bram_add: in std_logic_vector(7 downto 0):=(others=>'0');
       accum0_snap_ss_bram_accum0_snap_ss_bram_wdat: in std_logic_vector(31 downto 0):=(others=>'0');
       accum0_snap_ss_bram_accum0_snap_ss_bram_rdat: out std_logic_vector(31 downto 0)
    );
@@ -80,12 +80,12 @@ begin
    --
    ipb_accum0_snap_ss_bram_dp_ram_inst: entity xil_defaultlib.ipb_accum0_snap_ss_bram_dp_ram
    generic map(
-      ipb_ram_add_width => 12,
+      ipb_ram_add_width => 8,
       ipb_read => true,
       ipb_write => true,
       ipb_read_latency => 1,
       user_ram_dat_width => 32,
-      user_ram_add_width => 12,
+      user_ram_add_width => 8,
       user_read_latency => 1,
       init_file => "",
       init_file_format => "hex"

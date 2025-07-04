@@ -61,7 +61,7 @@ ENTITY test_spec_c_counter_binary_v12_0_i3 IS
     CLK : IN STD_LOGIC;
     CE : IN STD_LOGIC;
     SCLR : IN STD_LOGIC;
-    Q : OUT STD_LOGIC_VECTOR(14 DOWNTO 0)
+    Q : OUT STD_LOGIC_VECTOR(10 DOWNTO 0)
   );
 END test_spec_c_counter_binary_v12_0_i3;
 
@@ -101,9 +101,9 @@ ARCHITECTURE test_spec_c_counter_binary_v12_0_i3_arch OF test_spec_c_counter_bin
       SINIT : IN STD_LOGIC;
       UP : IN STD_LOGIC;
       LOAD : IN STD_LOGIC;
-      L : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+      L : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
       THRESH0 : OUT STD_LOGIC;
-      Q : OUT STD_LOGIC_VECTOR(14 DOWNTO 0)
+      Q : OUT STD_LOGIC_VECTOR(10 DOWNTO 0)
     );
   END COMPONENT c_counter_binary_v12_0_14;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -111,7 +111,7 @@ ARCHITECTURE test_spec_c_counter_binary_v12_0_i3_arch OF test_spec_c_counter_bin
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF test_spec_c_counter_binary_v12_0_i3_arch : ARCHITECTURE IS "test_spec_c_counter_binary_v12_0_i3,c_counter_binary_v12_0_14,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF test_spec_c_counter_binary_v12_0_i3_arch: ARCHITECTURE IS "test_spec_c_counter_binary_v12_0_i3,c_counter_binary_v12_0_14,{x_ipProduct=Vivado 2021.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=c_counter_binary,x_ipVersion=12.0,x_ipCoreRevision=14,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_IMPLEMENTATION=1,C_VERBOSITY=0,C_XDEVICEFAMILY=zynq,C_WIDTH=15,C_HAS_CE=1,C_HAS_SCLR=1,C_RESTRICT_COUNT=0,C_COUNT_TO=1,C_COUNT_BY=100,C_COUNT_MODE=0,C_THRESH0_VALUE=1,C_CE_OVERRIDES_SYNC=0,C_HAS_THRESH0=0,C_HAS_LOAD=0,C_LOAD_LOW=0,C_LATENCY=1,C_FB_LATENCY=0,C_AINIT_VAL" & 
+  ATTRIBUTE CORE_GENERATION_INFO OF test_spec_c_counter_binary_v12_0_i3_arch: ARCHITECTURE IS "test_spec_c_counter_binary_v12_0_i3,c_counter_binary_v12_0_14,{x_ipProduct=Vivado 2021.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=c_counter_binary,x_ipVersion=12.0,x_ipCoreRevision=14,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_IMPLEMENTATION=1,C_VERBOSITY=0,C_XDEVICEFAMILY=zynq,C_WIDTH=11,C_HAS_CE=1,C_HAS_SCLR=1,C_RESTRICT_COUNT=0,C_COUNT_TO=1,C_COUNT_BY=100,C_COUNT_MODE=0,C_THRESH0_VALUE=1,C_CE_OVERRIDES_SYNC=0,C_HAS_THRESH0=0,C_HAS_LOAD=0,C_LOAD_LOW=0,C_LATENCY=1,C_FB_LATENCY=0,C_AINIT_VAL" & 
 "=0,C_SINIT_VAL=0,C_SCLR_OVERRIDES_SSET=1,C_HAS_SSET=0,C_HAS_SINIT=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
@@ -129,7 +129,7 @@ BEGIN
       C_IMPLEMENTATION => 1,
       C_VERBOSITY => 0,
       C_XDEVICEFAMILY => "zynq",
-      C_WIDTH => 15,
+      C_WIDTH => 11,
       C_HAS_CE => 1,
       C_HAS_SCLR => 1,
       C_RESTRICT_COUNT => 0,
@@ -157,7 +157,7 @@ BEGIN
       SINIT => '0',
       UP => '1',
       LOAD => '0',
-      L => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 15)),
+      L => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
       Q => Q
     );
 END test_spec_c_counter_binary_v12_0_i3_arch;

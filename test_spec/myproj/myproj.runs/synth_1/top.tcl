@@ -136,13 +136,13 @@ set_property used_in_implementation false [get_files -all /home/shishir/pythonte
 set_property used_in_implementation false [get_files -all /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/bd/red_pitaya_bd/ip/red_pitaya_bd_rst_ps7_0_50M_0/red_pitaya_bd_rst_ps7_0_50M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/bd/red_pitaya_bd/red_pitaya_bd_ooc.xdc]
 
-read_ip -quiet /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/sources_1/ip/test_spec_ip/test_spec_ip.xci
-set_property used_in_implementation false [get_files -all /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/test_spec_ip/constrs/test_spec.xdc]
-
 read_ip -quiet /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/sources_1/ip/adc_data_fifo/adc_data_fifo.xci
 set_property used_in_implementation false [get_files -all /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/adc_data_fifo/adc_data_fifo.xdc]
 set_property used_in_implementation false [get_files -all /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/adc_data_fifo/adc_data_fifo_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/adc_data_fifo/adc_data_fifo_ooc.xdc]
+
+read_ip -quiet /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/sources_1/ip/test_spec_ip/test_spec_ip.xci
+set_property used_in_implementation false [get_files -all /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/ip/test_spec_ip/constrs/test_spec.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

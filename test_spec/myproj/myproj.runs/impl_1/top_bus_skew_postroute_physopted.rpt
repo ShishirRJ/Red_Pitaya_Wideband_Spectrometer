@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Fri Jul  4 10:28:39 2025
+| Date         : Fri Jul  4 12:12:43 2025
 | Host         : shishir-HP-Pavilion-Laptop-15-eg3xxx running 64-bit Ubuntu 22.04.4 LTS
 | Command      : report_bus_skew -warn_on_violation -file top_bus_skew_postroute_physopted.rpt -pb top_bus_skew_postroute_physopted.pb -rpx top_bus_skew_postroute_physopted.rpx
 | Design       : top
@@ -23,10 +23,10 @@ Id  Position  From                            To                              Co
 --  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
 1   15        [get_cells [list {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]}]]
                                               [get_cells [list {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]}]]
-                                                                              Slow              8.000       1.122      6.878
+                                                                              Slow              8.000       1.083      6.917
 2   17        [get_cells [list {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]}]]
                                               [get_cells [list {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]}]]
-                                                                              Slow              8.000       1.121      6.879
+                                                                              Slow              8.000       1.099      6.901
 
 
 2. Bus Skew Report Per Constraint
@@ -39,27 +39,27 @@ Endpoints: 9
 
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-dsp_clk_mmcm          adc_clk_125_mmcm      test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                            test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
-                                                                                                            Slow         1.122      6.878
+dsp_clk_mmcm          adc_clk_125_mmcm      test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+                                                                                                            Slow         1.083      6.917
 
 
-Slack (MET) :             6.878ns  (requirement - actual skew)
-  Endpoint Source:        test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+Slack (MET) :             6.917ns  (requirement - actual skew)
+  Endpoint Source:        test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by dsp_clk_mmcm)
-  Endpoint Destination:   test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Endpoint Destination:   test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
                             (rising edge-triggered cell FDRE clocked by adc_clk_125_mmcm)
-  Reference Source:       test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+  Reference Source:       test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
                             (rising edge-triggered cell FDRE clocked by dsp_clk_mmcm)
-  Reference Destination:  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  Reference Destination:  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
                             (rising edge-triggered cell FDRE clocked by adc_clk_125_mmcm)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            8.000ns
-  Endpoint Relative Delay:    1.769ns
-  Reference Relative Delay:   0.015ns
-  Relative CRPR:              0.893ns
+  Endpoint Relative Delay:    1.663ns
+  Reference Relative Delay:   0.104ns
+  Relative CRPR:              0.737ns
   Uncertainty:                0.261ns
-  Actual Bus Skew:            1.122ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.083ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -74,12 +74,12 @@ Endpoint path:
                                                       0.088     2.388 r  red_pitaya_infr_inst/dsp_clk_mmcm_inst/CLKOUT0
                          net (fo=1, routed)           1.760     4.148    red_pitaya_infr_inst/dsp_clk_mmcm
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     4.249 r  red_pitaya_infr_inst/bufg_sysclk[9]/O
-                         net (fo=7436, routed)        1.656     5.905    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X21Y27         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=7485, routed)        1.660     5.909    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X26Y20         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X21Y27         FDRE (Prop_fdre_C_Q)         0.419     6.324 r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.720     7.044    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[3]
-    SLICE_X21Y28         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X26Y20         FDRE (Prop_fdre_C_Q)         0.456     6.365 r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.743     7.108    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[2]
+    SLICE_X21Y20         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock adc_clk_125_mmcm rise edge)
@@ -92,15 +92,15 @@ Endpoint path:
                                                       0.083     2.225 r  red_pitaya_infr_inst/adc_clk_mmcm_inst/CLKOUT1
                          net (fo=1, routed)           1.599     3.824    red_pitaya_infr_inst/adc_clk_125_mmcm
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.915 r  red_pitaya_infr_inst/bufg_sysclk[5]/O
-                         net (fo=362, routed)         1.490     5.405    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X21Y28         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.134     5.540    
-    SLICE_X21Y28         FDRE (Setup_fdre_C_D)       -0.265     5.275    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=362, routed)         1.491     5.406    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X21Y20         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.134     5.541    
+    SLICE_X21Y20         FDRE (Setup_fdre_C_D)       -0.095     5.446    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           7.044    
-                         clock arrival                          5.275    
+                         data arrival                           7.108    
+                         clock arrival                          5.446    
   -------------------------------------------------------------------
-                         relative delay                         1.769    
+                         relative delay                         1.663    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -115,12 +115,12 @@ Reference path:
                                                       0.083     2.126 r  red_pitaya_infr_inst/dsp_clk_mmcm_inst/CLKOUT0
                          net (fo=1, routed)           1.599     3.725    red_pitaya_infr_inst/dsp_clk_mmcm
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.816 r  red_pitaya_infr_inst/bufg_sysclk[9]/O
-                         net (fo=7436, routed)        1.485     5.301    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X21Y27         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                         net (fo=7485, routed)        1.487     5.303    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X25Y17         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X21Y27         FDRE (Prop_fdre_C_Q)         0.367     5.668 r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/Q
-                         net (fo=1, routed)           0.399     6.068    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[4]
-    SLICE_X19Y27         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+    SLICE_X25Y17         FDRE (Prop_fdre_C_Q)         0.337     5.640 r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]/Q
+                         net (fo=1, routed)           0.379     6.020    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[7]
+    SLICE_X22Y17         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock adc_clk_125_mmcm rise edge)
@@ -133,15 +133,15 @@ Reference path:
                                                       0.088     2.497 r  red_pitaya_infr_inst/adc_clk_mmcm_inst/CLKOUT1
                          net (fo=1, routed)           1.760     4.257    red_pitaya_infr_inst/adc_clk_125_mmcm
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.358 r  red_pitaya_infr_inst/bufg_sysclk[5]/O
-                         net (fo=362, routed)         1.660     6.018    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X19Y27         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
-                         clock pessimism             -0.134     5.884    
-    SLICE_X19Y27         FDRE (Hold_fdre_C_D)         0.169     6.053    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+                         net (fo=362, routed)         1.663     6.021    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X22Y17         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
+                         clock pessimism             -0.134     5.887    
+    SLICE_X22Y17         FDRE (Hold_fdre_C_D)         0.029     5.916    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
   -------------------------------------------------------------------
-                         data arrival                           6.068    
-                         clock arrival                          6.053    
+                         data arrival                           6.020    
+                         clock arrival                          5.916    
   -------------------------------------------------------------------
-                         relative delay                         0.015    
+                         relative delay                         0.104    
 
 
 
@@ -152,27 +152,27 @@ Endpoints: 9
 
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-adc_clk_125_mmcm      dsp_clk_mmcm          test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                            test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
-                                                                                                            Slow         1.121      6.879
+adc_clk_125_mmcm      dsp_clk_mmcm          test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         1.099      6.901
 
 
-Slack (MET) :             6.879ns  (requirement - actual skew)
-  Endpoint Source:        test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+Slack (MET) :             6.901ns  (requirement - actual skew)
+  Endpoint Source:        test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by adc_clk_125_mmcm)
-  Endpoint Destination:   test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Endpoint Destination:   test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by dsp_clk_mmcm)
-  Reference Source:       test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+  Reference Source:       test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by adc_clk_125_mmcm)
-  Reference Destination:  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  Reference Destination:  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
                             (rising edge-triggered cell FDRE clocked by dsp_clk_mmcm)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            8.000ns
-  Endpoint Relative Delay:    1.714ns
-  Reference Relative Delay:   0.218ns
-  Relative CRPR:              0.636ns
+  Endpoint Relative Delay:    1.873ns
+  Reference Relative Delay:   0.197ns
+  Relative CRPR:              0.837ns
   Uncertainty:                0.261ns
-  Actual Bus Skew:            1.121ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.099ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -187,12 +187,12 @@ Endpoint path:
                                                       0.088     2.497 r  red_pitaya_infr_inst/adc_clk_mmcm_inst/CLKOUT1
                          net (fo=1, routed)           1.760     4.257    red_pitaya_infr_inst/adc_clk_125_mmcm
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.358 r  red_pitaya_infr_inst/bufg_sysclk[5]/O
-                         net (fo=362, routed)         1.655     6.013    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X23Y27         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=362, routed)         1.665     6.023    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X29Y19         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X23Y27         FDRE (Prop_fdre_C_Q)         0.456     6.469 r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.581     7.050    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
-    SLICE_X23Y26         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X29Y19         FDRE (Prop_fdre_C_Q)         0.419     6.442 r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.601     7.043    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[3]
+    SLICE_X31Y18         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock dsp_clk_mmcm rise edge)
@@ -205,15 +205,15 @@ Endpoint path:
                                                       0.083     2.126 r  red_pitaya_infr_inst/dsp_clk_mmcm_inst/CLKOUT0
                          net (fo=1, routed)           1.599     3.725    red_pitaya_infr_inst/dsp_clk_mmcm
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.816 r  red_pitaya_infr_inst/bufg_sysclk[9]/O
-                         net (fo=7436, routed)        1.480     5.296    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X23Y26         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.134     5.431    
-    SLICE_X23Y26         FDRE (Setup_fdre_C_D)       -0.095     5.336    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=7485, routed)        1.489     5.305    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X31Y18         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.134     5.440    
+    SLICE_X31Y18         FDRE (Setup_fdre_C_D)       -0.270     5.170    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           7.050    
-                         clock arrival                          5.336    
+                         data arrival                           7.043    
+                         clock arrival                          5.170    
   -------------------------------------------------------------------
-                         relative delay                         1.714    
+                         relative delay                         1.873    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -228,12 +228,12 @@ Reference path:
                                                       0.083     2.225 r  red_pitaya_infr_inst/adc_clk_mmcm_inst/CLKOUT1
                          net (fo=1, routed)           1.599     3.824    red_pitaya_infr_inst/adc_clk_125_mmcm
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.915 r  red_pitaya_infr_inst/bufg_sysclk[5]/O
-                         net (fo=362, routed)         1.486     5.401    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X18Y25         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                         net (fo=362, routed)         1.487     5.402    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X23Y19         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X18Y25         FDRE (Prop_fdre_C_Q)         0.367     5.768 r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/Q
-                         net (fo=1, routed)           0.400     6.169    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[4]
-    SLICE_X15Y25         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+    SLICE_X23Y19         FDRE (Prop_fdre_C_Q)         0.367     5.769 r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.371     6.140    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[0]
+    SLICE_X22Y18         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock dsp_clk_mmcm rise edge)
@@ -246,15 +246,15 @@ Reference path:
                                                       0.088     2.388 r  red_pitaya_infr_inst/dsp_clk_mmcm_inst/CLKOUT0
                          net (fo=1, routed)           1.760     4.148    red_pitaya_infr_inst/dsp_clk_mmcm
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     4.249 r  red_pitaya_infr_inst/bufg_sysclk[9]/O
-                         net (fo=7436, routed)        1.656     5.905    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X15Y25         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
-                         clock pessimism             -0.134     5.771    
-    SLICE_X15Y25         FDRE (Hold_fdre_C_D)         0.180     5.951    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+                         net (fo=7485, routed)        1.658     5.907    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X22Y18         FDRE                                         r  test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism             -0.134     5.773    
+    SLICE_X22Y18         FDRE (Hold_fdre_C_D)         0.170     5.943    test_spec_red_pitaya_adc/adc_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
   -------------------------------------------------------------------
-                         data arrival                           6.169    
-                         clock arrival                          5.951    
+                         data arrival                           6.140    
+                         clock arrival                          5.943    
   -------------------------------------------------------------------
-                         relative delay                         0.218    
+                         relative delay                         0.197    
 
 
 

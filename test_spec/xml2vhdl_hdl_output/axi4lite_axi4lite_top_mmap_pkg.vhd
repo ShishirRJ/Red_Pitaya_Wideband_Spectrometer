@@ -38,10 +38,10 @@ package axi4lite_axi4lite_top_mmap_pkg is
    -- without generating an error.
    --##########################################################################
    type t_axi4lite_mmap_slaves is (
-      id_accum0_snap_ss_bram      ,
       id_accum1_snap_ss_bram      ,
       id_accumdat_snap_ss_bram    ,
       id_adc_voltage_snap_ss_bram ,
+      id_accum0_snap_ss_bram      ,
       id_sw_reg                   ,
       id_sys                      
    );
@@ -96,7 +96,7 @@ package body axi4lite_axi4lite_top_mmap_pkg is
       return slave_hit;
    end function;
    
-   constant c_axi4lite_mmap_baddr: t_axi4lite_mmap_addr_arr := (X"00000000",X"00004000",X"00008000",X"0000c000",X"00010000",X"00010080");
-   constant c_axi4lite_mmap_mask: t_axi4lite_mmap_addr_arr := (X"0001c000",X"0001c000",X"0001c000",X"0001c000",X"00010080",X"00010080");
+   constant c_axi4lite_mmap_baddr: t_axi4lite_mmap_addr_arr := (X"00000000",X"00004000",X"00008000",X"0000c000",X"0000c400",X"0000c480");
+   constant c_axi4lite_mmap_mask: t_axi4lite_mmap_addr_arr := (X"0000c000",X"0000c000",X"0000c000",X"0000c400",X"0000c480",X"0000c480");
 
 end package body;

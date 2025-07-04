@@ -37,5 +37,6 @@
     test_spec_fft_sync_inc0_user_data_in => test_spec_fft_sync_inc0_user_data_in,
     test_spec_fft_sync_inc1_user_data_in => test_spec_fft_sync_inc1_user_data_in,
     test_spec_red_pitaya_adc_adc_reset_in => test_spec_red_pitaya_adc_adc_reset_in,
-    test_spec_sync_cnt_user_data_in => test_spec_sync_cnt_user_data_in
+    test_spec_sync_cnt_user_data_in => test_spec_sync_cnt_user_data_in,
+    test_spec_trig_cnt_user_data_in => test_spec_trig_cnt_user_data_in
   );

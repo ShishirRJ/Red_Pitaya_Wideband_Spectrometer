@@ -46,6 +46,7 @@ package axi4lite_sw_reg_pkg is
       reg_cntrl: std_logic_vector(31 downto 0);
       snap_gap: std_logic_vector(31 downto 0);
       sync_cnt: std_logic_vector(31 downto 0);
+      trig_cnt: std_logic_vector(31 downto 0);
    end record;
 
    --##########################################################################
@@ -71,6 +72,7 @@ package axi4lite_sw_reg_pkg is
       reg_cntrl: std_logic;
       snap_gap: std_logic;
       sync_cnt: std_logic;
+      trig_cnt: std_logic;
    end record;
 
    --##########################################################################
@@ -109,6 +111,7 @@ package axi4lite_sw_reg_pkg is
       reg_cntrl: t_reg_descr;
       snap_gap: t_reg_descr;
       sync_cnt: t_reg_descr;
+      trig_cnt: t_reg_descr;
    end record;
 
    
@@ -129,7 +132,8 @@ package axi4lite_sw_reg_pkg is
       fft_sync_inc1               => (X"00000034",31, 0,X"00000000",async_reset,X"0000007c",r),
       reg_cntrl                   => (X"00000038",31, 0,X"00000000",async_reset,X"0000007c",rw),
       snap_gap                    => (X"0000003c",31, 0,X"00000014",async_reset,X"0000007c",rw),
-      sync_cnt                    => (X"00000040",31, 0,X"00000000",async_reset,X"00000040",r)
+      sync_cnt                    => (X"00000040",31, 0,X"00000000",async_reset,X"00000044",r),
+      trig_cnt                    => (X"00000044",31, 0,X"00000000",async_reset,X"00000044",r)
    );
 
    --##########################################################################
@@ -274,6 +278,11 @@ package body axi4lite_sw_reg_pkg is
          sw_reg_decoded.sync_cnt := '1';
       end if;
       
+      sw_reg_decoded.trig_cnt := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.trig_cnt,addr) = true and en = '1' then
+         sw_reg_decoded.trig_cnt := '1';
+      end if;
+      
       
       return sw_reg_decoded;
    end function;
@@ -298,6 +307,7 @@ package body axi4lite_sw_reg_pkg is
       sw_reg.reg_cntrl <= axi4lite_sw_reg_descr.reg_cntrl.rst_val(31 downto 0);
       sw_reg.snap_gap <= axi4lite_sw_reg_descr.snap_gap.rst_val(31 downto 0);
       sw_reg.sync_cnt <= axi4lite_sw_reg_descr.sync_cnt.rst_val(31 downto 0);
+      sw_reg.trig_cnt <= axi4lite_sw_reg_descr.trig_cnt.rst_val(31 downto 0);
 
    end procedure;
 
@@ -322,6 +332,7 @@ package body axi4lite_sw_reg_pkg is
       sw_reg_rst.reg_cntrl := '1';
       sw_reg_rst.snap_gap := '1';
       sw_reg_rst.sync_cnt := '1';
+      sw_reg_rst.trig_cnt := '1';
   
      return sw_reg_rst;
    end function;
@@ -346,6 +357,7 @@ package body axi4lite_sw_reg_pkg is
       sw_reg.reg_cntrl <= '0';
       sw_reg.snap_gap <= '0';
       sw_reg.sync_cnt <= '0';
+      sw_reg.trig_cnt <= '0';
 
    end procedure;
 
@@ -457,6 +469,10 @@ package body axi4lite_sw_reg_pkg is
       
       if sw_reg_decoded.sync_cnt = '1' then
          ret(31 downto 0) := sw_reg.sync_cnt;
+      end if;
+      
+      if sw_reg_decoded.trig_cnt = '1' then
+         ret(31 downto 0) := sw_reg.trig_cnt;
       end if;
       
 

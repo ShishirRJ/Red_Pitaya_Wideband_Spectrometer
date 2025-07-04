@@ -127,6 +127,7 @@ begin
          axi4lite_sw_reg_int.fft_sync_inc0 <= axi4lite_sw_reg_in.fft_sync_inc0;
          axi4lite_sw_reg_int.fft_sync_inc1 <= axi4lite_sw_reg_in.fft_sync_inc1;
          axi4lite_sw_reg_int.sync_cnt <= axi4lite_sw_reg_in.sync_cnt;
+         axi4lite_sw_reg_int.trig_cnt <= axi4lite_sw_reg_in.trig_cnt;
 
       end if;
       if axi4lite_aresetn = '0' then

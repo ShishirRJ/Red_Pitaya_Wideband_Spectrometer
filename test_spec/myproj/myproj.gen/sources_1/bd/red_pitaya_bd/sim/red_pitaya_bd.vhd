@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
---Date        : Fri Jul  4 10:19:53 2025
+--Date        : Fri Jul  4 12:05:14 2025
 --Host        : shishir-HP-Pavilion-Laptop-15-eg3xxx running 64-bit Ubuntu 22.04.4 LTS
 --Command     : generate_target red_pitaya_bd.bd
 --Design      : red_pitaya_bd

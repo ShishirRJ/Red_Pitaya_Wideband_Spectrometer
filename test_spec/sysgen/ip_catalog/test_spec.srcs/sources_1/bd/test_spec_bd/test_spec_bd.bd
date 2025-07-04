@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x4E5C9E1BBF228D5C",
+      "boundary_crc": "0xADDE209AA3FFFE7A",
       "design_src": "SYSGEN",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../test_spec.gen/sources_1/bd/test_spec_bd",
@@ -68,11 +68,11 @@
       "test_spec_accum0_snap_ss_bram_addr": {
         "type": "data",
         "direction": "O",
-        "left": "11",
+        "left": "7",
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
-            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
             "value_src": "const_prop"
           }
         }
@@ -484,6 +484,18 @@
             "value_src": "const_prop"
           }
         }
+      },
+      "test_spec_trig_cnt_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
       }
     },
     "components": {
@@ -637,6 +649,12 @@
         "ports": [
           "test_spec_1/test_spec_sync_cnt_user_data_in",
           "test_spec_sync_cnt_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_trig_cnt_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_trig_cnt_user_data_in",
+          "test_spec_trig_cnt_user_data_in"
         ]
       },
       "test_spec_acc_len_user_data_out_1": {

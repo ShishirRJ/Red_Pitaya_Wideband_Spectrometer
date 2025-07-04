@@ -20,7 +20,7 @@ entity test_spec_stub is
     test_spec_snap_gap_user_data_out : in std_logic_vector( 32-1 downto 0 );
     clk : in std_logic;
     test_spec_acc_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 );
-    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 12-1 downto 0 );
+    test_spec_accum0_snap_ss_bram_addr : out std_logic_vector( 8-1 downto 0 );
     test_spec_accum0_snap_ss_bram_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_accum0_snap_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     test_spec_accum0_snap_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 );
@@ -41,7 +41,8 @@ entity test_spec_stub is
     test_spec_fft_sync_inc0_user_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_fft_sync_inc1_user_data_in : out std_logic_vector( 32-1 downto 0 );
     test_spec_red_pitaya_adc_adc_reset_in : out std_logic_vector( 1-1 downto 0 );
-    test_spec_sync_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 )
+    test_spec_sync_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 );
+    test_spec_trig_cnt_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
 end test_spec_stub;
 architecture structural of test_spec_stub is 
@@ -85,6 +86,7 @@ begin
     test_spec_fft_sync_inc0_user_data_in => test_spec_fft_sync_inc0_user_data_in,
     test_spec_fft_sync_inc1_user_data_in => test_spec_fft_sync_inc1_user_data_in,
     test_spec_red_pitaya_adc_adc_reset_in => test_spec_red_pitaya_adc_adc_reset_in,
-    test_spec_sync_cnt_user_data_in => test_spec_sync_cnt_user_data_in
+    test_spec_sync_cnt_user_data_in => test_spec_sync_cnt_user_data_in,
+    test_spec_trig_cnt_user_data_in => test_spec_trig_cnt_user_data_in
   );
 end structural;

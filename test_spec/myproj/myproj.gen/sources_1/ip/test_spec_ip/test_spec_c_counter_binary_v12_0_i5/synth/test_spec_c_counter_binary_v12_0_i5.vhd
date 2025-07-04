@@ -60,8 +60,8 @@ ENTITY test_spec_c_counter_binary_v12_0_i5 IS
   PORT (
     CLK : IN STD_LOGIC;
     CE : IN STD_LOGIC;
-    SINIT : IN STD_LOGIC;
-    Q : OUT STD_LOGIC_VECTOR(8 DOWNTO 0)
+    SCLR : IN STD_LOGIC;
+    Q : OUT STD_LOGIC_VECTOR(14 DOWNTO 0)
   );
 END test_spec_c_counter_binary_v12_0_i5;
 
@@ -101,9 +101,9 @@ ARCHITECTURE test_spec_c_counter_binary_v12_0_i5_arch OF test_spec_c_counter_bin
       SINIT : IN STD_LOGIC;
       UP : IN STD_LOGIC;
       LOAD : IN STD_LOGIC;
-      L : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+      L : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
       THRESH0 : OUT STD_LOGIC;
-      Q : OUT STD_LOGIC_VECTOR(8 DOWNTO 0)
+      Q : OUT STD_LOGIC_VECTOR(14 DOWNTO 0)
     );
   END COMPONENT c_counter_binary_v12_0_14;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -111,14 +111,14 @@ ARCHITECTURE test_spec_c_counter_binary_v12_0_i5_arch OF test_spec_c_counter_bin
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF test_spec_c_counter_binary_v12_0_i5_arch : ARCHITECTURE IS "test_spec_c_counter_binary_v12_0_i5,c_counter_binary_v12_0_14,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF test_spec_c_counter_binary_v12_0_i5_arch: ARCHITECTURE IS "test_spec_c_counter_binary_v12_0_i5,c_counter_binary_v12_0_14,{x_ipProduct=Vivado 2021.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=c_counter_binary,x_ipVersion=12.0,x_ipCoreRevision=14,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_IMPLEMENTATION=0,C_VERBOSITY=0,C_XDEVICEFAMILY=zynq,C_WIDTH=9,C_HAS_CE=1,C_HAS_SCLR=0,C_RESTRICT_COUNT=0,C_COUNT_TO=1,C_COUNT_BY=1,C_COUNT_MODE=0,C_THRESH0_VALUE=1,C_CE_OVERRIDES_SYNC=0,C_HAS_THRESH0=0,C_HAS_LOAD=0,C_LOAD_LOW=0,C_LATENCY=1,C_FB_LATENCY=0,C_AINIT_VAL=0," & 
-"C_SINIT_VAL=0,C_SCLR_OVERRIDES_SSET=1,C_HAS_SSET=0,C_HAS_SINIT=1}";
+  ATTRIBUTE CORE_GENERATION_INFO OF test_spec_c_counter_binary_v12_0_i5_arch: ARCHITECTURE IS "test_spec_c_counter_binary_v12_0_i5,c_counter_binary_v12_0_14,{x_ipProduct=Vivado 2021.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=c_counter_binary,x_ipVersion=12.0,x_ipCoreRevision=14,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_IMPLEMENTATION=1,C_VERBOSITY=0,C_XDEVICEFAMILY=zynq,C_WIDTH=15,C_HAS_CE=1,C_HAS_SCLR=1,C_RESTRICT_COUNT=0,C_COUNT_TO=1,C_COUNT_BY=100,C_COUNT_MODE=0,C_THRESH0_VALUE=1,C_CE_OVERRIDES_SYNC=0,C_HAS_THRESH0=0,C_HAS_LOAD=0,C_LOAD_LOW=0,C_LATENCY=1,C_FB_LATENCY=0,C_AINIT_VAL" & 
+"=0,C_SINIT_VAL=0,C_SCLR_OVERRIDES_SSET=1,C_HAS_SSET=0,C_HAS_SINIT=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF Q: SIGNAL IS "XIL_INTERFACENAME q_intf, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF Q: SIGNAL IS "xilinx.com:signal:data:1.0 q_intf DATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF SINIT: SIGNAL IS "XIL_INTERFACENAME sinit_intf, LAYERED_METADATA undef";
-  ATTRIBUTE X_INTERFACE_INFO OF SINIT: SIGNAL IS "xilinx.com:signal:data:1.0 sinit_intf DATA";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF SCLR: SIGNAL IS "XIL_INTERFACENAME sclr_intf, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF SCLR: SIGNAL IS "xilinx.com:signal:reset:1.0 sclr_intf RST";
   ATTRIBUTE X_INTERFACE_PARAMETER OF CE: SIGNAL IS "XIL_INTERFACENAME ce_intf, POLARITY ACTIVE_HIGH";
   ATTRIBUTE X_INTERFACE_INFO OF CE: SIGNAL IS "xilinx.com:signal:clockenable:1.0 ce_intf CE";
   ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF q_intf:thresh0_intf:l_intf:load_intf:up_intf:sinit_intf:sset_intf, ASSOCIATED_RESET SCLR, ASSOCIATED_CLKEN CE, FREQ_HZ 10000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
@@ -126,15 +126,15 @@ ARCHITECTURE test_spec_c_counter_binary_v12_0_i5_arch OF test_spec_c_counter_bin
 BEGIN
   U0 : c_counter_binary_v12_0_14
     GENERIC MAP (
-      C_IMPLEMENTATION => 0,
+      C_IMPLEMENTATION => 1,
       C_VERBOSITY => 0,
       C_XDEVICEFAMILY => "zynq",
-      C_WIDTH => 9,
+      C_WIDTH => 15,
       C_HAS_CE => 1,
-      C_HAS_SCLR => 0,
+      C_HAS_SCLR => 1,
       C_RESTRICT_COUNT => 0,
       C_COUNT_TO => "1",
-      C_COUNT_BY => "1",
+      C_COUNT_BY => "100",
       C_COUNT_MODE => 0,
       C_THRESH0_VALUE => "1",
       C_CE_OVERRIDES_SYNC => 0,
@@ -147,17 +147,17 @@ BEGIN
       C_SINIT_VAL => "0",
       C_SCLR_OVERRIDES_SSET => 1,
       C_HAS_SSET => 0,
-      C_HAS_SINIT => 1
+      C_HAS_SINIT => 0
     )
     PORT MAP (
       CLK => CLK,
       CE => CE,
-      SCLR => '0',
+      SCLR => SCLR,
       SSET => '0',
-      SINIT => SINIT,
+      SINIT => '0',
       UP => '1',
       LOAD => '0',
-      L => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 9)),
+      L => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 15)),
       Q => Q
     );
 END test_spec_c_counter_binary_v12_0_i5_arch;

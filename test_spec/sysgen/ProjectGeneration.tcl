@@ -24,7 +24,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {2}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {}
-	set IP_Revision {382529960}
+	set IP_Revision {382536277}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {User_Company}
@@ -289,10 +289,10 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in Locs {}
 	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in IOStandard {}
 	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Name {test_spec_accum0_snap_ss_bram_addr}
-	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Type UFix_12_0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Type UFix_8_0
 	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr ArithmeticType xlUnsigned
 	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr BinaryPoint 0
-	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Width 12
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Width 8
 	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr DatFile {test_spec_accum0_snap_ss_bram_test_spec_accum0_snap_ss_bram_addr.dat}
 	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr IconText {test_spec_accum0_snap_ss_bram_addr}
 	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Direction out
@@ -618,6 +618,21 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in ClockDomain {test_spec}
 	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in Locs {}
 	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in Name {test_spec_trig_cnt_user_data_in}
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in DatFile {test_spec_trig_cnt_test_spec_trig_cnt_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in IconText {test_spec_trig_cnt_user_data_in}
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_trig_cnt_user_data_in IOStandard {}
 	dict set TopLevelPortInterface clk Name {clk}
 	dict set TopLevelPortInterface clk Type -
 	dict set TopLevelPortInterface clk ArithmeticType xlUnsigned

@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Fri Jul  4 10:21:33 2025
-# Process ID: 495530
+# Start of session at: Fri Jul  4 12:05:28 2025
+# Process ID: 538262
 # Current directory: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.runs/red_pitaya_bd_axi_protocol_convert_0_0_synth_1
 # Command line: vivado -log red_pitaya_bd_axi_protocol_convert_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source red_pitaya_bd_axi_protocol_convert_0_0.tcl
 # Log file: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.runs/red_pitaya_bd_axi_protocol_convert_0_0_synth_1/red_pitaya_bd_axi_protocol_convert_0_0.vds
@@ -20,9 +20,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 495684
+INFO: [Synth 8-7075] Helper process launched with PID 538285
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2507.793 ; gain = 0.000 ; free physical = 1785 ; free virtual = 4461
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2529.828 ; gain = 0.000 ; free physical = 760 ; free virtual = 2518
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'red_pitaya_bd_axi_protocol_convert_0_0' [/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/bd/red_pitaya_bd/ip/red_pitaya_bd_axi_protocol_convert_0_0/synth/red_pitaya_bd_axi_protocol_convert_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_axi_protocol_converter' [/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/bd/red_pitaya_bd/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
@@ -91,18 +91,18 @@ INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_axi_protocol_converter' (16#1) [/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/bd/red_pitaya_bd/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
 INFO: [Synth 8-6155] done synthesizing module 'red_pitaya_bd_axi_protocol_convert_0_0' (17#1) [/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.gen/sources_1/bd/red_pitaya_bd/ip/red_pitaya_bd_axi_protocol_convert_0_0/synth/red_pitaya_bd_axi_protocol_convert_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2507.793 ; gain = 0.000 ; free physical = 3514 ; free virtual = 6238
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2529.828 ; gain = 0.000 ; free physical = 1180 ; free virtual = 3076
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2507.793 ; gain = 0.000 ; free physical = 3530 ; free virtual = 6253
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2529.828 ; gain = 0.000 ; free physical = 1155 ; free virtual = 3054
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2507.793 ; gain = 0.000 ; free physical = 3530 ; free virtual = 6253
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2529.828 ; gain = 0.000 ; free physical = 1155 ; free virtual = 3054
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2507.793 ; gain = 0.000 ; free physical = 3528 ; free virtual = 6251
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2529.828 ; gain = 0.000 ; free physical = 1188 ; free virtual = 3092
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -113,27 +113,27 @@ Parsing XDC File [/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya
 Finished Parsing XDC File [/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.runs/red_pitaya_bd_axi_protocol_convert_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2571.746 ; gain = 0.000 ; free physical = 3473 ; free virtual = 6196
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2593.781 ; gain = 0.000 ; free physical = 1030 ; free virtual = 2964
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2571.746 ; gain = 0.000 ; free physical = 3473 ; free virtual = 6195
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2593.781 ; gain = 0.000 ; free physical = 1028 ; free virtual = 2962
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3557 ; free virtual = 6275
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 907 ; free virtual = 2850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3557 ; free virtual = 6275
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 907 ; free virtual = 2850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.runs/red_pitaya_bd_axi_protocol_convert_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3559 ; free virtual = 6276
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 907 ; free virtual = 2850
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_24_b2s_wr_cmd_fsm'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_24_b2s_rd_cmd_fsm'
@@ -156,7 +156,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_24_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3566 ; free virtual = 6284
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 879 ; free virtual = 2841
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -208,25 +208,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3573 ; free virtual = 6294
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 734 ; free virtual = 2707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3514 ; free virtual = 6244
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 702 ; free virtual = 2751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3440 ; free virtual = 6199
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 661 ; free virtual = 2729
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3424 ; free virtual = 6183
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 659 ; free virtual = 2728
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -244,37 +244,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3467 ; free virtual = 6199
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 1406 ; free virtual = 3514
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3467 ; free virtual = 6199
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 1400 ; free virtual = 3508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3466 ; free virtual = 6199
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 1406 ; free virtual = 3515
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3466 ; free virtual = 6199
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 1406 ; free virtual = 3515
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3466 ; free virtual = 6199
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 1406 ; free virtual = 3515
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3466 ; free virtual = 6199
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 1406 ; free virtual = 3515
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -322,18 +322,18 @@ Report Cell Usage:
 |11    |FDSE    |    16|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3466 ; free virtual = 6199
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 1406 ; free virtual = 3515
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2571.746 ; gain = 0.000 ; free physical = 3516 ; free virtual = 6249
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.746 ; gain = 63.953 ; free physical = 3516 ; free virtual = 6249
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2593.781 ; gain = 0.000 ; free physical = 1406 ; free virtual = 3515
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2593.781 ; gain = 63.953 ; free physical = 1406 ; free virtual = 3515
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2571.746 ; gain = 0.000 ; free physical = 3574 ; free virtual = 6306
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2593.781 ; gain = 0.000 ; free physical = 1484 ; free virtual = 3593
 INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2571.746 ; gain = 0.000 ; free physical = 3527 ; free virtual = 6260
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2593.781 ; gain = 0.000 ; free physical = 1479 ; free virtual = 3644
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -341,10 +341,10 @@ Synth Design complete, checksum: bbecb56a
 INFO: [Common 17-83] Releasing license: Synthesis
 83 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:01:02 . Memory (MB): peak = 2571.746 ; gain = 64.031 ; free physical = 3645 ; free virtual = 6377
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:59 . Memory (MB): peak = 2593.781 ; gain = 64.031 ; free physical = 1559 ; free virtual = 3748
 INFO: [Common 17-1381] The checkpoint '/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.runs/red_pitaya_bd_axi_protocol_convert_0_0_synth_1/red_pitaya_bd_axi_protocol_convert_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP red_pitaya_bd_axi_protocol_convert_0_0, cache-ID = e3441478cb0df4c8
 INFO: [Coretcl 2-1174] Renamed 23 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.runs/red_pitaya_bd_axi_protocol_convert_0_0_synth_1/red_pitaya_bd_axi_protocol_convert_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file red_pitaya_bd_axi_protocol_convert_0_0_utilization_synth.rpt -pb red_pitaya_bd_axi_protocol_convert_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jul  4 10:22:45 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  4 12:06:35 2025...

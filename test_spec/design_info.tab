@@ -4,13 +4,13 @@ RED_PITAYA	xps:xsg	clk_rate	125
 RED_PITAYA	xps:xsg	sample_period	1
 RED_PITAYA	xps:xsg	synthesis_tool	XST
 accum0_snap/ss/bram	xps:bram	arith_type	Unsigned
-accum0_snap/ss/bram	xps:bram	addr_width	12
+accum0_snap/ss/bram	xps:bram	addr_width	8
 accum0_snap/ss/bram	xps:bram	data_width	32
 accum0_snap/ss/bram	xps:bram	reg_prim_output	off
 accum0_snap/ss/bram	xps:bram	reg_core_output	off
 accum0_snap/ss/bram	xps:bram	optimization	Minimum_Area
 accum0_snap/ss/bram	xps:bram	data_bin_pt	0
-accum0_snap/ss/bram	xps:bram	init_vals	[0:2^12-1]
+accum0_snap/ss/bram	xps:bram	init_vals	[0:2^8-1]
 accum0_snap/ss/bram	xps:bram	sample_rate	1
 accum1_snap/ss/bram	xps:bram	arith_type	Unsigned
 accum1_snap/ss/bram	xps:bram	addr_width	12
@@ -209,6 +209,16 @@ sync_cnt	xps:sw_reg	bin_pts	0
 sync_cnt	xps:sw_reg	arith_types	0
 sync_cnt	xps:sw_reg	sim_port	on
 sync_cnt	xps:sw_reg	show_format	off
+trig_cnt	xps:sw_reg	io_dir	To\_Processor
+trig_cnt	xps:sw_reg	io_delay	0
+trig_cnt	xps:sw_reg	init_val	0
+trig_cnt	xps:sw_reg	sample_period	1
+trig_cnt	xps:sw_reg	names	reg
+trig_cnt	xps:sw_reg	bitwidths	32
+trig_cnt	xps:sw_reg	bin_pts	0
+trig_cnt	xps:sw_reg	arith_types	0
+trig_cnt	xps:sw_reg	sim_port	on
+trig_cnt	xps:sw_reg	show_format	off
 red_pitaya_adc	xps:red_pitaya_adc	bits	10
 accum0_snap	casper:bitsnap	io_names	[P_acc0\_val_acc0]
 accum0_snap	casper:bitsnap	io_widths	[31\_1]
@@ -218,7 +228,7 @@ accum0_snap	casper:bitsnap	show_format	on
 accum0_snap	casper:bitsnap	snap_storage	bram
 accum0_snap	casper:bitsnap	snap_dram_dimm	2
 accum0_snap	casper:bitsnap	snap_dram_clock	250
-accum0_snap	casper:bitsnap	snap_nsamples	12
+accum0_snap	casper:bitsnap	snap_nsamples	8
 accum0_snap	casper:bitsnap	snap_data_width	32
 accum0_snap	casper:bitsnap	snap_offset	off
 accum0_snap	casper:bitsnap	snap_circap	off
@@ -301,7 +311,7 @@ adc_voltage_snap	casper:bitsnap	extra_types	[0\_0]
 accum0_snap/ss	casper:snapshot	storage	bram
 accum0_snap/ss	casper:snapshot	dram_dimm	2
 accum0_snap/ss	casper:snapshot	dram_clock	250
-accum0_snap/ss	casper:snapshot	nsamples	12
+accum0_snap/ss	casper:snapshot	nsamples	8
 accum0_snap/ss	casper:snapshot	data_width	32
 accum0_snap/ss	casper:snapshot	offset	off
 accum0_snap/ss	casper:snapshot	circap	off
@@ -348,5 +358,5 @@ adc_voltage_snap/ss	casper:snapshot	provide_outputs	off
 adc_voltage_snap/ss	casper:snapshot	use_dsp48	on
 77777	77777	tags	casper:bitsnap,casper:snapshot,xps:bram,xps:red_pitaya_adc,xps:sw_reg,xps:xsg
 77777	77777	system	test_spec
-77777	77777	builddate	04-Jul-2025\_10:19:15
+77777	77777	builddate	04-Jul-2025\_12:04:31
 77777	77777	xlSgRoot	/home/shishir/tools/Xilinx/Vivado/2021.1/lib/lnx64.o/matlab/sysgen.mexa64

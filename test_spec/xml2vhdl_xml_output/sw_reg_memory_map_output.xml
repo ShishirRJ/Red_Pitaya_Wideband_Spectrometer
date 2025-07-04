@@ -17,5 +17,6 @@
 	<node id="reg_cntrl" address="0x00000038" mask="0xffffffff" size="1" permission="rw" hw_rst="0" description="sw_reg_reg_cntrl"/>
 	<node id="snap_gap" address="0x0000003c" mask="0xffffffff" size="1" permission="rw" hw_rst="14" description="sw_reg_snap_gap"/>
 	<node id="sync_cnt" address="0x00000040" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_sync_cnt"/>
+	<node id="trig_cnt" address="0x00000044" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_trig_cnt"/>
 </node>
 <!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

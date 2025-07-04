@@ -9,134 +9,140 @@ ips:
   version: '1.0'
 mm_slaves:
 - !!python/object:castro.mm_slave
-  base_address: 1073807360
-  high_address: 1073807364
+  base_address: 1073792000
+  high_address: 1073792004
   mode: 1
   name: acc_cnt
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807364
-  high_address: 1073807368
+  base_address: 1073792004
+  high_address: 1073792008
   mode: 3
   name: acc_len
+  span: 4
+- !!python/object:castro.mm_slave
+  base_address: 1073790976
+  high_address: 1073792000
+  mode: 3
+  name: accum0_snap_ss_bram
+  span: 1024
+- !!python/object:castro.mm_slave
+  base_address: 1073792008
+  high_address: 1073792012
+  mode: 3
+  name: accum0_snap_ss_ctrl
+  span: 4
+- !!python/object:castro.mm_slave
+  base_address: 1073792012
+  high_address: 1073792016
+  mode: 1
+  name: accum0_snap_ss_status
   span: 4
 - !!python/object:castro.mm_slave
   base_address: 1073741824
   high_address: 1073758208
   mode: 3
-  name: accum0_snap_ss_bram
+  name: accum1_snap_ss_bram
   span: 16384
 - !!python/object:castro.mm_slave
-  base_address: 1073807368
-  high_address: 1073807372
+  base_address: 1073792016
+  high_address: 1073792020
   mode: 3
-  name: accum0_snap_ss_ctrl
+  name: accum1_snap_ss_ctrl
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807372
-  high_address: 1073807376
+  base_address: 1073792020
+  high_address: 1073792024
   mode: 1
-  name: accum0_snap_ss_status
+  name: accum1_snap_ss_status
   span: 4
 - !!python/object:castro.mm_slave
   base_address: 1073758208
   high_address: 1073774592
   mode: 3
-  name: accum1_snap_ss_bram
+  name: accumdat_snap_ss_bram
   span: 16384
 - !!python/object:castro.mm_slave
-  base_address: 1073807376
-  high_address: 1073807380
+  base_address: 1073792024
+  high_address: 1073792028
   mode: 3
-  name: accum1_snap_ss_ctrl
+  name: accumdat_snap_ss_ctrl
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807380
-  high_address: 1073807384
+  base_address: 1073792028
+  high_address: 1073792032
   mode: 1
-  name: accum1_snap_ss_status
+  name: accumdat_snap_ss_status
+  span: 4
+- !!python/object:castro.mm_slave
+  base_address: 1073792032
+  high_address: 1073792036
+  mode: 1
+  name: adc_dv
+  span: 4
+- !!python/object:castro.mm_slave
+  base_address: 1073792036
+  high_address: 1073792040
+  mode: 1
+  name: adc_sample_cnt
   span: 4
 - !!python/object:castro.mm_slave
   base_address: 1073774592
   high_address: 1073790976
   mode: 3
-  name: accumdat_snap_ss_bram
-  span: 16384
-- !!python/object:castro.mm_slave
-  base_address: 1073807384
-  high_address: 1073807388
-  mode: 3
-  name: accumdat_snap_ss_ctrl
-  span: 4
-- !!python/object:castro.mm_slave
-  base_address: 1073807388
-  high_address: 1073807392
-  mode: 1
-  name: accumdat_snap_ss_status
-  span: 4
-- !!python/object:castro.mm_slave
-  base_address: 1073807392
-  high_address: 1073807396
-  mode: 1
-  name: adc_dv
-  span: 4
-- !!python/object:castro.mm_slave
-  base_address: 1073807396
-  high_address: 1073807400
-  mode: 1
-  name: adc_sample_cnt
-  span: 4
-- !!python/object:castro.mm_slave
-  base_address: 1073790976
-  high_address: 1073807360
-  mode: 3
   name: adc_voltage_snap_ss_bram
   span: 16384
 - !!python/object:castro.mm_slave
-  base_address: 1073807400
-  high_address: 1073807404
+  base_address: 1073792040
+  high_address: 1073792044
   mode: 3
   name: adc_voltage_snap_ss_ctrl
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807404
-  high_address: 1073807408
+  base_address: 1073792044
+  high_address: 1073792048
   mode: 1
   name: adc_voltage_snap_ss_status
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807408
-  high_address: 1073807412
+  base_address: 1073792048
+  high_address: 1073792052
   mode: 1
   name: fft_sync_inc0
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807412
-  high_address: 1073807416
+  base_address: 1073792052
+  high_address: 1073792056
   mode: 1
   name: fft_sync_inc1
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807416
-  high_address: 1073807420
+  base_address: 1073792056
+  high_address: 1073792060
   mode: 3
   name: reg_cntrl
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807420
-  high_address: 1073807424
+  base_address: 1073792060
+  high_address: 1073792064
   mode: 3
   name: snap_gap
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807424
-  high_address: 1073807428
+  base_address: 1073792064
+  high_address: 1073792068
   mode: 1
   name: sync_cnt
   span: 4
 - !!python/object:castro.mm_slave
-  base_address: 1073807488
-  high_address: 1073807520
+  base_address: 1073792068
+  high_address: 1073792072
+  mode: 1
+  name: trig_cnt
+  span: 4
+- !!python/object:castro.mm_slave
+  base_address: 1073792128
+  high_address: 1073792160
   mode: 1
   name: sys
   span: 32
@@ -160,6 +166,7 @@ src_files:
 - /home/shishir/pythontest/mlib_devel/jasper_library/hdl_sources/red_pitaya_adc/adc_data_fifo/adc_data_fifo.xci
 - /home/shishir/pythontest/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink
 - /home/shishir/pythontest/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink
+- /home/shishir/pythontest/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc
 - /home/shishir/pythontest/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc
 - /home/shishir/pythontest/mlib_devel/jasper_library/hdl_sources/infrastructure/red_pitaya.v
 - /home/shishir/pythontest/mlib_devel/jasper_library/hdl_sources/utils/cdc_synchroniser.vhd

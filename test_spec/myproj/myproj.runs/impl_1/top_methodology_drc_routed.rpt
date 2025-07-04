@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Fri Jul  4 10:28:22 2025
+| Date         : Fri Jul  4 12:12:37 2025
 | Host         : shishir-HP-Pavilion-Laptop-15-eg3xxx running 64-bit Ubuntu 22.04.4 LTS
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,14 +23,15 @@ Table of Contents
           Floorplan: checkpoint_top
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 22
-+-----------+----------+------------------------------------------+------------+
-| Rule      | Severity | Description                              | Violations |
-+-----------+----------+------------------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert             | 1          |
-| TIMING-10 | Warning  | Missing property on synchronizer         | 1          |
-| XDCH-2    | Warning  | Same min and max delay values on IO port | 20         |
-+-----------+----------+------------------------------------------+------------+
+             Violations found: 23
++-----------+----------+--------------------------------------------+------------+
+| Rule      | Severity | Description                                | Violations |
++-----------+----------+--------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert               | 1          |
+| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer           | 1          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port   | 20         |
++-----------+----------+--------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -52,6 +53,11 @@ test_spec_red_pitaya_adc/sAdc1DataQIn_reg[2]/CLR,
 test_spec_red_pitaya_adc/sAdc1DataQIn_reg[3]/CLR,
 test_spec_red_pitaya_adc/sAdc1DataQIn_reg[4]/CLR
  (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance axi4lite_interconnect/axi4lite_accum0_snap_ss_bram_inst/ipb_accum0_snap_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_a_wider.my_ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 TIMING-10#1 Warning

@@ -41,13 +41,13 @@ print("hello world")
 time.sleep(5)
 while (True):
     # print("hello world 0")
-
+    # print(fpga.read_int('trig_cnt'))  # Reset sync counter
     # print("hello world 1")
     fpga.snapshots.accum0_snap_ss.arm()
-    # print("hello world 2")
+    print("hello world 2")
     spec0=fpga.snapshots.accum0_snap_ss.read(arm=False)['data']
-    # print(spec0)
-    # print("hello world 3")
+    print(spec0)
+    print("hello world 3")
     fpga.snapshots.accum1_snap_ss.arm()
     # print("hello world 4")
     # spec1=fpga.snapshots.accum1_snap_ss.read(arm=False)['data']
@@ -73,13 +73,13 @@ while (True):
     # ax1.set(xlabel='channel',ylabel='power',title='Ch1')
     # ax1.set_xlim(0,2*acc_len*fft_len)
 
-    # fig2, ax2= plt.subplots()
-    # valid = np.array(spec0['val_acc0'][0:2*acc_len*fft_len]).astype(bool)
-    # spectrum0 = np.array(spec0['P_acc0'][0:2*acc_len*fft_len])	
-    # spectrum0 = np.fft.fftshift(spectrum0[:256])
-    # ax2.plot(np.linspace(-256/2,256/2-1,256)*125/256,spectrum0[:256].astype(float),'b-')
-    # ax2.set(xlabel='freq (MHz)',ylabel='power',title='Ch0')
-    # ax2.set_xlim(0,50)
+    fig2, ax2= plt.subplots()
+    valid = np.array(spec0['val_acc0'][0:2*acc_len*fft_len]).astype(bool)
+    spectrum0 = np.array(spec0['P_acc0'][:])	
+    spectrum0 = np.fft.fftshift(spectrum0[:])
+    ax2.plot(np.linspace(-256/2,256/2-1,256)*125/256,(spectrum0[:]/acc_len).astype(float),'b-')
+    ax2.set(xlabel='freq (MHz)',ylabel='power',title='Ch0')
+    ax2.set_xlim(0,50)
 
     # fig3, ax3= plt.subplots()
     # valid = np.array(spec1['val_acc1'][0:2*acc_len*fft_len]).astype(bool)
@@ -88,5 +88,5 @@ while (True):
     # ax3.plot(np.linspace(-256/2,256/2-1,256)*125/256,spectrum1[:256].astype(float),'b-')
     # ax3.set(xlabel='freq (MHz)',ylabel='power',title='Ch1')
     # ax3.set_xlim(0,50)
-    # plt.show()
+    plt.show()
     # time.sleep(1)  # Sleep for 1 second before the next iteration

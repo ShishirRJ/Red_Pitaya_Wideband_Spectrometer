@@ -48,7 +48,7 @@
 
 
 // IP VLNV: User_Company:SysGen:test_spec:1.0
-// IP Revision: 382529960
+// IP Revision: 382536277
 
 (* X_CORE_INFO = "test_spec,Vivado 2021.1" *)
 (* CHECK_LICENSE_TYPE = "test_spec_ip,test_spec,{}" *)
@@ -92,7 +92,8 @@ module test_spec_ip (
   test_spec_fft_sync_inc0_user_data_in,
   test_spec_fft_sync_inc1_user_data_in,
   test_spec_red_pitaya_adc_adc_reset_in,
-  test_spec_sync_cnt_user_data_in
+  test_spec_sync_cnt_user_data_in,
+  test_spec_trig_cnt_user_data_in
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME test_spec_acc_len_user_data_out, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format l\
@@ -158,10 +159,10 @@ input wire clk;
 ng minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 test_spec_acc_cnt_user_data_in DATA" *)
 output wire [31 : 0] test_spec_acc_cnt_user_data_in;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME test_spec_accum0_snap_ss_bram_addr, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} forma\
-t long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME test_spec_accum0_snap_ss_bram_addr, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format\
+ long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 test_spec_accum0_snap_ss_bram_addr DATA" *)
-output wire [11 : 0] test_spec_accum0_snap_ss_bram_addr;
+output wire [7 : 0] test_spec_accum0_snap_ss_bram_addr;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME test_spec_accum0_snap_ss_bram_data_in, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} fo\
 rmat long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 test_spec_accum0_snap_ss_bram_data_in DATA" *)
@@ -246,6 +247,10 @@ output wire [0 : 0] test_spec_red_pitaya_adc_adc_reset_in;
 ong minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 test_spec_sync_cnt_user_data_in DATA" *)
 output wire [31 : 0] test_spec_sync_cnt_user_data_in;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME test_spec_trig_cnt_user_data_in, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format l\
+ong minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 test_spec_trig_cnt_user_data_in DATA" *)
+output wire [31 : 0] test_spec_trig_cnt_user_data_in;
 
   test_spec inst (
     .test_spec_acc_len_user_data_out(test_spec_acc_len_user_data_out),
@@ -285,6 +290,7 @@ output wire [31 : 0] test_spec_sync_cnt_user_data_in;
     .test_spec_fft_sync_inc0_user_data_in(test_spec_fft_sync_inc0_user_data_in),
     .test_spec_fft_sync_inc1_user_data_in(test_spec_fft_sync_inc1_user_data_in),
     .test_spec_red_pitaya_adc_adc_reset_in(test_spec_red_pitaya_adc_adc_reset_in),
-    .test_spec_sync_cnt_user_data_in(test_spec_sync_cnt_user_data_in)
+    .test_spec_sync_cnt_user_data_in(test_spec_sync_cnt_user_data_in),
+    .test_spec_trig_cnt_user_data_in(test_spec_trig_cnt_user_data_in)
   );
 endmodule

@@ -2,10 +2,14 @@ Warning:
  code:     
  severity: L1
  open_fcn:   
- summary:  Externally connected blocks are defined as blocks that directly drive Simulink/Non-SysGen blocks without going through a gateway. An example is the output port of a SysGen block connected to the input port of Simulink Scope. This feature will be removed in future releases of SysGen. The table below lists blocks with such connections. Modify the design by inserting gateway outs with 'Translate into output port' turned off. Also Sysgen blocks with ports which have Signal Logging turned on are classified as Externally connected blocks. For more details look into <a href= "matlab:web('file:///home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/SysgenFeatureReport.htm')">SysgenFeatureReport.htm</a>.
-<a href="matlab:xlignoremodelforwarning('test_spec')">Disable</a> feature warnings for this model.
+ summary:  Your license for Sysgen will expire in 11 days.
+ XILINXD_LICENSE_FILE = 2100@10.10.106.57:/home/shishir/tools/Xilinx/Vivado/2021.1/data/sysgen/hwcosim_compiler/pp_ethernet
+ Environment variable LM_LICENSE_FILE is not set.
+ License search path: /home/shishir/.Xilinx:2100@10.10.106.57:/home/shishir/tools/Xilinx/Vivado/2021.1/data/sysgen/hwcosim_compiler/pp_ethernet:/home/shishir/tools/Xilinx/Vivado/2021.1/data/ip/core_licenses
 
- details:  Externally connected blocks are defined as blocks that directly drive Simulink/Non-SysGen blocks without going through a gateway. An example is the output port of a SysGen block connected to the input port of Simulink Scope. This feature will be removed in future releases of SysGen. The table below lists blocks with such connections. Modify the design by inserting gateway outs with 'Translate into output port' turned off. Also Sysgen blocks with ports which have Signal Logging turned on are classified as Externally connected blocks. For more details look into <a href= "matlab:web('file:///home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/SysgenFeatureReport.htm')">SysgenFeatureReport.htm</a>.
-<a href="matlab:xlignoremodelforwarning('test_spec')">Disable</a> feature warnings for this model.
+ details:  Your license for Sysgen will expire in 11 days.
+ XILINXD_LICENSE_FILE = 2100@10.10.106.57:/home/shishir/tools/Xilinx/Vivado/2021.1/data/sysgen/hwcosim_compiler/pp_ethernet
+ Environment variable LM_LICENSE_FILE is not set.
+ License search path: /home/shishir/.Xilinx:2100@10.10.106.57:/home/shishir/tools/Xilinx/Vivado/2021.1/data/sysgen/hwcosim_compiler/pp_ethernet:/home/shishir/tools/Xilinx/Vivado/2021.1/data/ip/core_licenses
 
 
