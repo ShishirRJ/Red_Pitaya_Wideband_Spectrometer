@@ -89,4 +89,4 @@ while (True):
     # ax3.set(xlabel='freq (MHz)',ylabel='power',title='Ch1')
     # ax3.set_xlim(0,50)
     plt.show()
-    # time.sleep(1)  # Sleep for 1 second before the next iteration
+    # time.sleep(1)  
