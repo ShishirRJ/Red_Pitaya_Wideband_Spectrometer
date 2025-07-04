@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1751604609">
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/red_pitaya_bd/red_pitaya_bd.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/infrastructure/red_pitaya.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/infrastructure/red_pitaya.v"/>
+        <Attr Name="ImportTime" Val="1749036116"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/red_pitaya_adc/red_pitaya_adc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/red_pitaya_adc/red_pitaya_adc.v"/>
+        <Attr Name="ImportTime" Val="1749036116"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sys_block/sys_block_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/sys_block/sys_block_counter.v"/>
+        <Attr Name="ImportTime" Val="1749036118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/asym_bram_tdp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/asym_bram_tdp.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/axi4_lite/axi4lite_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1749036114"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/axi4_lite/axi4lite_slave_logic.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_slave_logic.vhd"/>
+        <Attr Name="ImportTime" Val="1749036114"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/axi4_lite/axi4lite_slave_logic.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram_muxdemux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram_muxdemux.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/ipb_accum0_snap_ss_bram_dp_ram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/ipb_accum0_snap_ss_bram_dp_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum0_snap_ss_bram.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram_muxdemux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram_muxdemux.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/ipb_accum1_snap_ss_bram_dp_ram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/ipb_accum1_snap_ss_bram_dp_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accum1_snap_ss_bram.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram_muxdemux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram_muxdemux.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/ipb_accumdat_snap_ss_bram_dp_ram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/ipb_accumdat_snap_ss_bram_dp_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_accumdat_snap_ss_bram.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram_muxdemux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram_muxdemux.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/ipb_adc_voltage_snap_ss_bram_dp_ram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/ipb_adc_voltage_snap_ss_bram_dp_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_adc_voltage_snap_ss_bram.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_mmap_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_axi4lite_top_mmap_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sw_reg_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sys_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg_muxdemux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sw_reg_muxdemux.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sw_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys_muxdemux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sys_muxdemux.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xml2vhdl_hdl_output/axi4lite_sys.vhd"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/test_spec/axi4lite_ic_wrapper.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../axi4lite_ic_wrapper.vhdl"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/utils/cdc_synchroniser.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/utils/cdc_synchroniser.vhd"/>
+        <Attr Name="ImportTime" Val="1749036118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/test_spec/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../top.v"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wb_register_simulink2ppc/wb_register_simulink2ppc.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc/wb_register_simulink2ppc.v"/>
+        <Attr Name="ImportTime" Val="1749036118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/wb_register_ppc2simulink/wb_register_ppc2simulink.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink/wb_register_ppc2simulink.v"/>
+        <Attr Name="ImportTime" Val="1749036118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sys_block/sys_block.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mlib_devel/jasper_library/hdl_sources/sys_block/sys_block.v"/>
+        <Attr Name="ImportTime" Val="1749036118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/red_pitaya_bd/hdl/red_pitaya_bd_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/test_spec/user_const.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../user_const.xdc"/>
+        <Attr Name="ImportTime" Val="1751604581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="red_pitaya_bd_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="red_pitaya_bd_axi_protocol_convert_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="red_pitaya_bd_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="test_spec_ip"/>
+  <BlockFileSet Type="BlockSrcs" Name="adc_data_fifo"/>
+</GenRun>

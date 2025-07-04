@@ -1,0 +1,202 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Fri Jul  4 10:28:22 2025
+| Host         : shishir-HP-Pavilion-Laptop-15-eg3xxx running 64-bit Ubuntu 22.04.4 LTS
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_top
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 22
++-----------+----------+------------------------------------------+------------+
+| Rule      | Severity | Description                              | Violations |
++-----------+----------+------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert             | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer         | 1          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port | 20         |
++-----------+----------+------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell red_pitaya_infr_inst/adc_data_fifo_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) test_spec_red_pitaya_adc/sAdc0DataIIn_reg[0]/CLR,
+test_spec_red_pitaya_adc/sAdc0DataIIn_reg[1]/CLR,
+test_spec_red_pitaya_adc/sAdc0DataIIn_reg[2]/CLR,
+test_spec_red_pitaya_adc/sAdc0DataIIn_reg[3]/CLR,
+test_spec_red_pitaya_adc/sAdc0DataIIn_reg[4]/CLR,
+test_spec_red_pitaya_adc/sAdc0DataIIn_reg[5]/CLR,
+test_spec_red_pitaya_adc/sAdc0DataIIn_reg[6]/CLR,
+test_spec_red_pitaya_adc/sAdc0DataIIn_reg[7]/CLR,
+test_spec_red_pitaya_adc/sAdc0DataIIn_reg[8]/CLR,
+test_spec_red_pitaya_adc/sAdc0DataIIn_reg[9]/CLR,
+test_spec_red_pitaya_adc/sAdc1DataQIn_reg[0]/CLR,
+test_spec_red_pitaya_adc/sAdc1DataQIn_reg[1]/CLR,
+test_spec_red_pitaya_adc/sAdc1DataQIn_reg[2]/CLR,
+test_spec_red_pitaya_adc/sAdc1DataQIn_reg[3]/CLR,
+test_spec_red_pitaya_adc/sAdc1DataQIn_reg[4]/CLR
+ (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[0]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[1]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[2]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[3]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[4]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[5]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[6]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[7]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[8]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN1[9]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN1[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 201)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[0]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[1]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[2]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[3]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[4]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[5]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[6]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[7]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[8]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'ADC_DATA_IN2[9]' relative to clock ADC_CLK_IN_P for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks ADC_CLK_IN_P] -max -add_delay 3.400 [get_ports {ADC_DATA_IN2[*]}]
+/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/myproj/myproj.srcs/constrs_1/imports/test_spec/user_const.xdc (Line: 203)
+Related violations: <none>
+
+

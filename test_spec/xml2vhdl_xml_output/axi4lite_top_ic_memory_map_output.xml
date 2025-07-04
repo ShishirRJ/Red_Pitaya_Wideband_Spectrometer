@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<node id="axi4lite_top" address="0x40000000" hw_type="ic" byte_size="131072">
+   <node id="accum0_snap_ss_bram" address="0x00000000" byte_size="16384" link_done="accum0_snap_ss_bram_memory_map_output.xml" absolute_id="axi4lite_top.accum0_snap_ss_bram" absolute_offset="40000000">
+      <node id="accum0_snap_ss_bram" address="0x00000000" mask="0xffffffff" size="4096" permission="rw" hw_rst="0" description="accum0_snap_ss_bram_accum0_snap_ss_bram" absolute_id="axi4lite_top.accum0_snap_ss_bram.accum0_snap_ss_bram" absolute_offset="40000000"/>
+   </node>
+   <node id="accum1_snap_ss_bram" address="0x00004000" byte_size="16384" link_done="accum1_snap_ss_bram_memory_map_output.xml" absolute_id="axi4lite_top.accum1_snap_ss_bram" absolute_offset="40004000">
+      <node id="accum1_snap_ss_bram" address="0x00000000" mask="0xffffffff" size="4096" permission="rw" hw_rst="0" description="accum1_snap_ss_bram_accum1_snap_ss_bram" absolute_id="axi4lite_top.accum1_snap_ss_bram.accum1_snap_ss_bram" absolute_offset="40004000"/>
+   </node>
+   <node id="accumdat_snap_ss_bram" address="0x00008000" byte_size="16384" link_done="accumdat_snap_ss_bram_memory_map_output.xml" absolute_id="axi4lite_top.accumdat_snap_ss_bram" absolute_offset="40008000">
+      <node id="accumdat_snap_ss_bram" address="0x00000000" mask="0xffffffff" size="4096" permission="rw" hw_rst="0" description="accumdat_snap_ss_bram_accumdat_snap_ss_bram" absolute_id="axi4lite_top.accumdat_snap_ss_bram.accumdat_snap_ss_bram" absolute_offset="40008000"/>
+   </node>
+   <node id="adc_voltage_snap_ss_bram" address="0x0000c000" byte_size="16384" link_done="adc_voltage_snap_ss_bram_memory_map_output.xml" absolute_id="axi4lite_top.adc_voltage_snap_ss_bram" absolute_offset="4000c000">
+      <node id="adc_voltage_snap_ss_bram" address="0x00000000" mask="0xffffffff" size="4096" permission="rw" hw_rst="0" description="adc_voltage_snap_ss_bram_adc_voltage_snap_ss_bram" absolute_id="axi4lite_top.adc_voltage_snap_ss_bram.adc_voltage_snap_ss_bram" absolute_offset="4000c000"/>
+   </node>
+   <node id="sw_reg" address="0x00010000" byte_size="128" link_done="sw_reg_memory_map_output.xml" absolute_id="axi4lite_top.sw_reg" absolute_offset="40010000">
+      <node id="acc_cnt" address="0x00000000" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_acc_cnt" absolute_id="axi4lite_top.sw_reg.acc_cnt" absolute_offset="40010000"/>
+      <node id="acc_len" address="0x00000004" mask="0xffffffff" size="1" permission="rw" hw_rst="2" description="sw_reg_acc_len" absolute_id="axi4lite_top.sw_reg.acc_len" absolute_offset="40010004"/>
+      <node id="accum0_snap_ss_ctrl" address="0x00000008" mask="0xffffffff" size="1" permission="rw" hw_rst="0" description="sw_reg_accum0_snap_ss_ctrl" absolute_id="axi4lite_top.sw_reg.accum0_snap_ss_ctrl" absolute_offset="40010008"/>
+      <node id="accum0_snap_ss_status" address="0x0000000c" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_accum0_snap_ss_status" absolute_id="axi4lite_top.sw_reg.accum0_snap_ss_status" absolute_offset="4001000c"/>
+      <node id="accum1_snap_ss_ctrl" address="0x00000010" mask="0xffffffff" size="1" permission="rw" hw_rst="0" description="sw_reg_accum1_snap_ss_ctrl" absolute_id="axi4lite_top.sw_reg.accum1_snap_ss_ctrl" absolute_offset="40010010"/>
+      <node id="accum1_snap_ss_status" address="0x00000014" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_accum1_snap_ss_status" absolute_id="axi4lite_top.sw_reg.accum1_snap_ss_status" absolute_offset="40010014"/>
+      <node id="accumdat_snap_ss_ctrl" address="0x00000018" mask="0xffffffff" size="1" permission="rw" hw_rst="0" description="sw_reg_accumdat_snap_ss_ctrl" absolute_id="axi4lite_top.sw_reg.accumdat_snap_ss_ctrl" absolute_offset="40010018"/>
+      <node id="accumdat_snap_ss_status" address="0x0000001c" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_accumdat_snap_ss_status" absolute_id="axi4lite_top.sw_reg.accumdat_snap_ss_status" absolute_offset="4001001c"/>
+      <node id="adc_dv" address="0x00000020" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_adc_dv" absolute_id="axi4lite_top.sw_reg.adc_dv" absolute_offset="40010020"/>
+      <node id="adc_sample_cnt" address="0x00000024" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_adc_sample_cnt" absolute_id="axi4lite_top.sw_reg.adc_sample_cnt" absolute_offset="40010024"/>
+      <node id="adc_voltage_snap_ss_ctrl" address="0x00000028" mask="0xffffffff" size="1" permission="rw" hw_rst="0" description="sw_reg_adc_voltage_snap_ss_ctrl" absolute_id="axi4lite_top.sw_reg.adc_voltage_snap_ss_ctrl" absolute_offset="40010028"/>
+      <node id="adc_voltage_snap_ss_status" address="0x0000002c" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_adc_voltage_snap_ss_status" absolute_id="axi4lite_top.sw_reg.adc_voltage_snap_ss_status" absolute_offset="4001002c"/>
+      <node id="fft_sync_inc0" address="0x00000030" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_fft_sync_inc0" absolute_id="axi4lite_top.sw_reg.fft_sync_inc0" absolute_offset="40010030"/>
+      <node id="fft_sync_inc1" address="0x00000034" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_fft_sync_inc1" absolute_id="axi4lite_top.sw_reg.fft_sync_inc1" absolute_offset="40010034"/>
+      <node id="reg_cntrl" address="0x00000038" mask="0xffffffff" size="1" permission="rw" hw_rst="0" description="sw_reg_reg_cntrl" absolute_id="axi4lite_top.sw_reg.reg_cntrl" absolute_offset="40010038"/>
+      <node id="snap_gap" address="0x0000003c" mask="0xffffffff" size="1" permission="rw" hw_rst="14" description="sw_reg_snap_gap" absolute_id="axi4lite_top.sw_reg.snap_gap" absolute_offset="4001003c"/>
+      <node id="sync_cnt" address="0x00000040" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sw_reg_sync_cnt" absolute_id="axi4lite_top.sw_reg.sync_cnt" absolute_offset="40010040"/>
+   </node>
+   <node id="sys" address="0x00010080" byte_size="32" link_done="sys_memory_map_output.xml" absolute_id="axi4lite_top.sys" absolute_offset="40010080">
+      <node id="board_id" address="0x00000000" mask="0xffffffff" size="1" permission="r" hw_rst="4" description="sys_board_id" absolute_id="axi4lite_top.sys.board_id" absolute_offset="40010080"/>
+      <node id="rev" address="0x00000004" mask="0xffffffff" size="1" permission="r" hw_rst="65536" description="sys_rev" absolute_id="axi4lite_top.sys.rev" absolute_offset="40010084"/>
+      <node id="rev_rcs" address="0x0000000c" mask="0xffffffff" size="1" permission="r" hw_rst="1" description="sys_rev_rcs" absolute_id="axi4lite_top.sys.rev_rcs" absolute_offset="4001008c"/>
+      <node id="scratchpad" address="0x00000010" mask="0xffffffff" size="1" permission="rw" hw_rst="0" description="sys_scratchpad" absolute_id="axi4lite_top.sys.scratchpad" absolute_offset="40010090"/>
+      <node id="clkcounter" address="0x00000014" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sys_clkcounter" absolute_id="axi4lite_top.sys.clkcounter" absolute_offset="40010094"/>
+   </node>
+</node>
+<!-- This file has been automatically generated using xml_map_gen.py version 1.8 /!-->

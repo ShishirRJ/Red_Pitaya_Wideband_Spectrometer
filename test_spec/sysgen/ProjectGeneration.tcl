@@ -1,0 +1,641 @@
+# Note: This file is produced automatically, and will be overwritten the next
+# time you press "Generate" in System Generator. 
+#
+
+
+namespace eval ::xilinx::dsp::planaheaddriver {
+	set Compilation {IP Catalog}
+	set CompilationFlow {IP}
+	set CreateInterfaceDocument {off}
+	set DSPDevice {xc7z010}
+	set DSPFamily {zynq}
+	set DSPPackage {clg400}
+	set DSPSpeed {-1}
+	set FPGAClockPeriod 8
+	set GenerateTestBench 0
+	set HDLLanguage {vhdl}
+	set IPOOCCacheRootPath {/home/shishir/.Xilinx/Sysgen/SysgenVivado/lnx64.o/ip}
+	set IP_Auto_Infer {1}
+	set IP_Categories_Text {System_Generator_for_DSP}
+	set IP_Common_Repos {0}
+	set IP_Description {}
+	set IP_Dir {}
+	set IP_Library_Text {SysGen}
+	set IP_LifeCycle_Menu {2}
+	set IP_Logo {sysgen_icon_100.png}
+	set IP_Name {}
+	set IP_Revision {382529960}
+	set IP_Socket_IP {0}
+	set IP_Socket_IP_Proj_Path {}
+	set IP_Vendor_Text {User_Company}
+	set IP_Version_Text {1.0}
+	set ImplStrategyName {Vivado Implementation Defaults}
+	set PostProjectCreationProc {dsp_package_for_vivado_ip_integrator}
+	set Project {test_spec}
+	set ProjectFiles {
+		{{conv_pkg.vhd} -lib {xil_defaultlib}}
+		{{synth_reg.vhd} -lib {xil_defaultlib}}
+		{{synth_reg_w_init.vhd} -lib {xil_defaultlib}}
+		{{srl17e.vhd} -lib {xil_defaultlib}}
+		{{srl33e.vhd} -lib {xil_defaultlib}}
+		{{synth_reg_reg.vhd} -lib {xil_defaultlib}}
+		{{single_reg_w_init.vhd} -lib {xil_defaultlib}}
+		{{xlclockdriver_rd.vhd} -lib {xil_defaultlib}}
+		{{vivado_ip.tcl}}
+		{{xltest_spec_xfft_v9_1_i0_9b2dece57ee61ac8362d8aa5c105b38d.v}}
+		{{conv_pkg.v}}
+		{{synth_reg.v}}
+		{{synth_reg_w_init.v}}
+		{{convert_type.v}}
+		{{xpm_4dd9cf_vivado.mem}}
+		{{test_spec_entity_declarations.vhd} -lib {xil_defaultlib}}
+		{{test_spec.vhd} -lib {xil_defaultlib}}
+		{{test_spec_clock.xdc}}
+		{{test_spec.xdc}}
+	}
+	set SimPeriod 1
+	set SimTime 10000
+	set SimulationTime {80208.00000000 ns}
+	set SynthStrategyName {Vivado Synthesis Defaults}
+	set SynthesisTool {Vivado}
+	set TargetDir {/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen}
+	set TopLevelModule {test_spec}
+	set TopLevelSimulinkHandle 74908
+	set VHDLLib {xil_defaultlib}
+	set TopLevelPortInterface {}
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out Name {test_spec_snap_gap_user_data_out}
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out Width 32
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out DatFile {test_spec_snap_gap_test_spec_snap_gap_user_data_out.dat}
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out IconText {test_spec_snap_gap_user_data_out}
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out Direction in
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out Period 1
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_snap_gap_user_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out Name {test_spec_reg_cntrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out Width 32
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out DatFile {test_spec_reg_cntrl_test_spec_reg_cntrl_user_data_out.dat}
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out IconText {test_spec_reg_cntrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out Direction in
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out Period 1
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_reg_cntrl_user_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out Name {test_spec_red_pitaya_adc_adc_data_val_out}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out Type Bool
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out Width 1
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out DatFile {test_spec_red_pitaya_adc_test_spec_red_pitaya_adc_adc_data_val_out.dat}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out IconText {test_spec_red_pitaya_adc_adc_data_val_out}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out Direction in
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out Period 1
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out Interface 0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out Locs {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_data_val_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out Name {test_spec_red_pitaya_adc_adc1_data_q_out}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out Type UFix_10_0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out Width 10
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out DatFile {test_spec_red_pitaya_adc_test_spec_red_pitaya_adc_adc1_data_q_out.dat}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out IconText {test_spec_red_pitaya_adc_adc1_data_q_out}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out Direction in
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out Period 1
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out Interface 0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out Locs {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc1_data_q_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out Name {test_spec_red_pitaya_adc_adc0_data_i_out}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out Type UFix_10_0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out Width 10
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out DatFile {test_spec_red_pitaya_adc_test_spec_red_pitaya_adc_adc0_data_i_out.dat}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out IconText {test_spec_red_pitaya_adc_adc0_data_i_out}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out Direction in
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out Period 1
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out Interface 0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out Locs {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc0_data_i_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out Name {test_spec_adc_voltage_snap_ss_ctrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out Width 32
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out DatFile {test_spec_adc_voltage_snap_ss_ctrl_test_spec_adc_voltage_snap_ss_ctrl_user_data_out.dat}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out IconText {test_spec_adc_voltage_snap_ss_ctrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out Direction in
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out Period 1
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_ctrl_user_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out Name {test_spec_adc_voltage_snap_ss_bram_data_out}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out Width 32
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out DatFile {test_spec_adc_voltage_snap_ss_bram_test_spec_adc_voltage_snap_ss_bram_data_out.dat}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out IconText {test_spec_adc_voltage_snap_ss_bram_data_out}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out Direction in
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out Period 1
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out Name {test_spec_accumdat_snap_ss_ctrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out Width 32
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out DatFile {test_spec_accumdat_snap_ss_ctrl_test_spec_accumdat_snap_ss_ctrl_user_data_out.dat}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out IconText {test_spec_accumdat_snap_ss_ctrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out Direction in
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out Period 1
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_ctrl_user_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out Name {test_spec_accumdat_snap_ss_bram_data_out}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out Width 32
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out DatFile {test_spec_accumdat_snap_ss_bram_test_spec_accumdat_snap_ss_bram_data_out.dat}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out IconText {test_spec_accumdat_snap_ss_bram_data_out}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out Direction in
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out Period 1
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out Name {test_spec_accum1_snap_ss_ctrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out Width 32
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out DatFile {test_spec_accum1_snap_ss_ctrl_test_spec_accum1_snap_ss_ctrl_user_data_out.dat}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out IconText {test_spec_accum1_snap_ss_ctrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out Direction in
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out Period 1
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_ctrl_user_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out Name {test_spec_accum1_snap_ss_bram_data_out}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out Width 32
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out DatFile {test_spec_accum1_snap_ss_bram_test_spec_accum1_snap_ss_bram_data_out.dat}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out IconText {test_spec_accum1_snap_ss_bram_data_out}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out Direction in
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out Period 1
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out Name {test_spec_accum0_snap_ss_ctrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out Width 32
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out DatFile {test_spec_accum0_snap_ss_ctrl_test_spec_accum0_snap_ss_ctrl_user_data_out.dat}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out IconText {test_spec_accum0_snap_ss_ctrl_user_data_out}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out Direction in
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out Period 1
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_ctrl_user_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out Name {test_spec_accum0_snap_ss_bram_data_out}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out Width 32
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out DatFile {test_spec_accum0_snap_ss_bram_test_spec_accum0_snap_ss_bram_data_out.dat}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out IconText {test_spec_accum0_snap_ss_bram_data_out}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out Direction in
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out Period 1
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out Name {test_spec_acc_len_user_data_out}
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out Width 32
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out DatFile {test_spec_acc_len_test_spec_acc_len_user_data_out.dat}
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out IconText {test_spec_acc_len_user_data_out}
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out Direction in
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out Period 1
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out Interface 0
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out InterfaceName {}
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out Locs {}
+	dict set TopLevelPortInterface test_spec_acc_len_user_data_out IOStandard {}
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in Name {test_spec_acc_cnt_user_data_in}
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in DatFile {test_spec_acc_cnt_test_spec_acc_cnt_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in IconText {test_spec_acc_cnt_user_data_in}
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_acc_cnt_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Name {test_spec_accum0_snap_ss_bram_addr}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Type UFix_12_0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Width 12
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr DatFile {test_spec_accum0_snap_ss_bram_test_spec_accum0_snap_ss_bram_addr.dat}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr IconText {test_spec_accum0_snap_ss_bram_addr}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Direction out
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Period 1
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Interface 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr Locs {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_addr IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in Name {test_spec_accum0_snap_ss_bram_data_in}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in Width 32
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in DatFile {test_spec_accum0_snap_ss_bram_test_spec_accum0_snap_ss_bram_data_in.dat}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in IconText {test_spec_accum0_snap_ss_bram_data_in}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in Direction out
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in Period 1
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we Name {test_spec_accum0_snap_ss_bram_we}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we Type UFix_1_0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we Width 1
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we DatFile {test_spec_accum0_snap_ss_bram_test_spec_accum0_snap_ss_bram_we.dat}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we IconText {test_spec_accum0_snap_ss_bram_we}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we Direction out
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we Period 1
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we Interface 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we Locs {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_bram_we IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in Name {test_spec_accum0_snap_ss_status_user_data_in}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in DatFile {test_spec_accum0_snap_ss_status_test_spec_accum0_snap_ss_status_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in IconText {test_spec_accum0_snap_ss_status_user_data_in}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_accum0_snap_ss_status_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr Name {test_spec_accum1_snap_ss_bram_addr}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr Type UFix_12_0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr Width 12
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr DatFile {test_spec_accum1_snap_ss_bram_test_spec_accum1_snap_ss_bram_addr.dat}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr IconText {test_spec_accum1_snap_ss_bram_addr}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr Direction out
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr Period 1
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr Interface 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr Locs {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_addr IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in Name {test_spec_accum1_snap_ss_bram_data_in}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in Width 32
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in DatFile {test_spec_accum1_snap_ss_bram_test_spec_accum1_snap_ss_bram_data_in.dat}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in IconText {test_spec_accum1_snap_ss_bram_data_in}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in Direction out
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in Period 1
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we Name {test_spec_accum1_snap_ss_bram_we}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we Type UFix_1_0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we Width 1
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we DatFile {test_spec_accum1_snap_ss_bram_test_spec_accum1_snap_ss_bram_we.dat}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we IconText {test_spec_accum1_snap_ss_bram_we}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we Direction out
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we Period 1
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we Interface 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we Locs {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_bram_we IOStandard {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in Name {test_spec_accum1_snap_ss_status_user_data_in}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in DatFile {test_spec_accum1_snap_ss_status_test_spec_accum1_snap_ss_status_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in IconText {test_spec_accum1_snap_ss_status_user_data_in}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_accum1_snap_ss_status_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr Name {test_spec_accumdat_snap_ss_bram_addr}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr Type UFix_12_0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr Width 12
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr DatFile {test_spec_accumdat_snap_ss_bram_test_spec_accumdat_snap_ss_bram_addr.dat}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr IconText {test_spec_accumdat_snap_ss_bram_addr}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr Direction out
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr Period 1
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr Interface 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr Locs {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_addr IOStandard {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in Name {test_spec_accumdat_snap_ss_bram_data_in}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in Width 32
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in DatFile {test_spec_accumdat_snap_ss_bram_test_spec_accumdat_snap_ss_bram_data_in.dat}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in IconText {test_spec_accumdat_snap_ss_bram_data_in}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in Direction out
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in Period 1
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we Name {test_spec_accumdat_snap_ss_bram_we}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we Type UFix_1_0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we Width 1
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we DatFile {test_spec_accumdat_snap_ss_bram_test_spec_accumdat_snap_ss_bram_we.dat}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we IconText {test_spec_accumdat_snap_ss_bram_we}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we Direction out
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we Period 1
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we Interface 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we Locs {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_bram_we IOStandard {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in Name {test_spec_accumdat_snap_ss_status_user_data_in}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in DatFile {test_spec_accumdat_snap_ss_status_test_spec_accumdat_snap_ss_status_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in IconText {test_spec_accumdat_snap_ss_status_user_data_in}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_accumdat_snap_ss_status_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in Name {test_spec_adc_dv_user_data_in}
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in DatFile {test_spec_adc_dv_test_spec_adc_dv_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in IconText {test_spec_adc_dv_user_data_in}
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_adc_dv_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in Name {test_spec_adc_sample_cnt_user_data_in}
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in DatFile {test_spec_adc_sample_cnt_test_spec_adc_sample_cnt_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in IconText {test_spec_adc_sample_cnt_user_data_in}
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_adc_sample_cnt_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr Name {test_spec_adc_voltage_snap_ss_bram_addr}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr Type UFix_12_0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr Width 12
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr DatFile {test_spec_adc_voltage_snap_ss_bram_test_spec_adc_voltage_snap_ss_bram_addr.dat}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr IconText {test_spec_adc_voltage_snap_ss_bram_addr}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr Direction out
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr Period 1
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr Interface 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr InterfaceName {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr Locs {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_addr IOStandard {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in Name {test_spec_adc_voltage_snap_ss_bram_data_in}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in Width 32
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in DatFile {test_spec_adc_voltage_snap_ss_bram_test_spec_adc_voltage_snap_ss_bram_data_in.dat}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in IconText {test_spec_adc_voltage_snap_ss_bram_data_in}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in Direction out
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in Period 1
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we Name {test_spec_adc_voltage_snap_ss_bram_we}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we Type UFix_1_0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we Width 1
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we DatFile {test_spec_adc_voltage_snap_ss_bram_test_spec_adc_voltage_snap_ss_bram_we.dat}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we IconText {test_spec_adc_voltage_snap_ss_bram_we}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we Direction out
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we Period 1
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we Interface 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we InterfaceName {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we Locs {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_bram_we IOStandard {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in Name {test_spec_adc_voltage_snap_ss_status_user_data_in}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in DatFile {test_spec_adc_voltage_snap_ss_status_test_spec_adc_voltage_snap_ss_status_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in IconText {test_spec_adc_voltage_snap_ss_status_user_data_in}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_adc_voltage_snap_ss_status_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in Name {test_spec_fft_sync_inc0_user_data_in}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in DatFile {test_spec_fft_sync_inc0_test_spec_fft_sync_inc0_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in IconText {test_spec_fft_sync_inc0_user_data_in}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc0_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in Name {test_spec_fft_sync_inc1_user_data_in}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in DatFile {test_spec_fft_sync_inc1_test_spec_fft_sync_inc1_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in IconText {test_spec_fft_sync_inc1_user_data_in}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_fft_sync_inc1_user_data_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in Name {test_spec_red_pitaya_adc_adc_reset_in}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in Type Bool
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in Width 1
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in DatFile {test_spec_red_pitaya_adc_test_spec_red_pitaya_adc_adc_reset_in.dat}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in IconText {test_spec_red_pitaya_adc_adc_reset_in}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in Direction out
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in Period 1
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in Interface 0
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in Locs {}
+	dict set TopLevelPortInterface test_spec_red_pitaya_adc_adc_reset_in IOStandard {}
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in Name {test_spec_sync_cnt_user_data_in}
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in Type UFix_32_0
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in BinaryPoint 0
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in Width 32
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in DatFile {test_spec_sync_cnt_test_spec_sync_cnt_user_data_in.dat}
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in IconText {test_spec_sync_cnt_user_data_in}
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in Direction out
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in Period 1
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in Interface 0
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in InterfaceName {}
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in InterfaceString {DATA}
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in ClockDomain {test_spec}
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in Locs {}
+	dict set TopLevelPortInterface test_spec_sync_cnt_user_data_in IOStandard {}
+	dict set TopLevelPortInterface clk Name {clk}
+	dict set TopLevelPortInterface clk Type -
+	dict set TopLevelPortInterface clk ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface clk BinaryPoint 0
+	dict set TopLevelPortInterface clk Width 1
+	dict set TopLevelPortInterface clk DatFile {}
+	dict set TopLevelPortInterface clk Direction in
+	dict set TopLevelPortInterface clk Period 1
+	dict set TopLevelPortInterface clk Interface 6
+	dict set TopLevelPortInterface clk InterfaceName {}
+	dict set TopLevelPortInterface clk InterfaceString {CLOCK}
+	dict set TopLevelPortInterface clk ClockDomain {test_spec}
+	dict set TopLevelPortInterface clk Locs {}
+	dict set TopLevelPortInterface clk IOStandard {}
+	dict set TopLevelPortInterface clk AssociatedInterfaces {}
+	dict set TopLevelPortInterface clk AssociatedResets {}
+	set MemoryMappedPort {}
+}
+
+source SgPaProject.tcl
+::xilinx::dsp::planaheadworker::dsp_create_project

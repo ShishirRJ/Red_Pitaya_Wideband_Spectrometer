@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Jul  4 10:19:22 2025
+# Process ID: 494581
+# Current directory: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen
+# Command line: vivado -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/vivado.log
+# Journal file: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/shishir/tools/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'test_spec_c_counter_binary_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'test_spec_c_counter_binary_v12_0_i0' to 'test_spec_c_counter_binary_v12_0_i0' is not allowed and is ignored.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'test_spec_xfft_v9_1_i0' to 'test_spec_xfft_v9_1_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'test_spec_c_counter_binary_v12_0_i1' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'test_spec_c_counter_binary_v12_0_i1' to 'test_spec_c_counter_binary_v12_0_i1' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'test_spec_c_counter_binary_v12_0_i2' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'test_spec_c_counter_binary_v12_0_i2' to 'test_spec_c_counter_binary_v12_0_i2' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'test_spec_c_counter_binary_v12_0_i3' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'test_spec_c_counter_binary_v12_0_i3' to 'test_spec_c_counter_binary_v12_0_i3' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'test_spec_c_counter_binary_v12_0_i4' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'test_spec_c_counter_binary_v12_0_i4' to 'test_spec_c_counter_binary_v12_0_i4' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'test_spec_c_addsub_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'test_spec_c_addsub_v12_0_i0' to 'test_spec_c_addsub_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '0000000000000000000000000000000' to '0' has been ignored for IP 'test_spec_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'test_spec_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'test_spec_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-4832] The IP name 'test_spec_mult_gen_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'test_spec_mult_gen_v12_0_i0' to 'test_spec_mult_gen_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'SclrCePriority' from 'SCLR_Overrides_CE' to 'CE_Overrides_SCLR' has been ignored for IP 'test_spec_mult_gen_v12_0_i0'
+WARNING: [IP_Flow 19-4832] The IP name 'test_spec_c_counter_binary_v12_0_i5' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'test_spec_c_counter_binary_v12_0_i5' to 'test_spec_c_counter_binary_v12_0_i5' is not allowed and is ignored.
+IP Repository Located at : /home/shishir/tools/Xilinx/Vivado/2021.1/data/ip
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/shishir/tools/Xilinx/Vivado/2021.1/data/ip'.
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/ip/test_spec_c_addsub_v12_0_i0/test_spec_c_addsub_v12_0_i0.xci
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/ip/test_spec_c_counter_binary_v12_0_i0/test_spec_c_counter_binary_v12_0_i0.xci
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/ip/test_spec_c_counter_binary_v12_0_i1/test_spec_c_counter_binary_v12_0_i1.xci
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/ip/test_spec_c_counter_binary_v12_0_i2/test_spec_c_counter_binary_v12_0_i2.xci
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/ip/test_spec_c_counter_binary_v12_0_i3/test_spec_c_counter_binary_v12_0_i3.xci
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/ip/test_spec_c_counter_binary_v12_0_i4/test_spec_c_counter_binary_v12_0_i4.xci
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/ip/test_spec_c_counter_binary_v12_0_i5/test_spec_c_counter_binary_v12_0_i5.xci
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/ip/test_spec_mult_gen_v12_0_i0/test_spec_mult_gen_v12_0_i0.xci
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/ip/test_spec_xfft_v9_1_i0/test_spec_xfft_v9_1_i0.xci
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/sysgen/test_spec.xdc
+Adding File /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/sysgen/xpm_4dd9cf_vivado.mem
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from TCL Argument).
+CRITICAL WARNING: [IP_Flow 19-625] File Group 'xilinx_vhdlsynthesis (VHDL Synthesis)': One or more verilogSource files found added to the pure language VHDL file group: hdl/xltest_spec_xfft_v9_1_i0_9b2dece57ee61ac8362d8aa5c105b38d.v,...
+CRITICAL WARNING: [IP_Flow 19-625] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': One or more verilogSource files found added to the pure language VHDL file group: hdl/xltest_spec_xfft_v9_1_i0_9b2dece57ee61ac8362d8aa5c105b38d.v,...
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog'.)
+0
+Wrote  : </home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/bd/test_spec_bd/test_spec_bd.bd> 
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /test_spec_1/*'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /test_spec_1/*'
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /test_spec_1/*'
+Wrote  : </home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/test_spec/sysgen/ip_catalog/test_spec.srcs/sources_1/bd/test_spec_bd/test_spec_bd.bd> 
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  4 10:19:39 2025...

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Jun 27 15:39:00 2025
+# Process ID: 166633
+# Current directory: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec
+# Command line: vivado
+# Log file: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/vivado.log
+# Journal file: /home/shishir/pythontest/Red-Pitaya-Casper-Toolflow/red_pitaya/test_spec/vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 27 15:41:07 2025...

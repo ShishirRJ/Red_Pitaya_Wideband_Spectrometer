@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<node id="sys" byte_size="32">
+	<node id="board_id" address="0x00000000" mask="0xffffffff" size="1" permission="r" hw_rst="4" description="sys_board_id"/>
+	<node id="rev" address="0x00000004" mask="0xffffffff" size="1" permission="r" hw_rst="65536" description="sys_rev"/>
+	<node id="rev_rcs" address="0x0000000c" mask="0xffffffff" size="1" permission="r" hw_rst="1" description="sys_rev_rcs"/>
+	<node id="scratchpad" address="0x00000010" mask="0xffffffff" size="1" permission="rw" hw_rst="0" description="sys_scratchpad"/>
+	<node id="clkcounter" address="0x00000014" mask="0xffffffff" size="1" permission="r" hw_rst="0x0" description="sys_clkcounter"/>
+</node>
+<!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

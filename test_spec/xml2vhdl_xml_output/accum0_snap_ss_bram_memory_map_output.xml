@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<node id="accum0_snap_ss_bram" byte_size="16384">
+	<node id="accum0_snap_ss_bram" address="0x00000000" mask="0xffffffff" size="4096" permission="rw" hw_rst="0" description="accum0_snap_ss_bram_accum0_snap_ss_bram"/>
+</node>
+<!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

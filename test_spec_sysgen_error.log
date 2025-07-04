@@ -1,0 +1,25 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2021.1                 /home/shishir/tools/Xilinx/Vivado/2021.1
+Matlab 9.10.0.2198249 (R2021a) Update 8 /usr/local/MATLAB/R2021a
+Vivado 2021.1                           /home/shishir/tools/Xilinx/Vivado/2021.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Type assertion failed
+     Block: 'test_spec/fft_sync_inc1/assert_reg'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'test_spec/fft_sync_inc1/assert_reg'
+
+Details:
+The input type propagated to this block did not match the
+specified type.
+  Expected Type: UFix_32_0
+  Actual Type: UFix_8_0
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------

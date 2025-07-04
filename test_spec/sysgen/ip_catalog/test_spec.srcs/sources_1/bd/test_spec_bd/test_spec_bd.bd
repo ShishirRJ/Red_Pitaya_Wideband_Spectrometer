@@ -1,0 +1,728 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4E5C9E1BBF228D5C",
+      "design_src": "SYSGEN",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../test_spec.gen/sources_1/bd/test_spec_bd",
+      "name": "test_spec_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "test_spec_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "test_spec_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_acc_cnt_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_acc_len_user_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_accum0_snap_ss_bram_addr": {
+        "type": "data",
+        "direction": "O",
+        "left": "11",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accum0_snap_ss_bram_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accum0_snap_ss_bram_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_accum0_snap_ss_bram_we": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accum0_snap_ss_ctrl_user_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_accum0_snap_ss_status_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accum1_snap_ss_bram_addr": {
+        "type": "data",
+        "direction": "O",
+        "left": "11",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accum1_snap_ss_bram_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accum1_snap_ss_bram_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_accum1_snap_ss_bram_we": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accum1_snap_ss_ctrl_user_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_accum1_snap_ss_status_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accumdat_snap_ss_bram_addr": {
+        "type": "data",
+        "direction": "O",
+        "left": "11",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accumdat_snap_ss_bram_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accumdat_snap_ss_bram_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_accumdat_snap_ss_bram_we": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_accumdat_snap_ss_ctrl_user_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_accumdat_snap_ss_status_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_adc_dv_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_adc_sample_cnt_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_adc_voltage_snap_ss_bram_addr": {
+        "type": "data",
+        "direction": "O",
+        "left": "11",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_adc_voltage_snap_ss_bram_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_adc_voltage_snap_ss_bram_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_adc_voltage_snap_ss_bram_we": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_adc_voltage_snap_ss_ctrl_user_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_adc_voltage_snap_ss_status_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_fft_sync_inc0_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_fft_sync_inc1_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_red_pitaya_adc_adc0_data_i_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "9",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_red_pitaya_adc_adc1_data_q_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "9",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_red_pitaya_adc_adc_data_val_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_red_pitaya_adc_adc_reset_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "test_spec_reg_cntrl_user_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_snap_gap_user_data_out": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "test_spec_sync_cnt_user_data_in": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "test_spec_1": {
+        "vlnv": "User_Company:SysGen:test_spec:1.0",
+        "xci_name": "test_spec_bd_test_spec_1_0",
+        "xci_path": "ip/test_spec_bd_test_spec_1_0/test_spec_bd_test_spec_1_0.xci",
+        "inst_hier_path": "test_spec_1"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "test_spec_1/clk"
+        ]
+      },
+      "test_spec_1_test_spec_acc_cnt_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_acc_cnt_user_data_in",
+          "test_spec_acc_cnt_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_accum0_snap_ss_bram_addr": {
+        "ports": [
+          "test_spec_1/test_spec_accum0_snap_ss_bram_addr",
+          "test_spec_accum0_snap_ss_bram_addr"
+        ]
+      },
+      "test_spec_1_test_spec_accum0_snap_ss_bram_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_accum0_snap_ss_bram_data_in",
+          "test_spec_accum0_snap_ss_bram_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_accum0_snap_ss_bram_we": {
+        "ports": [
+          "test_spec_1/test_spec_accum0_snap_ss_bram_we",
+          "test_spec_accum0_snap_ss_bram_we"
+        ]
+      },
+      "test_spec_1_test_spec_accum0_snap_ss_status_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_accum0_snap_ss_status_user_data_in",
+          "test_spec_accum0_snap_ss_status_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_accum1_snap_ss_bram_addr": {
+        "ports": [
+          "test_spec_1/test_spec_accum1_snap_ss_bram_addr",
+          "test_spec_accum1_snap_ss_bram_addr"
+        ]
+      },
+      "test_spec_1_test_spec_accum1_snap_ss_bram_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_accum1_snap_ss_bram_data_in",
+          "test_spec_accum1_snap_ss_bram_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_accum1_snap_ss_bram_we": {
+        "ports": [
+          "test_spec_1/test_spec_accum1_snap_ss_bram_we",
+          "test_spec_accum1_snap_ss_bram_we"
+        ]
+      },
+      "test_spec_1_test_spec_accum1_snap_ss_status_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_accum1_snap_ss_status_user_data_in",
+          "test_spec_accum1_snap_ss_status_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_accumdat_snap_ss_bram_addr": {
+        "ports": [
+          "test_spec_1/test_spec_accumdat_snap_ss_bram_addr",
+          "test_spec_accumdat_snap_ss_bram_addr"
+        ]
+      },
+      "test_spec_1_test_spec_accumdat_snap_ss_bram_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_accumdat_snap_ss_bram_data_in",
+          "test_spec_accumdat_snap_ss_bram_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_accumdat_snap_ss_bram_we": {
+        "ports": [
+          "test_spec_1/test_spec_accumdat_snap_ss_bram_we",
+          "test_spec_accumdat_snap_ss_bram_we"
+        ]
+      },
+      "test_spec_1_test_spec_accumdat_snap_ss_status_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_accumdat_snap_ss_status_user_data_in",
+          "test_spec_accumdat_snap_ss_status_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_adc_dv_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_adc_dv_user_data_in",
+          "test_spec_adc_dv_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_adc_sample_cnt_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_adc_sample_cnt_user_data_in",
+          "test_spec_adc_sample_cnt_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_adc_voltage_snap_ss_bram_addr": {
+        "ports": [
+          "test_spec_1/test_spec_adc_voltage_snap_ss_bram_addr",
+          "test_spec_adc_voltage_snap_ss_bram_addr"
+        ]
+      },
+      "test_spec_1_test_spec_adc_voltage_snap_ss_bram_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_adc_voltage_snap_ss_bram_data_in",
+          "test_spec_adc_voltage_snap_ss_bram_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_adc_voltage_snap_ss_bram_we": {
+        "ports": [
+          "test_spec_1/test_spec_adc_voltage_snap_ss_bram_we",
+          "test_spec_adc_voltage_snap_ss_bram_we"
+        ]
+      },
+      "test_spec_1_test_spec_adc_voltage_snap_ss_status_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_adc_voltage_snap_ss_status_user_data_in",
+          "test_spec_adc_voltage_snap_ss_status_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_fft_sync_inc0_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_fft_sync_inc0_user_data_in",
+          "test_spec_fft_sync_inc0_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_fft_sync_inc1_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_fft_sync_inc1_user_data_in",
+          "test_spec_fft_sync_inc1_user_data_in"
+        ]
+      },
+      "test_spec_1_test_spec_red_pitaya_adc_adc_reset_in": {
+        "ports": [
+          "test_spec_1/test_spec_red_pitaya_adc_adc_reset_in",
+          "test_spec_red_pitaya_adc_adc_reset_in"
+        ]
+      },
+      "test_spec_1_test_spec_sync_cnt_user_data_in": {
+        "ports": [
+          "test_spec_1/test_spec_sync_cnt_user_data_in",
+          "test_spec_sync_cnt_user_data_in"
+        ]
+      },
+      "test_spec_acc_len_user_data_out_1": {
+        "ports": [
+          "test_spec_acc_len_user_data_out",
+          "test_spec_1/test_spec_acc_len_user_data_out"
+        ]
+      },
+      "test_spec_accum0_snap_ss_bram_data_out_1": {
+        "ports": [
+          "test_spec_accum0_snap_ss_bram_data_out",
+          "test_spec_1/test_spec_accum0_snap_ss_bram_data_out"
+        ]
+      },
+      "test_spec_accum0_snap_ss_ctrl_user_data_out_1": {
+        "ports": [
+          "test_spec_accum0_snap_ss_ctrl_user_data_out",
+          "test_spec_1/test_spec_accum0_snap_ss_ctrl_user_data_out"
+        ]
+      },
+      "test_spec_accum1_snap_ss_bram_data_out_1": {
+        "ports": [
+          "test_spec_accum1_snap_ss_bram_data_out",
+          "test_spec_1/test_spec_accum1_snap_ss_bram_data_out"
+        ]
+      },
+      "test_spec_accum1_snap_ss_ctrl_user_data_out_1": {
+        "ports": [
+          "test_spec_accum1_snap_ss_ctrl_user_data_out",
+          "test_spec_1/test_spec_accum1_snap_ss_ctrl_user_data_out"
+        ]
+      },
+      "test_spec_accumdat_snap_ss_bram_data_out_1": {
+        "ports": [
+          "test_spec_accumdat_snap_ss_bram_data_out",
+          "test_spec_1/test_spec_accumdat_snap_ss_bram_data_out"
+        ]
+      },
+      "test_spec_accumdat_snap_ss_ctrl_user_data_out_1": {
+        "ports": [
+          "test_spec_accumdat_snap_ss_ctrl_user_data_out",
+          "test_spec_1/test_spec_accumdat_snap_ss_ctrl_user_data_out"
+        ]
+      },
+      "test_spec_adc_voltage_snap_ss_bram_data_out_1": {
+        "ports": [
+          "test_spec_adc_voltage_snap_ss_bram_data_out",
+          "test_spec_1/test_spec_adc_voltage_snap_ss_bram_data_out"
+        ]
+      },
+      "test_spec_adc_voltage_snap_ss_ctrl_user_data_out_1": {
+        "ports": [
+          "test_spec_adc_voltage_snap_ss_ctrl_user_data_out",
+          "test_spec_1/test_spec_adc_voltage_snap_ss_ctrl_user_data_out"
+        ]
+      },
+      "test_spec_red_pitaya_adc_adc0_data_i_out_1": {
+        "ports": [
+          "test_spec_red_pitaya_adc_adc0_data_i_out",
+          "test_spec_1/test_spec_red_pitaya_adc_adc0_data_i_out"
+        ]
+      },
+      "test_spec_red_pitaya_adc_adc1_data_q_out_1": {
+        "ports": [
+          "test_spec_red_pitaya_adc_adc1_data_q_out",
+          "test_spec_1/test_spec_red_pitaya_adc_adc1_data_q_out"
+        ]
+      },
+      "test_spec_red_pitaya_adc_adc_data_val_out_1": {
+        "ports": [
+          "test_spec_red_pitaya_adc_adc_data_val_out",
+          "test_spec_1/test_spec_red_pitaya_adc_adc_data_val_out"
+        ]
+      },
+      "test_spec_reg_cntrl_user_data_out_1": {
+        "ports": [
+          "test_spec_reg_cntrl_user_data_out",
+          "test_spec_1/test_spec_reg_cntrl_user_data_out"
+        ]
+      },
+      "test_spec_snap_gap_user_data_out_1": {
+        "ports": [
+          "test_spec_snap_gap_user_data_out",
+          "test_spec_1/test_spec_snap_gap_user_data_out"
+        ]
+      }
+    }
+  }
+}
