@@ -40,13 +40,24 @@ print("hello world")
 
 time.sleep(5)
 while (True):
+    begin = time.time()
     # print("hello world 0")
     # print(fpga.read_int('trig_cnt'))  # Reset sync counter
     # print("hello world 1")
     fpga.snapshots.accum0_snap_ss.arm()
     print("hello world 2")
     spec0=fpga.snapshots.accum0_snap_ss.read(arm=False)['data']
-    print(spec0)
+    spectrum = np.array(spec0['P_acc0'], dtype=np.int32)  
+    with open("spec0_dump.csv", "a") as f:
+        for i, val in enumerate(spectrum):
+            f.write(f"{i},{val}\n")
+        f.write("\n") 
+    with open("spec0_dump.bin", "ab") as f:
+        spectrum.tofile(f)
+
+    print("Snapshot data appended to spec0_dump.bin")
+    print("Snapshot data appended to spec0_dump.csv")
+    # print(spec0)
     print("hello world 3")
     fpga.snapshots.accum1_snap_ss.arm()
     # print("hello world 4")
@@ -64,7 +75,7 @@ while (True):
    
     # for i in range(10):
     # print(fpga.read_int('sync_cnt'))
-    print(fpga.read_int('fft_sync_inc1'))
+    print(fpga.read_int('trig_cnt'))
 
 
     # fig1, ax1= plt.subplots()
@@ -88,5 +99,7 @@ while (True):
     # ax3.plot(np.linspace(-256/2,256/2-1,256)*125/256,spectrum1[:256].astype(float),'b-')
     # ax3.set(xlabel='freq (MHz)',ylabel='power',title='Ch1')
     # ax3.set_xlim(0,50)
-    plt.show()
+    # plt.show()
     # time.sleep(1)  
+    end = time.time()
+    print("Time taken for this iteration: {:.10f} seconds".format(end - begin))
