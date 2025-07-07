@@ -48,7 +48,7 @@
 
 
 // IP VLNV: User_Company:SysGen:test_spec:1.0
-// IP Revision: 382536277
+// IP Revision: 382550627
 
 (* X_CORE_INFO = "test_spec,Vivado 2021.1" *)
 (* CHECK_LICENSE_TYPE = "test_spec_ip,test_spec,{}" *)

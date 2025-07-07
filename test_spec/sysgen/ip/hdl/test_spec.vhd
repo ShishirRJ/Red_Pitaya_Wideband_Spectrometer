@@ -12,10 +12,10 @@ entity test_spec_acc_cnt is
   );
 end test_spec_acc_cnt;
 architecture structural of test_spec_acc_cnt is 
+  signal acc_cntr_op_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal acc_cntr_op_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
